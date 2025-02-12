@@ -2,8 +2,9 @@
   "name": "soma_project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/2025/",
   "dependencies": {
-    "cra-template": "1.2.0",
+    "cra-template": "1.2.0", 
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
@@ -24,7 +25,7 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
+      "not dead", 
       "not op_mini all"
     ],
     "development": [
@@ -33,4 +34,4 @@
       "last 1 safari version"
     ]
   }
-}
+ }
