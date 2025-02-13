@@ -12,6 +12,7 @@ const Header = () => {
  };
 
  const handleNavLeave = () => {
+   setHoveredNav(false);
    setIsDropdownVisible(false);
  };
 
@@ -45,36 +46,47 @@ const Header = () => {
 
  return (
    <div className="relative" onMouseLeave={handleNavLeave}>
-     <header className="w-full bg-black">
+     <header className={`w-full transition-colors duration-300 ${hoveredNav ? 'bg-black' : 'bg-white'}`}>
        {/* Top Bar */}
        <div className="w-full px-4">
-         <div className="flex justify-between items-center h-12">
+         <div className="flex justify-between h-12">
            {/* Left side with social icons and title */}
-           <div className="flex flex-col items-start">
-             <h1 className="text-white w-[300px] h-[15px] mb-2 text-sm leading-none">
+           <div className="flex flex-col mt-4">
+             <h1 className={`w-[300px] h-[15px] mb-2 text-sm leading-none transition-colors duration-300 ${
+               hoveredNav ? 'text-white' : 'text-black'
+             }`}>
                2025 KUAD GRADUATION FASHION SHOW
              </h1>
              <div className="flex gap-4">
                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                 <Youtube className="w-[20px] h-[20px] text-white" />
+                 <Youtube className={`w-[25px] h-[25px] transition-colors duration-300 ${
+                   hoveredNav ? 'text-white' : 'text-black'
+                 }`} />
                </a>
                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                 <Instagram className="w-[20px] h-[20px] text-white" />
+                 <Instagram className={`w-[25px] h-[25px] transition-colors duration-300 ${
+                   hoveredNav ? 'text-white' : 'text-black'
+                 }`} />
                </a>
              </div>
            </div>
 
            {/* Cart Icon */}
-           <div>
+           <div className="flex flex-col mt-4">
+             <div className="h-[15px] mb-2"></div>
              <button className="relative">
-               <ShoppingCart className="w-[20px] h-[20px] text-white" />
+               <ShoppingCart className={`w-[25px] h-[25px] transition-colors duration-300 ${
+                 hoveredNav ? 'text-white' : 'text-black'
+               }`} />
              </button>
            </div>
          </div>
 
          {/* Logo */}
          <div className="text-center py-4">
-           <Link to="/" className="inline-block w-[310px] h-[40px] text-white font-bold text-5xl leading-none">
+           <Link to="/" className={`inline-block w-[310px] h-[40px] font-bold text-5xl leading-none transition-colors duration-300 ${
+             hoveredNav ? 'text-white' : 'text-black'
+           }`}>
              SOMA
            </Link>
          </div>
@@ -92,7 +104,9 @@ const Header = () => {
                >
                  <Link 
                    to={`/${item.title.toLowerCase()}`} 
-                   className="text-white hover:text-gray-300 relative"
+                   className={`relative transition-colors duration-300 font-bold ${
+                     hoveredNav ? 'text-white hover:text-gray-300' : 'text-black hover:text-gray-600'
+                   }`}
                    style={{
                      fontSize: '20px',
                      lineHeight: '30px',
@@ -100,7 +114,9 @@ const Header = () => {
                    }}
                  >
                    {item.title}
-                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full"></span>
+                   <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-200 group-hover:w-full ${
+                     hoveredNav ? 'bg-white' : 'bg-black'
+                   }`}></span>
                  </Link>
                </li>
              ))}
@@ -117,12 +133,14 @@ const Header = () => {
        >
          <div className="mx-auto px-8 py-12" style={{ width: '1140px' }}>
            <div className="flex justify-between items-start">
+             {/* Left Side - Title and Description */}
              <div className="w-1/3">
                <h3 className="text-3xl font-bold text-black mb-6">{hoveredNav}</h3>
                <p className="text-gray-600 text-base leading-relaxed">
                  {navItems.find(item => item.title === hoveredNav)?.description}
                </p>
              </div>
+             {/* Right Side - Navigation Links */}
              <div className="w-1/4">
                <ul className="space-y-6">
                  {navItems.find(item => item.title === hoveredNav)?.subItems.map((subItem) => (
