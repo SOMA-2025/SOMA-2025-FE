@@ -45,7 +45,7 @@ const Header = () => {
  ];
 
  return (
-   <div className="relative" onMouseLeave={handleNavLeave}>
+   <div className="relative">
      <header className={`w-full transition-colors duration-300 ${hoveredNav ? 'bg-black' : 'bg-white'}`}>
        {/* Top Bar */}
        <div className="w-full px-4">
@@ -91,9 +91,11 @@ const Header = () => {
            </Link>
          </div>
        </div>
+     </header>
 
-       {/* Navigation */}
-       <nav>
+     {/* Navigation and Dropdown Container */}
+     <div className="relative" onMouseLeave={handleNavLeave}>
+       <nav className={`w-full transition-colors duration-300 ${hoveredNav ? 'bg-black' : 'bg-white'}`}>
          <div className="mx-auto" style={{ width: '1140px' }}>
            <ul className="flex justify-between py-4">
              {navItems.map((item) => (
@@ -123,42 +125,44 @@ const Header = () => {
            </ul>
          </div>
        </nav>
-     </header>
 
-     {/* Dropdown Menu */}
-     {isDropdownVisible && hoveredNav && (
-       <div 
-         className="absolute w-full bg-white z-50 shadow-lg transition-all duration-300 ease-in-out"
-         onMouseEnter={() => setIsDropdownVisible(true)}
-       >
-         <div className="mx-auto px-8 py-12" style={{ width: '1140px' }}>
-           <div className="flex justify-between items-start">
-             {/* Left Side - Title and Description */}
-             <div className="w-1/3">
-               <h3 className="text-3xl font-bold text-black mb-6">{hoveredNav}</h3>
-               <p className="text-gray-600 text-base leading-relaxed">
-                 {navItems.find(item => item.title === hoveredNav)?.description}
-               </p>
-             </div>
-             {/* Right Side - Navigation Links */}
-             <div className="w-1/4">
-               <ul className="space-y-6">
-                 {navItems.find(item => item.title === hoveredNav)?.subItems.map((subItem) => (
-                   <li key={subItem}>
-                     <Link 
-                       to={`/${hoveredNav.toLowerCase()}/${subItem.toLowerCase()}`} 
-                       className="text-black text-lg hover:text-gray-600 transition-colors duration-200"
-                     >
-                       {subItem}
-                     </Link>
-                   </li>
-                 ))}
-               </ul>
+       {/* Dropdown Menu */}
+       {isDropdownVisible && hoveredNav && (
+         <div 
+           className="absolute w-full bg-white z-50 shadow-lg transition-all duration-300 ease-in-out"
+           onMouseEnter={() => setIsDropdownVisible(true)}
+         >
+           <div className="mx-auto" style={{ width: '1140px' }}>
+             <div className="flex items-start">
+               {/* Left Side - Title and Description */}
+               <div className="w-1/3 pt-12 pb-20">
+                 <h3 className="text-3xl font-bold text-black mb-6">{hoveredNav}</h3>
+                 <p className="text-gray-600 text-base leading-relaxed">
+                   {navItems.find(item => item.title === hoveredNav)?.description}
+                 </p>
+               </div>
+               {/* Right Side - Navigation Links */}
+               <div className={`pt-12 pb-20 ${
+                  hoveredNav === 'PROJECT' ? 'ml-[132px]' : 'ml-[425px]'
+                }`}>
+                 <ul className="space-y-6">
+                   {navItems.find(item => item.title === hoveredNav)?.subItems.map((subItem) => (
+                     <li key={subItem}>
+                       <Link 
+                         to={`/${hoveredNav.toLowerCase()}/${subItem.toLowerCase()}`} 
+                         className="text-black text-lg hover:text-gray-600 transition-colors duration-200"
+                       >
+                         {subItem}
+                       </Link>
+                     </li>
+                   ))}
+                 </ul>
+               </div>
              </div>
            </div>
          </div>
-       </div>
-     )}
+       )}
+     </div>
    </div>
  );
 };
