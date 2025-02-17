@@ -19,27 +19,40 @@ const Header = () => {
  const navItems = [
    {
      title: 'PROJECT',
-     description: 'PROJECT 카테고리는 졸업전시회의 메인 페이지로, 팀 선택 화면을 통해 각 팀별 주제를 탐색할 수 있습니다.',
+     description: `Project 카테고리는 졸업전시회의 다양한 콘텐츠를
+     담고있는 공간입니다.
+     
+     이 카테고리는 졸업전시회의 전반적인 주제와 관련된 콘텐츠를 통해 관람객이 전시회를 이해하고 즐길 수 있도록 돕습니다. 또한, 팀별 주제와 룩북, 쇼 런웨이, 디자이너의 작품을 통해 학생들의 다양한 아이디어와 작품들을 소개합니다.`,
      subItems: ['MAIN THEME', 'LOOK BOOK', 'RUNWAY', 'DESIGNER']
    },
    {
      title: 'STORE',
-     description: 'STORE 카테고리는 졸업전시회와 관련된 다양한 상품을 소개하는 공간으로, 관람객이 전시회의 특별한 기념품을 손쉽게 구매할 수 있도록 돕습니다.',
+     description: `STORE 카테고리는 졸업전시회와 관련된 다양한 상품들을 소개하는 공간입니다.
+     
+     이곳에서는 학생들이 직접 제작한 특별한 굿즈를 만나볼 수 있으며, 관람객이 전시회의 기념품을 소장할 수 있도록 돕습니다.`,
      subItems: ['전체 굿즈', '팀별 굿즈']
    },
    {
      title: 'SHOW INFO',
-     description: 'SHOW INFO 카테고리는 졸업전시회의 전반적인 정보를 제공하는 중요한 공간입니다.',
+     description: `SHOW INFO 카테고리는 졸업전시회의 전반적인 정보를 제공하는 공간입니다.
+     
+     이 카테고리는 관람객이 전시회를 쉽게 이해하고 즐길 수 있도록 전시정보와 관람정보를 제공하고, 오시는 길에 대한 정보도 함께 안내합니다.`,
      subItems: ['전시정보', '관람정보', '오시는 길']
    },
    {
      title: 'BEHIND',
-     description: 'BEHIND 카테고리는 졸업전시회의 뒷이야기를 담아 관람객에게 새로운 시각을 제공합니다.',
+     description: `BEHIND 카테고리는 졸업전시회의 비하인드 스토리를 담은 공간입니다.
+     
+     이 카테고리는 전시회와 관련된 다양한 비하인드
+     콘텐츠를 통해 관람객이 전시의 제작 과정과 준비과정을 이해하고 감상할 수 있도록 돕습니다.`,
      subItems: ['SHOW BEHIND', 'BROCHURE BEHIND', 'MAKING BEHIND']
    },
    {
      title: 'ARCHIVE',
-     description: '과거의 전시 기록들을 보관하고 있습니다.',
+     description: `ARCHIVE 카테고리는 이전 졸업전시회 웹사이트 링크를 모아둔 공간입니다.
+     
+     이곳에서는 과거 전시회의 다양한 콘텐츠와 내용을
+     쉽게 찾아볼 수 있습니다. 졸업전시회의 역사를 되짚어보며, 졸업생들의 작품과 성과를 다시 한 번 감상할 수 있는 기회를 제공합니다.`,
      subItems: ['2024:Prototype', '2023', '2022']
    }
  ];
@@ -52,7 +65,7 @@ const Header = () => {
          <div className="flex justify-between h-12">
            {/* Left side with social icons and title */}
            <div className="flex flex-col mt-4">
-             <h1 className={`w-[300px] h-[15px] mb-2 text-sm leading-none transition-colors duration-300 ${
+             <h1 className={`w-[400px] h-[15px] mb-2 text-sm leading-none font-medium transition-colors duration-300 ${
                hoveredNav ? 'text-white' : 'text-black'
              }`}>
                2025 KUAD GRADUATION FASHION SHOW
@@ -110,7 +123,7 @@ const Header = () => {
                      hoveredNav ? 'text-white hover:text-gray-300' : 'text-black hover:text-gray-600'
                    }`}
                    style={{
-                     fontSize: '20px',
+                     fontSize: '22px',
                      lineHeight: '30px',
                      display: 'block'
                    }}
@@ -137,22 +150,23 @@ const Header = () => {
                {/* Left Side - Title and Description */}
                <div className="w-1/3 pt-12 pb-20">
                  <h3 className="text-3xl font-bold text-black mb-6">{hoveredNav}</h3>
-                 <p className="text-gray-600 text-base leading-relaxed">
+                 <p className="text-gray-600 text-base leading-relaxed whitespace-pre-line">
                    {navItems.find(item => item.title === hoveredNav)?.description}
                  </p>
                </div>
                {/* Right Side - Navigation Links */}
-               <div className={`pt-12 pb-20 ${
+               <div className={`pt-16 pb-20 ${
                   hoveredNav === 'PROJECT' ? 'ml-[132px]' : 'ml-[425px]'
                 }`}>
                  <ul className="space-y-6">
                    {navItems.find(item => item.title === hoveredNav)?.subItems.map((subItem) => (
-                     <li key={subItem}>
+                     <li key={subItem} className="relative group">
                        <Link 
                          to={`/${hoveredNav.toLowerCase()}/${subItem.toLowerCase()}`} 
-                         className="text-black text-lg hover:text-gray-600 transition-colors duration-200"
+                         className="text-black text-lg font-medium hover:text-gray-600 transition-colors duration-200 relative"
                        >
                          {subItem}
+                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-200 group-hover:w-full"></span>
                        </Link>
                      </li>
                    ))}
