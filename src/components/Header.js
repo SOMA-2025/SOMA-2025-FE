@@ -23,21 +23,33 @@ const Header = () => {
      담고있는 공간입니다.
      
      이 카테고리는 졸업전시회의 전반적인 주제와 관련된 콘텐츠를 통해 관람객이 전시회를 이해하고 즐길 수 있도록 돕습니다. 또한, 팀별 주제와 룩북, 쇼 런웨이, 디자이너의 작품을 통해 학생들의 다양한 아이디어와 작품들을 소개합니다.`,
-     subItems: ['MAIN THEME', 'LOOK BOOK', 'RUNWAY', 'DESIGNER']
+     subItems: [
+       { name: 'MAIN THEME', path: '/project/main-theme' },
+       { name: 'LOOK BOOK', path: '/project/look-book' },
+       { name: 'RUNWAY', path: '/project/runway' },
+       { name: 'DESIGNER', path: '/search' }
+     ]
    },
    {
      title: 'STORE',
      description: `STORE 카테고리는 졸업전시회와 관련된 다양한 상품들을 소개하는 공간입니다.
      
      이곳에서는 학생들이 직접 제작한 특별한 굿즈를 만나볼 수 있으며, 관람객이 전시회의 기념품을 소장할 수 있도록 돕습니다.`,
-     subItems: ['전체 굿즈', '팀별 굿즈']
+     subItems: [
+       { name: '전체 굿즈', path: '/store/all' },
+       { name: '팀별 굿즈', path: '/store/team' }
+     ]
    },
    {
      title: 'SHOW INFO',
      description: `SHOW INFO 카테고리는 졸업전시회의 전반적인 정보를 제공하는 공간입니다.
      
      이 카테고리는 관람객이 전시회를 쉽게 이해하고 즐길 수 있도록 전시정보와 관람정보를 제공하고, 오시는 길에 대한 정보도 함께 안내합니다.`,
-     subItems: ['전시정보', '관람정보', '오시는 길']
+     subItems: [
+       { name: '전시정보', path: '/show-info/exhibition' },
+       { name: '관람정보', path: '/show-info/visitor' },
+       { name: '오시는 길', path: '/show-info/location' }
+     ]
    },
    {
      title: 'BEHIND',
@@ -45,7 +57,11 @@ const Header = () => {
      
      이 카테고리는 전시회와 관련된 다양한 비하인드
      콘텐츠를 통해 관람객이 전시의 제작 과정과 준비과정을 이해하고 감상할 수 있도록 돕습니다.`,
-     subItems: ['SHOW BEHIND', 'BROCHURE BEHIND', 'MAKING BEHIND']
+     subItems: [
+       { name: 'SHOW BEHIND', path: '/behind/show' },
+       { name: 'BROCHURE BEHIND', path: '/behind/brochure' },
+       { name: 'MAKING BEHIND', path: '/behind/making' }
+     ]
    },
    {
      title: 'ARCHIVE',
@@ -53,7 +69,11 @@ const Header = () => {
      
      이곳에서는 과거 전시회의 다양한 콘텐츠와 내용을
      쉽게 찾아볼 수 있습니다. 졸업전시회의 역사를 되짚어보며, 졸업생들의 작품과 성과를 다시 한 번 감상할 수 있는 기회를 제공합니다.`,
-     subItems: ['2024:Prototype', '2023', '2022']
+     subItems: [
+       { name: '2024:Prototype', path: '/2024' },
+       { name: '2023', path: '/archive/2023' },
+       { name: '2022', path: '/archive/2022' }
+     ]
    }
  ];
 
@@ -156,16 +176,16 @@ const Header = () => {
                </div>
                {/* Right Side - Navigation Links */}
                <div className={`pt-16 pb-20 ${
-                  hoveredNav === 'PROJECT' ? 'ml-[132px]' : 'ml-[425px]'
-                }`}>
+                 hoveredNav === 'PROJECT' ? 'ml-[132px]' : 'ml-[425px]'
+               }`}>
                  <ul className="space-y-6">
                    {navItems.find(item => item.title === hoveredNav)?.subItems.map((subItem) => (
-                     <li key={subItem} className="relative group">
+                     <li key={subItem.name} className="relative group">
                        <Link 
-                         to={`/${hoveredNav.toLowerCase()}/${subItem.toLowerCase()}`} 
+                         to={subItem.path}
                          className="text-black text-lg font-medium hover:text-gray-600 transition-colors duration-200 relative"
                        >
-                         {subItem}
+                         {subItem.name}
                          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-200 group-hover:w-full"></span>
                        </Link>
                      </li>
