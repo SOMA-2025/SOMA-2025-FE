@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 // 환경 변수에서 API URL 가져오기
@@ -10,7 +10,6 @@ const OrderCompletePage = () => {
   const [receipt, setReceipt] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchReceiptDetails = async () => {
@@ -32,7 +31,6 @@ const OrderCompletePage = () => {
   // 이미지 경로 처리 함수
   const getImageSrc = (imagePath) => {
     try {
-      // assets/ 경로로 시작하는 경우 require로 가져오기
       if (imagePath && imagePath.startsWith('assets/')) {
         return require(`../${imagePath}`);
       }
@@ -146,7 +144,6 @@ const OrderCompletePage = () => {
                 <div className="flex items-center mb-2 md:mb-0">
                   <div className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] mr-3 md:mr-4 overflow-hidden">
                     <img
-                      // 직접 order 객체의 속성에 접근
                       src={order.itemImagePath ? getImageSrc(order.itemImagePath) : 'https://via.placeholder.com/80x80?text=No+Image'}
                       alt={order.itemName || '상품 이미지'}
                       className="w-full h-full object-cover"
