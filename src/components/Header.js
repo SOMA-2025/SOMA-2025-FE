@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   ShoppingCart,
   Youtube,
@@ -7,27 +7,59 @@ import {
   X,
   ArrowLeft
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [hoveredNav, setHoveredNav] = useState(null);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const [cartItemCount, setCartItemCount] = useState(0);
+  const navigate = useNavigate();
 
   // 모바일 상태
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [selectedMenu, setSelectedMenu] = useState(null);
 
+  // 장바구니 아이템 수를 계산
+  useEffect(() => {
+    const calculateCartItems = () => {
+      const savedCart = localStorage.getItem('cart');
+      if (savedCart) {
+        const cartItems = JSON.parse(savedCart);
+        setCartItemCount(cartItems.length);
+      }
+    };
+
+    calculateCartItems();
+    
+    // 로컬 스토리지 변경을 감지하여 장바구니 수 업데이트
+    window.addEventListener('storage', calculateCartItems);
+    
+    return () => {
+      window.removeEventListener('storage', calculateCartItems);
+    };
+  }, []);
+
   const handleNavEnter = (title) => {
     setHoveredNav(title);
     setIsDropdownVisible(true);
   };
+
   const handleNavLeave = () => {
     setHoveredNav(null);
     setIsDropdownVisible(false);
   };
+
   const closeMobile = () => {
     setIsMobileOpen(false);
     setSelectedMenu(null);
+  };
+
+  // 장바구니 페이지로 이동
+  const handleCartClick = () => {
+    navigate('/cart');
+    if (isMobileOpen) {
+      closeMobile();
+    }
   };
 
   const navItems = [
@@ -45,6 +77,16 @@ const Header = () => {
       ]
     },
     {
+      title: 'STORE',
+      description: `STORE 카테고리는 졸업전시회와 관련된 다양한 상품들을 소개하는 공간입니다.
+     
+이곳에서는 학생들이 직접 제작한 특별한 굿즈를 만나볼 수 있으며, 관람객이 전시회의 기념품을 소장할 수 있도록 돕습니다.`,
+      subItems: [
+        { name: '전체 굿즈', path: '/store/all' },
+        { name: '팀별 굿즈', path: '/store/team' }
+      ]
+    },
+    {
       title: 'SHOW INFO',
       description: `SHOW INFO 카테고리는 졸업전시회의 전반적인 정보를 제공하는 공간입니다.
 
@@ -57,7 +99,10 @@ const Header = () => {
     },
     {
       title: 'BEHIND',
-      description: `BEHIND 카테고리는 졸업전시회의 비하인드 스토리를 담은 공간입니다.`,
+      description: `BEHIND 카테고리는 졸업전시회의 비하인드 스토리를 담은 공간입니다.
+     
+이 카테고리는 전시회와 관련된 다양한 비하인드
+콘텐츠를 통해 관람객이 전시의 제작 과정과 준비과정을 이해하고 감상할 수 있도록 돕습니다.`,
       subItems: [
         { name: 'SHOW BEHIND', path: '/behind/show' },
         { name: 'BROCHURE BEHIND', path: '/behind/brochure' },
@@ -65,16 +110,11 @@ const Header = () => {
       ]
     },
     {
-      title: 'STORE',
-      description: `STORE 카테고리는 졸업전시회 관련 상품을 소개합니다.`,
-      subItems: [
-        { name: '전체 굿즈', path: '/store/all' },
-        { name: '팀별 굿즈', path: '/store/team' }
-      ]
-    },
-    {
       title: 'ARCHIVE',
-      description: `ARCHIVE 카테고리는 이전 전시회 웹사이트 링크를 모아둔 공간입니다.`,
+      description: `ARCHIVE 카테고리는 이전 졸업전시회 웹사이트 링크를 모아둔 공간입니다.
+     
+이곳에서는 과거 전시회의 다양한 콘텐츠와 내용을
+쉽게 찾아볼 수 있습니다. 졸업전시회의 역사를 되짚어보며, 졸업생들의 작품과 성과를 다시 한 번 감상할 수 있는 기회를 제공합니다.`,
       subItems: [
         { name: '2024:Prototype', path: '/2024' },
         { name: '2023', path: '/archive/2023' },
@@ -111,10 +151,15 @@ const Header = () => {
               </div>
               <div className="flex flex-col mt-4">
                 <div className="h-[15px] mb-2" />
-                <button className="relative">
+                <button onClick={handleCartClick} className="relative">
                   <ShoppingCart className={`w-[25px] h-[25px] transition-colors duration-300 ${
                     hoveredNav ? 'text-white' : 'text-black'
                   }`} />
+                  {cartItemCount > 0 && (
+                    <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+                      {cartItemCount}
+                    </span>
+                  )}
                 </button>
               </div>
             </div>
@@ -146,7 +191,7 @@ const Header = () => {
                       className={`relative transition-colors duration-300 font-bold ${
                         hoveredNav ? 'text-white hover:text-gray-300' : 'text-black hover:text-gray-600'
                       }`}
-                      style={{ fontSize: '22px', lineHeight: '30px' }}
+                      style={{ fontSize: '22px', lineHeight: '30px', display: 'block' }}
                     >
                       {item.title}
                       <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-200 group-hover:w-full ${
@@ -202,8 +247,13 @@ const Header = () => {
         <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-white px-4 py-3 shadow-md">
           <Link to="/" className="text-xl font-bold">SOMA</Link>
           <div className="flex items-center space-x-4">
-            <button>
+            <button onClick={handleCartClick} className="relative">
               <ShoppingCart className="w-6 h-6" />
+              {cartItemCount > 0 && (
+                <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+                  {cartItemCount}
+                </span>
+              )}
             </button>
             <button onClick={() => { setIsMobileOpen(o => !o); setSelectedMenu(null); }}>
               {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -232,7 +282,6 @@ const Header = () => {
               <X size={24} />
             </button>
 
-            
             <ul className="space-y-6">
               {navItems.map(item => (
                 <li key={item.title}>
@@ -245,6 +294,23 @@ const Header = () => {
                 </li>
               ))}
             </ul>
+            
+            {/* 모바일 장바구니 버튼 */}
+            <div className="mt-10">
+              <button 
+                className="flex items-center gap-2 text-lg font-medium"
+                onClick={handleCartClick}
+              >
+                <ShoppingCart className="w-5 h-5" />
+                장바구니
+                {cartItemCount > 0 && (
+                  <span className="bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">
+                    {cartItemCount}
+                  </span>
+                )}
+              </button>
+            </div>
+            
             {/* 하단 SNS 링크 */}
             <div className="absolute bottom-6 left-6 flex space-x-4">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
