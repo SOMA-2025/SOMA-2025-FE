@@ -1,10 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Youtube, Instagram } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
  const [hoveredNav, setHoveredNav] = useState(null);
  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+ const [cartItemCount, setCartItemCount] = useState(0);
+ const navigate = useNavigate();
+
+ // 장바구니 아이템 수를 계산
+ useEffect(() => {
+   const calculateCartItems = () => {
+     const savedCart = localStorage.getItem('cart');
+     if (savedCart) {
+       const cartItems = JSON.parse(savedCart);
+       setCartItemCount(cartItems.length);
+     }
+   };
+
+   calculateCartItems();
+   
+   // 로컬 스토리지 변경을 감지하여 장바구니 수 업데이트
+   window.addEventListener('storage', calculateCartItems);
+   
+   return () => {
+     window.removeEventListener('storage', calculateCartItems);
+   };
+ }, []);
 
  const handleNavEnter = (title) => {
    setHoveredNav(title);
@@ -14,6 +36,11 @@ const Header = () => {
  const handleNavLeave = () => {
    setHoveredNav(false);
    setIsDropdownVisible(false);
+ };
+
+ // 장바구니 페이지로 이동
+ const handleCartClick = () => {
+   navigate('/cart');
  };
 
  const navItems = [
@@ -107,10 +134,15 @@ const Header = () => {
            {/* Cart Icon */}
            <div className="flex flex-col mt-4">
              <div className="h-[15px] mb-2"></div>
-             <button className="relative">
+             <button onClick={handleCartClick} className="relative">
                <ShoppingCart className={`w-[25px] h-[25px] transition-colors duration-300 ${
                  hoveredNav ? 'text-white' : 'text-black'
                }`} />
+               {cartItemCount > 0 && (
+                 <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+                   {cartItemCount}
+                 </span>
+               )}
              </button>
            </div>
          </div>
