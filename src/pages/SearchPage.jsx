@@ -27,63 +27,62 @@ const SearchPage = () => {
     }
   }, []);
 
+  useEffect(() => {
+    fetchMembers(searchTerm);
+  }, [searchTerm, fetchMembers]);
 
- useEffect(() => {
-  fetchMembers(searchTerm);
-}, [searchTerm, fetchMembers]);
+  return (
+    <div className="min-h-screen bg-white">
+      <div className="w-full px-4 py-4 md:py-8">
+        <div className="mx-auto relative w-full max-w-7xl">
+          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full h-10 md:h-12 pl-12 pr-4 border border-gray-300 rounded-none focus:outline-none focus:border-black"
+            placeholder="검색어를 입력하세요"
+          />
+        </div>
+      </div>
 
- return (
-   <div className="min-h-screen bg-white">
-     <div className="w-full px-4 py-8">
-       <div className="mx-auto relative" style={{ width: '1140px' }}>
-         <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" />
-         <input
-           type="text"
-           value={searchTerm}
-           onChange={(e) => setSearchTerm(e.target.value)}
-           className="w-full h-12 pl-12 pr-4 border border-gray-300 rounded-none focus:outline-none focus:border-black"
-           placeholder="검색어를 입력하세요"
-         />
-       </div>
-     </div>
-
-     <div className="w-full px-4">
-       {teams.map((team) => (
-         <div key={team.teamName} className="mx-auto mb-16" style={{ width: '1140px' }}>
-           <div className="mb-8">
-             <Link 
-               to={`${BASE_URL}/team/${team.teamPageUrl}`}
-               className="text-3xl font-bold hover:text-gray-600 transition-colors"
-             >
-               {team.teamName}
-             </Link>
-           </div>
-           
-           <div className="grid grid-cols-3 gap-8">
-             {team.members.map((member) => (
-               <Link 
-                 key={member.name}
-                 to={`${BASE_URL}/portfolio/${member.portfolioUrl}`}
-                 className="block group"
-               >
-                 <div className="aspect-square bg-gray-100 mb-4">
-                   <img
-                     src={require(`../${member.profileImageUrl}`)}
-                     alt={member.name}
-                     className="w-full h-full object-cover"
-                   />
-                 </div>
-                 <h3 className="text-xl font-medium group-hover:text-gray-600 transition-colors">
-                   {member.name}
-                 </h3>
-               </Link>
-             ))}
-           </div>
-         </div>
-       ))}
-     </div>
-   </div>
- );
+      <div className="w-full px-4">
+        {teams.map((team) => (
+          <div key={team.teamName} className="mx-auto mb-8 md:mb-16 w-full max-w-7xl">
+            <div className="mb-4 md:mb-8">
+              <Link 
+                to={`${BASE_URL}/team/${team.teamPageUrl}`}
+                className="text-xl md:text-3xl font-bold hover:text-gray-600 transition-colors"
+              >
+                {team.teamName}
+              </Link>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8">
+              {team.members.map((member) => (
+                <Link 
+                  key={member.name}
+                  to={`${BASE_URL}/portfolio/${member.portfolioUrl}`}
+                  className="block group"
+                >
+                  <div className="aspect-square bg-gray-100 mb-2 md:mb-4">
+                    <img
+                      src={require(`../${member.profileImageUrl}`)}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-base md:text-xl font-medium group-hover:text-gray-600 transition-colors truncate">
+                    {member.name}
+                  </h3>
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default SearchPage;
