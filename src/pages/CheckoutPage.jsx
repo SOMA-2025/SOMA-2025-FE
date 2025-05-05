@@ -109,7 +109,7 @@ const CheckoutPage = () => {
     <div className="store-page" style={{ backgroundColor: 'white', minHeight: 'calc(100vh - 150px)' }}>
       {/* Breadcrumb Navigation */}
       <div className="breadcrumb border-t border-b border-gray-300 py-2 px-4">
-        <div className="mx-auto" style={{ width: '1140px' }}>
+        <div className="mx-auto w-full max-w-7xl px-4">
           <nav className="text-sm text-black">
             <Link to="/store" className="hover:underline">STORE</Link>
             {' > '}
@@ -120,50 +120,83 @@ const CheckoutPage = () => {
         </div>
       </div>
 
-      <div className="mx-auto py-8" style={{ width: '1140px' }}>
-        <h1 className="text-2xl font-bold mb-8 text-center">주문하기</h1>
+      <div className="mx-auto py-4 md:py-8 px-4 w-full max-w-7xl">
+        <h1 className="text-xl md:text-2xl font-bold mb-4 md:mb-8 text-center">주문하기</h1>
 
         {error && (
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 md:mb-6">
             {error}
           </div>
         )}
 
-        <div className="flex flex-wrap">
-          {/* 왼쪽 컬럼 - 입금 정보 */}
-          <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-4">입금 계좌 정보:</h2>
-              <div className="space-y-2">
+        <div className="flex flex-col md:flex-row md:flex-wrap">
+          {/* 모바일: 주문 상품 목록 먼저 표시 */}
+          <div className="w-full md:hidden mb-6">
+            <div className="border-t border-gray-300 pt-4">
+              <h2 className="text-lg font-semibold mb-3">주문 상품</h2>
+              {cartItems.map(item => (
+                <div key={item.id} className="flex items-center py-2 border-b border-gray-200">
+                  <div className="w-[50px] h-[50px] mr-3 overflow-hidden">
+                    <img
+                      src={getImageSrc(item.imagePath)}
+                      alt={item.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = 'https://via.placeholder.com/50x50?text=Error';
+                      }}
+                    />
+                  </div>
+                  <div className="flex-1 mr-2">
+                    <p className="font-medium text-sm">{item.name || '상품명 없음'}</p>
+                    <p className="text-xs text-gray-600">{Number(item.price).toLocaleString()} ₩ × {item.quantity}</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="font-medium text-sm">{(Number(item.price) * item.quantity).toLocaleString()} ₩</p>
+                  </div>
+                </div>
+              ))}
+              <div className="flex justify-between items-center py-3 border-b border-gray-300">
+                <span className="text-base font-semibold">총 입금액</span>
+                <span className="text-lg font-bold">{totalPrice.toLocaleString()} ₩</span>
+              </div>
+            </div>
+          </div>
+
+          {/* 입금 정보 */}
+          <div className="w-full md:w-1/2 md:pr-4 mb-6 md:mb-0">
+            <div className="mb-6">
+              <h2 className="text-lg md:text-xl font-semibold mb-3">입금 계좌 정보:</h2>
+              <div className="space-y-1 md:space-y-2 text-sm md:text-base">
                 <p><span className="font-medium">은행명:</span> IBK기업은행</p>
                 <p><span className="font-medium">계좌번호:</span> 11116875301018</p>
                 <p><span className="font-medium">예금주:</span> 박상현</p>
               </div>
             </div>
 
-            <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-4">입금 방법:</h2>
-              <div className="space-y-2 text-gray-700">
+            <div className="mb-6">
+              <h2 className="text-lg md:text-xl font-semibold mb-3">입금 방법:</h2>
+              <div className="space-y-1 md:space-y-2 text-sm md:text-base text-gray-700">
                 <p>위의 계좌로 인터넷 뱅킹을 통해 입금해 주시기 바랍니다.</p>
                 <p>입금시, 반드시 주문자 성함을 기재해주시기 바랍니다.</p>
                 <p>입금 후, 매일 오전 9시에 일괄적으로 주문을 확인하고, 문자를 통해 결제확인을 도와드리고 있습니다.</p>
               </div>
             </div>
 
-            <div>
-              <h2 className="text-xl font-semibold mb-4">유의사항:</h2>
-              <div className="space-y-2 text-gray-700">
+            <div className="mb-6 md:mb-0">
+              <h2 className="text-lg md:text-xl font-semibold mb-3">유의사항:</h2>
+              <div className="space-y-1 md:space-y-2 text-sm md:text-base text-gray-700">
                 <p>입금 금액이 다를 경우, 주문이 취소될 수 있으니 정확한 금액을 입금해 주시기 바랍니다.</p>
                 <p>입금 후 다음날 오후 1시까지 확인되지 않을 경우, 혹은 추가로 문의사항이 있을 경우 [010-2049-7239]로 연락주시면 신속하게 처리해드리겠습니다.</p>
               </div>
             </div>
           </div>
 
-          {/* 오른쪽 컬럼 - 주문자 정보 및 제품 목록 */}
-          <div className="w-full md:w-1/2 pl-0 md:pl-8">
+          {/* 주문자 정보 및 제품 목록 */}
+          <div className="w-full md:w-1/2 md:pl-4">
             <form onSubmit={handleOrderSubmit}>
-              <div className="mb-6">
-                <h2 className="text-xl font-semibold mb-4">입금자 명</h2>
+              <div className="mb-4 md:mb-6">
+                <h2 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">입금자 명</h2>
                 <input
                   type="text"
                   value={orderName}
@@ -174,8 +207,8 @@ const CheckoutPage = () => {
                 />
               </div>
 
-              <div className="mb-8">
-                <h2 className="text-xl font-semibold mb-4">입금자 계좌번호</h2>
+              <div className="mb-4 md:mb-6">
+                <h2 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">입금자 계좌번호</h2>
                 <input
                   type="text"
                   value={accountNumber}
@@ -185,8 +218,8 @@ const CheckoutPage = () => {
                 />
               </div>
 
-              <div className="mb-8">
-                <h2 className="text-xl font-semibold mb-4">연락처</h2>
+              <div className="mb-6">
+                <h2 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">연락처</h2>
                 <input
                   type="text"
                   value={phoneNumber}
@@ -197,8 +230,8 @@ const CheckoutPage = () => {
                 />
               </div>
 
-              {/* 주문 상품 목록 */}
-              <div className="mb-8 border-t border-gray-300 pt-4">
+              {/* 주문 상품 목록 - 데스크톱 */}
+              <div className="hidden md:block mb-6 border-t border-gray-300 pt-4">
                 <h2 className="text-xl font-semibold mb-4">주문 상품</h2>
                 {cartItems.map(item => (
                   <div key={item.id} className="flex items-center py-2 border-b border-gray-200">
@@ -224,8 +257,9 @@ const CheckoutPage = () => {
                 ))}
               </div>
 
-              <div className="border-t border-gray-300 pt-6 mt-8">
-                <div className="flex justify-between items-center mb-6">
+              <div className="border-t border-gray-300 pt-4 md:pt-6">
+                {/* 총 입금액 - 데스크톱 */}
+                <div className="hidden md:flex justify-between items-center mb-6">
                   <span className="text-lg font-semibold">총 입금액</span>
                   <span className="text-xl font-bold">{totalPrice.toLocaleString()} ₩</span>
                 </div>

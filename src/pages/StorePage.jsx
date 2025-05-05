@@ -10,6 +10,7 @@ const StorePage = () => {
   const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   // URL 파라미터에서 teamId 가져오기
   const { teamId } = useParams();
@@ -76,12 +77,17 @@ const StorePage = () => {
     }
   };
 
+  // 모바일 메뉴 토글 함수
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   return (
     <div className="store-page" style={{ backgroundColor: 'white', minHeight: 'calc(100vh - 150px)' }}>
       
       {/* Breadcrumb Navigation */}
       <div className="breadcrumb border-t border-b border-gray-300 py-2 px-4">
-        <div className="mx-auto" style={{ width: '1140px' }}>
+        <div className="mx-auto w-full max-w-7xl px-4">
           <nav className="text-sm text-black">
             <Link to="/store" className="hover:underline">STORE</Link>
             {' > '}
@@ -92,10 +98,10 @@ const StorePage = () => {
         </div>
       </div>
       
-      {/* Team Categories */}
-      <div className="team-categories border-b border-gray-300 py-3 px-4">
-        <div className="mx-auto" style={{ width: '1140px' }}>
-          <ul className="flex space-x-4">
+      {/* Team Categories - Desktop */}
+      <div className="team-categories border-b border-gray-300 py-3 px-4 hidden md:block">
+        <div className="mx-auto w-full max-w-7xl px-4">
+          <ul className="flex flex-wrap space-x-4">
             <li className={`${isAllView ? 'font-bold' : ''} text-black`}>
               <Link to="/store/all">전체보기</Link>
             </li>
@@ -112,9 +118,63 @@ const StorePage = () => {
         </div>
       </div>
       
+      {/* Mobile Category Dropdown */}
+      <div className="md:hidden border-b border-gray-300">
+        <div className="mx-auto w-full px-4 py-2">
+          <div 
+            className="flex justify-between items-center py-2"
+            onClick={toggleMobileMenu}
+          >
+            <span className="font-medium text-black">
+              {isAllView ? '전체보기' : (selectedTeam?.name || '카테고리')}
+            </span>
+            <svg 
+              className={`w-5 h-5 transition-transform ${mobileMenuOpen ? 'transform rotate-180' : ''}`} 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+          
+          {mobileMenuOpen && (
+            <div className="py-2 bg-white shadow-md absolute left-0 right-0 z-10">
+              <ul className="px-4">
+                <li className={`py-2 border-b border-gray-100 ${isAllView ? 'font-bold' : ''}`}>
+                  <Link 
+                    to="/store/all" 
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block w-full"
+                  >
+                    전체보기
+                  </Link>
+                </li>
+                {teams.map(team => (
+                  <li 
+                    key={team.id} 
+                    // eslint-disable-next-line eqeqeq
+                    className={`py-2 border-b border-gray-100 ${teamId === String(team.id) ? 'font-bold' : ''}`}
+                  >
+                    <Link 
+                      to={`/store/team/${team.id}`} 
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block w-full"
+                    >
+                      {team.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+      
       {/* Items Grid with white background */}
       <div className="items-grid bg-white py-8">
-        <div className="mx-auto" style={{ width: '1140px' }}>
+        <div className="mx-auto w-full max-w-7xl px-4">
           {loading ? (
             <p className="text-center text-black">로딩 중...</p>
           ) : error ? (
@@ -124,11 +184,11 @@ const StorePage = () => {
               <p className="text-center text-black text-lg">표시할 상품이 없습니다.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-3 gap-x-[60px] gap-y-[40px]">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-x-[60px] md:gap-y-[40px]">
               {items.map(item => (
                 <div key={item.id} className="item-card">
                   <Link to={`/store/item/${item.id}`}>
-                    <div className="w-[340px] h-[340px] overflow-hidden mb-3 bg-gray-100">
+                    <div className="w-full aspect-square overflow-hidden mb-3 bg-gray-100">
                       <img 
                         src={getImageSrc(item.itemImagePath)}
                         alt={item.name}
@@ -140,10 +200,10 @@ const StorePage = () => {
                         }}
                       />
                     </div>
-                    <div className="text-gray-800 mb-1">{item.creator}</div>
-                    <h3 className="text-lg font-medium text-black">{item.name}</h3>
+                    <div className="text-gray-800 mb-1 text-sm md:text-base">{item.creator}</div>
+                    <h3 className="text-base md:text-lg font-medium text-black truncate">{item.name}</h3>
                   </Link>
-                  <p className="text-gray-800">{item.price ? Number(item.price).toLocaleString() : '0'} ₩</p>
+                  <p className="text-gray-800 text-sm md:text-base">{item.price ? Number(item.price).toLocaleString() : '0'} ₩</p>
                 </div>
               ))}
             </div>

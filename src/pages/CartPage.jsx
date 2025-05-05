@@ -131,7 +131,7 @@ const CartPage = () => {
     <div className="store-page" style={{ backgroundColor: 'white', minHeight: 'calc(100vh - 150px)' }}>
       {/* Breadcrumb Navigation */}
       <div className="breadcrumb border-t border-b border-gray-300 py-2 px-4">
-        <div className="mx-auto" style={{ width: '1140px' }}>
+        <div className="mx-auto w-full max-w-7xl px-4">
           <nav className="text-sm text-black">
             <Link to="/store" className="hover:underline">STORE</Link>
             {' > '}
@@ -140,12 +140,12 @@ const CartPage = () => {
         </div>
       </div>
       
-      <div className="mx-auto py-8" style={{ width: '1140px' }}>
-        <h1 className="text-2xl font-bold mb-8 text-center">장바구니</h1>
+      <div className="mx-auto py-4 md:py-8 px-4 w-full max-w-7xl">
+        <h1 className="text-xl md:text-2xl font-bold mb-4 md:mb-8 text-center">장바구니</h1>
         
         {cartItems.length === 0 ? (
-          <div className="text-center py-16">
-            <p className="text-gray-500 text-lg mb-8">장바구니가 비어있습니다.</p>
+          <div className="text-center py-8 md:py-16">
+            <p className="text-gray-500 text-base md:text-lg mb-4 md:mb-8">장바구니가 비어있습니다.</p>
             <Link 
               to="/store/all" 
               className="bg-indigo-600 text-white py-2 px-6 rounded hover:bg-indigo-700 transition-colors"
@@ -156,7 +156,7 @@ const CartPage = () => {
         ) : (
           <>
             {/* 전체 선택 체크박스 */}
-            <div className="flex items-center pb-4 border-b border-gray-300">
+            <div className="flex items-center pb-3 border-b border-gray-300">
               <div className="flex items-center">
                 <input 
                   type="checkbox" 
@@ -170,60 +170,64 @@ const CartPage = () => {
             </div>
             
             {/* 장바구니 아이템 목록 */}
-            <div className="mt-4">
+            <div className="mt-2 md:mt-4">
               {cartItems.map((item) => (
-                <div key={item.id} className="flex items-center py-4 border-b border-gray-200">
-                  {/* 체크박스 */}
-                  <input 
-                    type="checkbox" 
-                    id={`item-${item.id}`}
-                    checked={selectedItems[item.id] || false}
-                    onChange={() => handleItemSelect(item.id)}
-                    className="h-5 w-5 mr-4 cursor-pointer"
-                  />
-                  
-                  {/* 상품 이미지 */}
-                  <div className="w-[80px] h-[80px] mr-4 overflow-hidden">
-                    <img 
-                      src={getImageSrc(item.imagePath)}
-                      alt={item.name}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src = 'https://via.placeholder.com/80x80?text=Error';
-                      }}
+                <div key={item.id} className="flex flex-col md:flex-row md:items-center py-3 border-b border-gray-200">
+                  <div className="flex items-center mb-2 md:mb-0">
+                    {/* 체크박스 */}
+                    <input 
+                      type="checkbox" 
+                      id={`item-${item.id}`}
+                      checked={selectedItems[item.id] || false}
+                      onChange={() => handleItemSelect(item.id)}
+                      className="h-5 w-5 mr-3 cursor-pointer"
                     />
+                    
+                    {/* 상품 이미지 */}
+                    <div className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] mr-3 overflow-hidden">
+                      <img 
+                        src={getImageSrc(item.imagePath)}
+                        alt={item.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = 'https://via.placeholder.com/80x80?text=Error';
+                        }}
+                      />
+                    </div>
+                    
+                    {/* 상품 정보 - 모바일에서는 이미지 옆에 표시 */}
+                    <div className="flex-grow md:w-auto">
+                      <h3 className="font-medium text-sm md:text-base">{item.name}</h3>
+                      <p className="text-xs md:text-sm text-gray-600">
+                        {Number(item.price).toLocaleString()} ₩
+                      </p>
+                    </div>
                   </div>
                   
-                  {/* 상품 정보 */}
-                  <div className="flex-grow">
-                    <h3 className="font-medium">{item.name}</h3>
-                    <p className="text-sm text-gray-600">
-                      {Number(item.price).toLocaleString()} ₩
-                    </p>
+                  <div className="flex justify-between items-center ml-8 md:ml-auto">
+                    {/* 수량 */}
+                    <div className="text-center mr-4">
+                      <span className="text-sm md:text-base">x{item.quantity}</span>
+                    </div>
+                    
+                    {/* 삭제 버튼 */}
+                    <button 
+                      onClick={() => handleRemoveItem(item.id)}
+                      className="text-gray-400 hover:text-gray-600 cursor-pointer p-2"
+                    >
+                      ✕
+                    </button>
                   </div>
-                  
-                  {/* 수량 */}
-                  <div className="w-[60px] text-center">
-                    <span>x{item.quantity}</span>
-                  </div>
-                  
-                  {/* 삭제 버튼 */}
-                  <button 
-                    onClick={() => handleRemoveItem(item.id)}
-                    className="ml-4 text-gray-400 hover:text-gray-600 cursor-pointer"
-                  >
-                    ✕
-                  </button>
                 </div>
               ))}
             </div>
             
-            {/* 총 금액 및 결제 버튼 */}
-            <div className="mt-8 border-t border-gray-300 pt-6">
-              <div className="flex justify-between items-center mb-6">
-                <span className="text-lg font-semibold">총 구매금액</span>
-                <span className="text-xl font-bold">{totalPrice.toLocaleString()} ₩</span>
+            {/* 총 금액 및 결제 버튼 - 모바일에서는 하단에 고정 */}
+            <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 md:static md:mt-8 md:border-t md:border-gray-300 md:pt-6">
+              <div className="flex justify-between items-center mb-3">
+                <span className="text-base md:text-lg font-semibold">총 구매금액</span>
+                <span className="text-lg md:text-xl font-bold">{totalPrice.toLocaleString()} ₩</span>
               </div>
               
               <button 
@@ -233,6 +237,9 @@ const CartPage = () => {
                 예약 주문하기
               </button>
             </div>
+            
+            {/* 모바일에서 하단 고정 버튼 영역 보상을 위한 패딩 */}
+            <div className="h-32 md:h-0 md:hidden"></div>
           </>
         )}
       </div>

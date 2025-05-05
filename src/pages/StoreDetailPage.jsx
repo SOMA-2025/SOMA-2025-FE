@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useParams, useNavigate  } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 // 환경 변수에서 API URL 가져오기
@@ -12,6 +12,7 @@ const StoreDetailPage = () => {
   const [quantity, setQuantity] = useState(1);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate(); // navigation hook 사용
 
   useEffect(() => {
@@ -133,9 +134,14 @@ const StoreDetailPage = () => {
     navigate('/checkout');
   };
 
+  // 모바일 메뉴 토글 함수
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   if (loading) return (
     <div className="store-page" style={{ backgroundColor: 'white', minHeight: 'calc(100vh - 150px)' }}>
-      <div className="mx-auto py-8" style={{ width: '1140px' }}>
+      <div className="mx-auto py-8 px-4 w-full max-w-7xl">
         <p className="text-center text-black">로딩 중...</p>
       </div>
     </div>
@@ -143,7 +149,7 @@ const StoreDetailPage = () => {
   
   if (error) return (
     <div className="store-page" style={{ backgroundColor: 'white', minHeight: 'calc(100vh - 150px)' }}>
-      <div className="mx-auto py-8" style={{ width: '1140px' }}>
+      <div className="mx-auto py-8 px-4 w-full max-w-7xl">
         <p className="text-center text-red-500">{error}</p>
       </div>
     </div>
@@ -151,7 +157,7 @@ const StoreDetailPage = () => {
   
   if (!item) return (
     <div className="store-page" style={{ backgroundColor: 'white', minHeight: 'calc(100vh - 150px)' }}>
-      <div className="mx-auto py-8" style={{ width: '1140px' }}>
+      <div className="mx-auto py-8 px-4 w-full max-w-7xl">
         <p className="text-center text-black text-lg">상품을 찾을 수 없습니다.</p>
       </div>
     </div>
@@ -164,7 +170,7 @@ const StoreDetailPage = () => {
     <div className="store-page" style={{ backgroundColor: 'white', minHeight: 'calc(100vh - 150px)' }}>
       {/* Breadcrumb Navigation */}
       <div className="breadcrumb border-t border-b border-gray-300 py-2 px-4">
-        <div className="mx-auto" style={{ width: '1140px' }}>
+        <div className="mx-auto w-full max-w-7xl px-4">
           <nav className="text-sm text-black">
             <Link to="/store" className="hover:underline">STORE</Link>
             {' > '}
@@ -177,10 +183,10 @@ const StoreDetailPage = () => {
         </div>
       </div>
       
-      {/* Team Categories */}
-      <div className="team-categories border-b border-gray-300 py-3 px-4">
-        <div className="mx-auto" style={{ width: '1140px' }}>
-          <ul className="flex space-x-4">
+      {/* Team Categories - Desktop */}
+      <div className="team-categories border-b border-gray-300 py-3 px-4 hidden md:block">
+        <div className="mx-auto w-full max-w-7xl px-4">
+          <ul className="flex flex-wrap space-x-4">
             <li className="text-black">
               <Link to="/store/all">전체보기</Link>
             </li>
@@ -196,11 +202,64 @@ const StoreDetailPage = () => {
         </div>
       </div>
       
+      {/* Mobile Category Dropdown */}
+      <div className="md:hidden border-b border-gray-300">
+        <div className="mx-auto w-full px-4 py-2">
+          <div 
+            className="flex justify-between items-center py-2"
+            onClick={toggleMobileMenu}
+          >
+            <span className="font-medium text-black">
+              {teamName || '카테고리'}
+            </span>
+            <svg 
+              className={`w-5 h-5 transition-transform ${mobileMenuOpen ? 'transform rotate-180' : ''}`} 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+          
+          {mobileMenuOpen && (
+            <div className="py-2 bg-white shadow-md absolute left-0 right-0 z-10">
+              <ul className="px-4">
+                <li className="py-2 border-b border-gray-100">
+                  <Link 
+                    to="/store/all" 
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block w-full"
+                  >
+                    전체보기
+                  </Link>
+                </li>
+                {teams.map(team => (
+                  <li 
+                    key={team.id} 
+                    className={`py-2 border-b border-gray-100 ${team.id === item.teamId ? 'font-bold' : ''}`}
+                  >
+                    <Link 
+                      to={`/store/team/${team.id}`} 
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block w-full"
+                    >
+                      {team.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+      
       {/* Product Detail Content */}
-      <div className="mx-auto py-12" style={{ width: '1140px' }}>
-        <div className="flex gap-16">
+      <div className="mx-auto py-6 md:py-12 px-4 w-full max-w-7xl">
+        <div className="flex flex-col md:flex-row md:gap-16">
           {/* Product Image */}
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2 mb-6 md:mb-0">
             <div>
               <img 
                 src={getImageSrc(item.itemImagePath)} 
@@ -216,21 +275,21 @@ const StoreDetailPage = () => {
           </div>
           
           {/* Product Info */}
-          <div className="w-1/2">
-            <h1 className="text-3xl font-medium text-black mb-2">{item.name}</h1>
-            <p className="text-xl text-gray-800 mb-6">{Number(item.price).toLocaleString()} ₩</p>
+          <div className="w-full md:w-1/2">
+            <h1 className="text-2xl md:text-3xl font-medium text-black mb-2">{item.name}</h1>
+            <p className="text-lg md:text-xl text-gray-800 mb-4 md:mb-6">{Number(item.price).toLocaleString()} ₩</p>
             
-            <div className="mb-8">
+            <div className="mb-6 md:mb-8">
               <p className="text-gray-700 mb-1">제작자: {item.creator}</p>
               <p className="text-gray-700">팀: {teamName}</p>
             </div>
             
             {/* Quantity Selector */}
-            <div className="mb-8">
+            <div className="mb-6 md:mb-8">
               <p className="text-gray-700 mb-2">수량:</p>
               <div className="flex">
                 <button 
-                  className="w-8 h-8 flex items-center justify-center border border-gray-300"
+                  className="w-10 h-10 flex items-center justify-center border border-gray-300"
                   onClick={decrementQuantity}
                 >
                   -
@@ -239,11 +298,11 @@ const StoreDetailPage = () => {
                   type="number" 
                   value={quantity} 
                   onChange={handleQuantityChange}
-                  className="w-12 h-8 text-center border-t border-b border-gray-300"
+                  className="w-16 h-10 text-center border-t border-b border-gray-300"
                   min="1"
                 />
                 <button 
-                  className="w-8 h-8 flex items-center justify-center border border-gray-300"
+                  className="w-10 h-10 flex items-center justify-center border border-gray-300"
                   onClick={incrementQuantity}
                 >
                   +
@@ -252,26 +311,28 @@ const StoreDetailPage = () => {
             </div>
             
             {/* Action Buttons */}
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row gap-2 md:gap-4">
               <button 
-                className="w-1/2 py-3 bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors"
+                className="w-full md:w-1/2 py-3 bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors"
                 onClick={handleAddToCart}
               >
                 장바구니 담기
               </button>
               <button 
-                className="w-1/2 py-3 bg-white text-indigo-600 font-medium border border-indigo-600 hover:bg-indigo-50 transition-colors"
-                onClick={handleDirectCheckout} // 바로 주문하기 함수 연결
+                className="w-full md:w-1/2 py-3 bg-white text-indigo-600 font-medium border border-indigo-600 hover:bg-indigo-50 transition-colors"
+                onClick={handleDirectCheckout}
               >
                 바로 주문하기
               </button>
             </div>
+            
+
           </div>
         </div>
         
         {/* Description Image */}
         {item.descriptionImagePath && (
-          <div className="mt-16">
+          <div className="mt-8 md:mt-16">
             <img 
               src={getImageSrc(item.descriptionImagePath)} 
               alt={`${item.name} 상세 설명`} 
