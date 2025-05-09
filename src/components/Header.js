@@ -244,7 +244,7 @@ const Header = () => {
       {/* 모바일 헤더 & 메뉴 (md 미만) */}
       <div className="md:hidden">
         {/* 상단 바 */}
-        <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-white px-4 py-3 shadow-md">
+        <div className="sticky top-0 left-0 right-0 z-50 flex items-center justify-between bg-white px-4 py-3 shadow-md">
           <Link to="/" className="text-xl font-bold">SOMA</Link>
           <div className="flex items-center space-x-4">
             <button onClick={handleCartClick} className="relative">
