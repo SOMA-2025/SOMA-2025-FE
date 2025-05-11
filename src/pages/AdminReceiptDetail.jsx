@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -10,18 +10,7 @@ const AdminReceiptDetail = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    // 인증 체크
-    const isAuth = sessionStorage.getItem('adminAuth');
-    if (!isAuth) {
-      navigate('/admin');
-      return;
-    }
-
-    fetchReceiptDetail();
-  }, [id]);
-
-  const fetchReceiptDetail = async () => {
+  const fetchReceiptDetail = useCallback(async () => {
     try {
       setLoading(true);
       const response = await axios.get(`${API_URL}/api/admin/receipts/${id}`);
@@ -31,7 +20,18 @@ const AdminReceiptDetail = () => {
       console.error('주문 상세 정보를 불러오는 중 오류가 발생했습니다:', err);
       setLoading(false);
     }
-  };
+  }, [id]);
+
+  useEffect(() => {
+    // 인증 체크
+    const isAuth = sessionStorage.getItem('adminAuth');
+    if (!isAuth) {
+      navigate('/admin');
+      return;
+    }
+
+    fetchReceiptDetail();
+  }, [fetchReceiptDetail, navigate]);
 
   if (loading) {
     return (
