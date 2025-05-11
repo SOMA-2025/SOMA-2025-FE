@@ -9,6 +9,7 @@ const CheckoutPage = () => {
   const [cartItems, setCartItems] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
   const [orderName, setOrderName] = useState('');
+  const [bankName, setBankName] = useState('');  // 은행명 상태 추가
   const [accountNumber, setAccountNumber] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -42,8 +43,8 @@ const CheckoutPage = () => {
   const handleOrderSubmit = async (e) => {
     e.preventDefault();
 
-    if (!orderName || !phoneNumber) {
-      setError('입금자명과 연락처를 모두 입력해주세요.');
+    if (!orderName || !bankName || !accountNumber || !phoneNumber) {
+      setError('입금자명, 은행명, 계좌번호, 연락처를 모두 입력해주세요.');
       return;
     }
 
@@ -54,6 +55,7 @@ const CheckoutPage = () => {
       // 백엔드에 보낼 주문 데이터 구성
       const orderData = {
         accountHolder: orderName,
+        bankName: bankName,  // 은행명 추가
         accountNumber: accountNumber,
         phoneNumber: phoneNumber,
         orders: cartItems.map(item => ({
@@ -208,6 +210,18 @@ const CheckoutPage = () => {
               </div>
 
               <div className="mb-4 md:mb-6">
+                <h2 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">은행명</h2>
+                <input
+                  type="text"
+                  value={bankName}
+                  onChange={(e) => setBankName(e.target.value)}
+                  className="w-full p-2 border border-gray-300 rounded"
+                  placeholder="입금하실 은행명을 입력하세요"
+                  required
+                />
+              </div>
+
+              <div className="mb-4 md:mb-6">
                 <h2 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">입금자 계좌번호</h2>
                 <input
                   type="text"
@@ -215,6 +229,7 @@ const CheckoutPage = () => {
                   onChange={(e) => setAccountNumber(e.target.value)}
                   className="w-full p-2 border border-gray-300 rounded"
                   placeholder="입금자 계좌번호"
+                  required
                 />
               </div>
 

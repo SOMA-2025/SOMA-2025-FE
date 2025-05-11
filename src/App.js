@@ -6,6 +6,9 @@ import StoreDetailPage from "./pages/StoreDetailPage";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import OrderCompletePage from "./pages/OrderCompletePage";
+import AdminLogin from './pages/AdminLogin';
+import AdminDashboard from './pages/AdminDashboard';
+import AdminReceiptDetail from './pages/AdminReceiptDetail';
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/order-complete/:receiptId" element={<OrderCompletePage />} />
+          <Route path="/admin" element={<AdminLogin />} />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/admin/receipt/:id" element={<AdminReceiptDetail />} />
           
           {/* 404 페이지 */}
           <Route path="*" element={
