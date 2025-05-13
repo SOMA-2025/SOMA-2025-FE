@@ -126,7 +126,7 @@ const Header = () => {
   return (
     <div className="relative">
       {/* 데스크탑 헤더 & 네비 (md 이상) */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <header className={`w-full transition-colors duration-300 ${hoveredNav ? 'bg-black' : 'bg-white'}`}>
           <div className="w-full px-4">
             <div className="flex justify-between h-12">
@@ -242,9 +242,9 @@ const Header = () => {
       </div>
 
       {/* 모바일 헤더 & 메뉴 (md 미만) */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         {/* 상단 바 */}
-        <div className="sticky top-0 left-0 right-0 z-50 flex items-center justify-between bg-white px-4 py-3 shadow-md">
+        <div className="sticky top-0 left-0 right-0 z-50 flex items-center justify-between bg-white px-4 py-3 shadow-sm">
           <Link to="/" className="text-xl font-bold">SOMA</Link>
           <div className="flex items-center space-x-4">
             <button onClick={handleCartClick} className="relative">
