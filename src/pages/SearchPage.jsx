@@ -31,6 +31,11 @@ const SearchPage = () => {
     fetchMembers(searchTerm);
   }, [searchTerm, fetchMembers]);
 
+  // 2333:3500 비율로 계산하는 함수 (약 0.6666 : 1)
+  const calculatePaddingTop = () => {
+    return (3500 / 2333) * 100; // 약 150%
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <div className="w-full px-4 py-4 md:py-8">
@@ -65,11 +70,14 @@ const SearchPage = () => {
                   to={`${BASE_URL}/portfolio/${member.portfolioUrl}`}
                   className="block group"
                 >
-                  <div className="aspect-square bg-gray-100 mb-2 md:mb-4">
+                  <div 
+                    className="bg-gray-100 mb-2 md:mb-4 relative" 
+                    style={{ paddingTop: `${calculatePaddingTop()}%` }}
+                  >
                     <img
                       src={require(`../${member.profileImageUrl}`)}
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      className="absolute top-0 left-0 w-full h-full object-contain"
                     />
                   </div>
                   <h3 className="text-base md:text-xl font-medium group-hover:text-gray-600 transition-colors truncate">
