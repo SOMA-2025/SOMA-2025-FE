@@ -9,6 +9,7 @@ import OrderCompletePage from "./pages/OrderCompletePage";
 import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminReceiptDetail from './pages/AdminReceiptDetail';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <div className="min-h-screen bg-white">
         <Header />
         <Routes>
+          <Route path="/" element={<Home />} />
           {/* 기존 경로 */}
           <Route path="/search" element={<SearchPage />} />
           
