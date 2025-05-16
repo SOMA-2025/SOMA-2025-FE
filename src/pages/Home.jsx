@@ -40,16 +40,6 @@ const Home = () => {
     const [progressBarKey, setProgressBarKey] = useState(0);
     const [disableTransition, setDisableTransition] = useState(false);
 
-      useEffect(() => {
-    // 페이지 진입 시 스크롤 막기
-    document.body.style.overflow = 'hidden';
-
-    // 페이지 나갈 때 원래대로 복구
-    return () => {
-      document.body.style.overflow = 'auto';
-    };
-  }, []);
-
     useEffect(() => {
         const video = videoRef.current;
         if (!video) return;
