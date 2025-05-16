@@ -92,8 +92,8 @@ const Home = () => {
                 className="
                 bg-black
                 relative
-                h-[calc(100vh-52px-64px)]  
-                lg:h-[calc(100vh-190px-64px)]
+                h-[calc(100dvh-52px-64px)]  
+                lg:h-[calc(100dvh-190px-64px)]
                 flex items-center justify-center
         "
             > {/* 헤더 푸터 길이만큼 빼 */}
@@ -178,7 +178,7 @@ const Home = () => {
 
 
             {/* 하단 메뉴 패널(모바일) */}
-            <div className="lg:hidden absolute bottom-0 left-0 w-full bg-white flex items-center justify-between px-4 py-3 border-t z-20">
+            <div className="lg:hidden absolute bottom-0 left-0 w-full bg-white flex items-center justify-between px-4 py-3 z-20">
                 <button
                     onClick={handlePrev}
                     className="w-9 h-9 flex items-center justify-center border border-gray-300 rounded-full text-xl"
