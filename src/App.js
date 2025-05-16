@@ -14,7 +14,7 @@ import Home from './pages/Home';
 function App() {
   return (
     <BrowserRouter basename="/2025">
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen-dvh bg-white">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
