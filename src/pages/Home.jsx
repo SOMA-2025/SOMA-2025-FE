@@ -7,38 +7,49 @@ const videoList = [
     // },
     {
         title: 'AGIOTITA',
-        src: '/videos/team_1.mp4'
+        src: '/videos/team_1_cut_comp.mp4'
     },
     {
         title: 'BIPOLAR',
-        src: '/videos/team_2.mp4'
+        src: '/videos/team_2_cut_comp.mp4'
     },
     {
         title: '"- - -"',
-        src: '/videos/team_3.mp4'
+        src: '/videos/team_3_cut_comp.mp4'
     },
     {
         title: 'Dialysis',
-        src: '/videos/team_4.mp4'
+        src: '/videos/team_4_cut_comp.mp4'
     },
     {
         title: '표류[]기',
-        src: '/videos/team_5.mp4'
+        src: '/videos/team_5_cut_comp.mp4'
     },
     {
         title: '자각몽',
-        src: '/videos/team_6.mp4'
+        src: '/videos/team_6_cut_comp.mp4'
     },
 ];
 
 const Home = () => {
-
+    
     const [currentIndex, setCurrentIndex] = useState(0);
     const [progress, setProgress] = useState(0);
     const videoRef = useRef(null);
     // const [setDisableTransition] = useState(false);
     const [progressBarKey, setProgressBarKey] = useState(0);
     const [disableTransition, setDisableTransition] = useState(false);
+
+      useEffect(() => {
+    // 페이지 진입 시 스크롤 막기
+    document.body.style.overflow = 'hidden';
+
+    // 페이지 나갈 때 원래대로 복구
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+
     useEffect(() => {
         const video = videoRef.current;
         if (!video) return;
