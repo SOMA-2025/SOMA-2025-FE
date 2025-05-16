@@ -7,38 +7,49 @@ const videoList = [
     // },
     {
         title: 'AGIOTITA',
-        src: '/videos/team_1.mp4'
+        src: '/videos/team_1_cut_comp.mp4'
     },
     {
         title: 'BIPOLAR',
-        src: '/videos/team_2.mp4'
+        src: '/videos/team_2_cut_comp.mp4'
     },
     {
         title: '"- - -"',
-        src: '/videos/team_3.mp4'
+        src: '/videos/team_3_cut_comp.mp4'
     },
     {
         title: 'Dialysis',
-        src: '/videos/team_4.mp4'
+        src: '/videos/team_4_cut_comp.mp4'
     },
     {
         title: '표류[]기',
-        src: '/videos/team_5.mp4'
+        src: '/videos/team_5_cut_comp.mp4'
     },
     {
         title: '자각몽',
-        src: '/videos/team_6.mp4'
+        src: '/videos/team_6_cut_comp.mp4'
     },
 ];
 
 const Home = () => {
-
+    
     const [currentIndex, setCurrentIndex] = useState(0);
     const [progress, setProgress] = useState(0);
     const videoRef = useRef(null);
     // const [setDisableTransition] = useState(false);
     const [progressBarKey, setProgressBarKey] = useState(0);
     const [disableTransition, setDisableTransition] = useState(false);
+
+      useEffect(() => {
+    // 페이지 진입 시 스크롤 막기
+    document.body.style.overflow = 'hidden';
+
+    // 페이지 나갈 때 원래대로 복구
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+
     useEffect(() => {
         const video = videoRef.current;
         if (!video) return;
@@ -92,8 +103,8 @@ const Home = () => {
                 className="
                 bg-black
                 relative
-                h-[calc(100vh-52px-64px)]  
-                lg:h-[calc(100vh-190px-64px)]
+                h-[calc(100dvh-52px-64px)]  
+                lg:h-[calc(100dvh-190px-64px)]
                 flex items-center justify-center
         "
             > {/* 헤더 푸터 길이만큼 빼 */}
@@ -178,7 +189,7 @@ const Home = () => {
 
 
             {/* 하단 메뉴 패널(모바일) */}
-            <div className="lg:hidden absolute bottom-0 left-0 w-full bg-white flex items-center justify-between px-4 py-3 border-t z-20">
+            <div className="lg:hidden absolute bottom-0 left-0 w-full bg-white flex items-center justify-between px-4 py-3 z-20">
                 <button
                     onClick={handlePrev}
                     className="w-9 h-9 flex items-center justify-center border border-gray-300 rounded-full text-xl"
