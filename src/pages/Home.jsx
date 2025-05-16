@@ -11,7 +11,7 @@ const videoList = [
     },
     {
         title: 'BIPOLAR',
-        src: '/videos/team_2_cut_comp.mp4'
+        src: '/videos/team_2_cut_2560.mp4'
     },
     {
         title: '"- - -"',
