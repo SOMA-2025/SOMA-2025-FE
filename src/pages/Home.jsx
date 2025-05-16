@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const videoList = [
-    {
-        title: 'MAIN FILM',
-        src: '/videos/SOMA2025_motionposter.mp4'
-    },
+    // {
+    //     title: 'MAIN FILM',
+    //     src: '/videos/SOMA2025_motionposter.mp4'
+    // },
     {
         title: 'AGIOTITA',
         src: '/videos/team_1.mp4'
@@ -36,9 +36,9 @@ const Home = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [progress, setProgress] = useState(0);
     const videoRef = useRef(null);
-    const [setDisableTransition] = useState(false);
+    // const [setDisableTransition] = useState(false);
     const [progressBarKey, setProgressBarKey] = useState(0);
-
+    const [disableTransition, setDisableTransition] = useState(false);
     useEffect(() => {
         const video = videoRef.current;
         if (!video) return;
@@ -67,12 +67,23 @@ const Home = () => {
         };
     }, [currentIndex, progress, setDisableTransition]);
 
+    const goToVideo = (index) => { // 진행 바 초기화 함수
+        setDisableTransition(true);           // transition 끄기
+        setProgress(0);                       
+        setProgressBarKey(prev => prev + 1);  
+        setCurrentIndex(index);
+
+        setTimeout(() => {
+            setDisableTransition(false);        
+        }, 50);
+    };
+
     const handlePrev = () => {
-        setCurrentIndex((prev) => (prev === 0 ? videoList.length - 1 : prev - 1));
+        goToVideo((prev) => (prev === 0 ? videoList.length - 1 : prev - 1));
     };
 
     const handleNext = () => {
-        setCurrentIndex((prev) => (prev === videoList.length - 1 ? 0 : prev + 1));
+        goToVideo((prev) => (prev === videoList.length - 1 ? 0 : prev + 1));
     };
 
     return (
@@ -104,11 +115,23 @@ const Home = () => {
 
                 />
 
+                
+                {/* <div className="absolute bottom-0 left-0 w-full h-1 bg-white/20">
+                    <div
+                        key={progressBarKey}
+                        className="h-full bg-black transition-[width] duration-[1000ms] ease-linear"
+                        style={{ width: `${progress}%` }}
+                    />
+                </div> */}
+
                 {/* 진행 바 */}
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-white/20">
                     <div
                         key={progressBarKey}
-                        className="h-full bg-black transition-[width] duration-[1000ms] ease-linear"
+                        className={`
+                        h-full bg-black
+                        ${disableTransition ? '' : 'transition-[width] duration-[1000ms] ease-linear'}
+                        `}
                         style={{ width: `${progress}%` }}
                     />
                 </div>
@@ -152,6 +175,8 @@ const Home = () => {
                     </button>
                 ))}
             </div>
+
+
             {/* 하단 메뉴 패널(모바일) */}
             <div className="lg:hidden absolute bottom-0 left-0 w-full bg-white flex items-center justify-between px-4 py-3 border-t z-20">
                 <button
@@ -173,7 +198,6 @@ const Home = () => {
                 </button>
             </div>
         </div>
-
     );
 };
 
