@@ -67,7 +67,8 @@ const SearchPage = () => {
               {team.members.map((member) => (
                 <Link 
                   key={member.name}
-                  to={`${BASE_URL}/portfolio/${member.portfolioUrl}`}
+                  // to={`${BASE_URL}/portfolio/${member.portfolioUrl}`}
+                  to={`/portfolio/${member.portfolioUrl}`}
                   className="block group"
                 >
                   <div 
