@@ -1,0 +1,75 @@
+[
+    {
+    "teamName": "TEAM 1",
+    "teamPageUrl": "team1",
+    "members": [
+      {
+        "name": "이승주",
+        "englishName": "LEE SEUNGJOO",
+        "projectTitle": "Nephele",
+        "description": "Nephele는 고대 그리스어로 구름을 의미하며, 영어로 성운을 뜻하는 Nebula의 어원이다. 성운은 별의 탄생과 죽음에 의해 형성되는 불규칙적인 우주 현상이다. 이 컬렉션은 이상적인 아름다움과 신성함을 추구하던 고대 그리스의 양식을 통해 성운의 비정형적이고 장엄한 아름다움을 표현한다.",
+        "email": "",
+        "instagram": "",
+        "profileImageUrl": "assets/agiotita/profile/AGIOTITA_leeseungju.jpg",
+        "brochureImages": ["assets/agiotita/brochure/AGIOTITA_이승주_1.jpg", "assets/agiotita/brochure/AGIOTITA_이승주_2.jpg"],
+        "portfolioUrl": "lee-seungju"
+      },
+      {
+        "name": "김윤성",
+        "englishName": "KIM YOONSUNG",
+        "projectTitle": "철 별 성운",
+        "description": "먼 미래, 양성자 붕괴가 일어나지 않을 경우 존재할 것이라는 가상의 천체 철 별.\n 별을 탄생시키는 성운의 아름다움에서 출발하여 메탈릭하고 다크웨어의 느낌을 가져가며 미래지향적인 새로운 스타일의 기성복 컬렉션을 보여준다.",
+        "email": "kozu1012@naver.com",
+        "instagram": "ssaekk_gga",
+        "profileImageUrl": "assets/agiotita/profile/AGIOTITA_kimyoonsung.jpg",
+        "brochureImages": ["assets/agiotita/brochure/AGIOTITA_김윤성_1.jpg", "assets/agiotita/brochure/AGIOTITA_김윤성_2.jpg"],
+        "portfolioUrl": "kim-yoonsung"
+      }
+    ]
+  },
+  {
+    "teamName": "TEAM 3",
+    "teamPageUrl": "team1",
+    "members": [
+      {
+        "name": "김솔이",
+        "englishName": "KIM SOLYI",
+        "projectTitle": "Glacier mind",
+        "description": "무의식은 마치 바다 아래 잠긴 빙하처럼, 겉으로 드러나지 않지만 깊고 무겁게 존재합니다.\n 빙하의 균열과 구조를 모티프로 하여, 내면의 흔들림과 억눌린 감정을 섬세하고 페미닌한 실루엣으로 표현했습니다.\n 디테일은 빙하의 선들을 따라 흐르고, 블루 톤과 그레이 톤은 감춰진 감정과 그 너머의 진실을 은유하며, 여성성의 섬세한 내면을 포착합니다.\n ‘무의식’이라는 깊은 수면 아래의 공간에서 일어나는 감정의 균열, 그리고 그 속에서 피어나는 여성성의 유연한 힘을 담아봤습니다.",
+        "email": "",
+        "instagram": "",
+        "profileImageUrl": "assets/dash/profile/DASH_kimsolyi.JPG",
+        "brochureImages": ["assets/dash/brochure/DASH_김솔이_1.jpg", "assets/dash/brochure/DASH_김솔이_2.jpg"],
+        "portfolioUrl": "kim-solyi"
+      },
+      {
+        "name": "송다연",
+        "englishName": "SONG DAYEON",
+        "projectTitle": "Serpent of Desire",
+        "description": "‘SOMA’는 인간의 육체를 의미하며, 이는 곧 무의식 속에 자리한 본능적 욕망의 출발점이 된다. 본 작품은 아담과 이브 신화 속에서 최초의 유혹을 이끌어낸 ‘뱀’을 모티프로 삼아, 인간 내면 깊숙이 숨겨진 욕망과 육체의 본질을 시각적으로 표현한 작품이다.",
+        "email": "",
+        "instagram": "",
+        "profileImageUrl": "assets/dash/profile/DASH_songdayeon.JPG",
+        "brochureImages": ["assets/dash/brochure/DASH_송다연_1.jpg", "assets/dash/brochure/DASH_송다연_2.jpg"],
+        "portfolioUrl": "song-dayeon"
+      }
+    ]
+  },
+  {
+    "teamName": "TEAM 5",
+    "teamPageUrl": "team1",
+    "members": [
+      {
+        "name": "이현희",
+        "englishName": "LEE HYUNHEE",
+        "projectTitle": "candy-colored",
+        "description": "20××.0×.××. 지구, 서울 - 맑음\n\n지구에 온 지도 벌써 4년째.\n고향 디저트 행성을 떠나 이곳저곳을 여행하던 중, 우연히 서울에 도착했다.\n처음엔 모든 것이 낯설었다. 건물은 딱딱했고, 사람들은 지나치게 빠르게 움직였다.\n그런데 이상하게도, 낯선 풍경 속에서 문득 고향이 떠오르곤 했다.\n크림소다같은 연못, 초콜릿같은 건물들…\n그렇게 이 도시와 내가 연결되기 시작했다.\n나는 지금, 서울에서 살아가는 외계인이다.",
+        "email": "lhh2030@daum.net",
+        "instagram": "@two.h_h",
+        "profileImageUrl": "assets/drift/profile/DRIFT_leehyunhee.jpeg",
+        "brochureImages": ["assets/drift/brochure/표류기_이현희_1.jpg", "assets/drift/brochure/표류기_이현희_2.jpg"],
+        "portfolioUrl": "lee-hyunhee"
+      }
+    ]
+  }
+]

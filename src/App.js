@@ -10,6 +10,7 @@ import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
 import AdminReceiptDetail from './pages/AdminReceiptDetail';
 import Home from './pages/Home';
+import PortfolioPage from './pages/PortfolioPage';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* 기존 경로 */}
           <Route path="/search" element={<SearchPage />} />
-          
+          <Route path="/portfolio/:portfolioUrl" element={<PortfolioPage />} />
           {/* 스토어 관련 경로 - teamName 대신 teamId 사용 */}
           <Route path="/store" element={<Navigate to="/store/all" />} />
           <Route path="/store/all" element={<StorePage />} />

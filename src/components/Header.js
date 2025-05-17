@@ -117,8 +117,8 @@ const Header = () => {
 쉽게 찾아볼 수 있습니다. 졸업전시회의 역사를 되짚어보며, 졸업생들의 작품과 성과를 다시 한 번 감상할 수 있는 기회를 제공합니다.`,
       subItems: [
         { name: '2024:Prototype', path: '/2024' },
-        { name: '2023', path: '/archive/2023' },
-        { name: '2022', path: '/archive/2022' }
+        // { name: '2023', path: '/archive/2023' },
+        // { name: '2022', path: '/archive/2022' }
       ]
     }
   ];
@@ -137,12 +137,12 @@ const Header = () => {
                   2025 KUAD GRADUATION FASHION SHOW
                 </h1>
                 <div className="flex gap-4">
-                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.youtube.com/@kuappareldesign" target="_blank" rel="noopener noreferrer">
                     <Youtube className={`w-[25px] h-[25px] transition-colors duration-300 ${
                       hoveredNav ? 'text-white' : 'text-black'
                     }`} />
                   </a>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/kuad_archive/" target="_blank" rel="noopener noreferrer">
                     <Instagram className={`w-[25px] h-[25px] transition-colors duration-300 ${
                       hoveredNav ? 'text-white' : 'text-black'
                     }`} />
@@ -313,10 +313,10 @@ const Header = () => {
             
             {/* 하단 SNS 링크 */}
             <div className="absolute bottom-6 left-6 flex space-x-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/kuad_archive/" target="_blank" rel="noopener noreferrer">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@kuappareldesign" target="_blank" rel="noopener noreferrer">
                 <Youtube className="w-6 h-6" />
               </a>
             </div>
@@ -356,10 +356,10 @@ const Header = () => {
             </ul>
             {/* 하단 SNS 링크 */}
             <div className="absolute bottom-6 left-6 flex space-x-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/kuad_archive/" target="_blank" rel="noopener noreferrer">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@kuappareldesign" target="_blank" rel="noopener noreferrer">
                 <Youtube className="w-6 h-6" />
               </a>
             </div>
