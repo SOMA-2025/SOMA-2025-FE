@@ -117,8 +117,8 @@ const Header = () => {
 쉽게 찾아볼 수 있습니다. 졸업전시회의 역사를 되짚어보며, 졸업생들의 작품과 성과를 다시 한 번 감상할 수 있는 기회를 제공합니다.`,
       subItems: [
         { name: '2024:Prototype', path: '/2024' },
-        { name: '2023', path: '/archive/2023' },
-        { name: '2022', path: '/archive/2022' }
+        // { name: '2023', path: '/archive/2023' },
+        // { name: '2022', path: '/archive/2022' }
       ]
     }
   ];

@@ -1,0 +1,36 @@
+[
+  {
+    "teamName": "TEAM 1",
+    "teamPageUrl": "team1",
+    "members": [
+      {
+        "name": "송다연",
+        "englishName": "SONG DAYEON",
+        "projectTitle": "Serpent of Desire",
+        "description": "‘SOMA’는 인간의 육체를 의미하며, 이는 곧 무의식 속에 자리한 본능적 욕망의 출발점이 된다. 본 작품은 아담과 이브 신화 속에서 최초의 유혹을 이끌어낸 ‘뱀’을 모티프로 삼아, 인간 내면 깊숙이 숨겨진 욕망과 육체의 본질을 시각적으로 표현한 작품이다.",
+        "email": "",
+        "instagram": "",
+        "profileImageUrl": "assets/dash/profile/DASH_songdayeon.JPG",
+        "runwayImageUrl": "assets/dash/brochure/DASH_송다연_2.jpg",
+        "portfolioUrl": "song-dayeon"
+      }
+    ]
+  },
+  {
+    "teamName": "TEAM 2",
+    "teamPageUrl": "team2",
+    "members": [
+      {
+        "name": "홍길동",
+        "englishName": "HONG GILDONG",
+        "projectTitle": "가상 프로젝트",
+        "description": "설명 내용",
+        "email": "hong@example.com",
+        "instagram": "@honggildong",
+        "profileImageUrl": "assets/members/team2/hong-profile.jpg",
+        "runwayImageUrl": "assets/members/team2/hong-runway.jpg",
+        "portfolioUrl": "hong-gildong"
+      }
+    ]
+  }
+]
