@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-
+import { Mail, Instagram } from 'lucide-react';
 const PortfolioPage = () => {
   const { portfolioUrl } = useParams();
 
@@ -34,8 +34,8 @@ const PortfolioPage = () => {
           {member.brochureImages && member.brochureImages.length > 0 ? (
             <Swiper
               spaceBetween={20}
-              navigation={true}           
-              modules={[Navigation]}       
+              navigation={true}
+              modules={[Navigation]}
               className="w-full"
             >
               {member.brochureImages.map((img, idx) => (
@@ -52,7 +52,7 @@ const PortfolioPage = () => {
             <p>브로셔 이미지가 없습니다.</p>
           )}
         </div>
-        <div className="w-full md:w-1/2 flex flex-col justify center">
+        <div className="w-full md:w-1/2 py-4 flex flex-col justify center">
           <img
             src={require(`../${member.profileImageUrl}`)}
             alt={`${member.name} profile`}
@@ -62,12 +62,30 @@ const PortfolioPage = () => {
           <h2 className="text-2xl font-bold mt-2">{member.projectTitle}</h2>
           <p className="mt-4 whitespace-pre-line">{member.description}</p>
           {(member.email || member.instagram) && (
-              <div className="mt-6 space-y-2">
-                <h3 className="text-lg font-semibold uppercase tracking-wide mb-2">Contact</h3>
-                {member.email && <p>📧 {member.email}</p>}
-                {member.instagram && <p>📱 {member.instagram}</p>}
-              </div>
-            )}
+            <div className="mt-6 space-y-2">
+              <h3 className="text-lg font-semibold uppercase tracking-wide mb-2">Contact</h3>
+              {member.instagram && (
+                <a
+                  href={`https://instagram.com/${member.instagram.replace('@', '')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-black hover:no-underline"
+                >
+                  <Instagram size={18} strokeWidth={1.5} />
+                  {member.instagram}
+                </a>
+              )}
+              {member.email && (
+                <a
+                  href={`mailto:${member.email}`}
+                  className="flex items-center gap-2 text-black hover:no-underline"
+                >
+                  <Mail size={18} strokeWidth={1.5} />
+                  {member.email}
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>

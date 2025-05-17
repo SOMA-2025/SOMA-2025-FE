@@ -313,10 +313,10 @@ const Header = () => {
             
             {/* 하단 SNS 링크 */}
             <div className="absolute bottom-6 left-6 flex space-x-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/kuad_archive/" target="_blank" rel="noopener noreferrer">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@kuappareldesign" target="_blank" rel="noopener noreferrer">
                 <Youtube className="w-6 h-6" />
               </a>
             </div>
@@ -356,10 +356,10 @@ const Header = () => {
             </ul>
             {/* 하단 SNS 링크 */}
             <div className="absolute bottom-6 left-6 flex space-x-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/kuad_archive/" target="_blank" rel="noopener noreferrer">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@kuappareldesign" target="_blank" rel="noopener noreferrer">
                 <Youtube className="w-6 h-6" />
               </a>
             </div>
