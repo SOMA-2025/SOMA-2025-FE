@@ -137,12 +137,12 @@ const Header = () => {
                   2025 KUAD GRADUATION FASHION SHOW
                 </h1>
                 <div className="flex gap-4">
-                  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.youtube.com/@kuappareldesign" target="_blank" rel="noopener noreferrer">
                     <Youtube className={`w-[25px] h-[25px] transition-colors duration-300 ${
                       hoveredNav ? 'text-white' : 'text-black'
                     }`} />
                   </a>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/kuad_archive/" target="_blank" rel="noopener noreferrer">
                     <Instagram className={`w-[25px] h-[25px] transition-colors duration-300 ${
                       hoveredNav ? 'text-white' : 'text-black'
                     }`} />
