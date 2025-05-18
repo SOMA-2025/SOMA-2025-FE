@@ -25,7 +25,7 @@ const PortfolioPage = () => {
   return (
     <div className="max-w-[1140px] mx-auto px-4 py-6">
       <div className="flex flex-col md:flex-row gap-10">
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 order-2 md:order-1">
           {/* <img
             src={require(`../${member.brochureImageUrl}`)}
             alt={`${member.name} runway`}
@@ -52,7 +52,7 @@ const PortfolioPage = () => {
             <p>브로셔 이미지가 없습니다.</p>
           )}
         </div>
-        <div className="w-full md:w-1/2 py-4 flex flex-col justify center">
+        <div className="w-full md:w-1/2 py-4 flex flex-col justify center order-1 md:order-2">
           <img
             src={require(`../${member.profileImageUrl}`)}
             alt={`${member.name} profile`}
