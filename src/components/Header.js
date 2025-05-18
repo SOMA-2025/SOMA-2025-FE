@@ -83,7 +83,7 @@ const Header = () => {
 이곳에서는 학생들이 직접 제작한 특별한 굿즈를 만나볼 수 있으며, 관람객이 전시회의 기념품을 소장할 수 있도록 돕습니다.`,
       subItems: [
         { name: '전체 굿즈', path: '/store/all' },
-        { name: '팀별 굿즈', path: '/store/team' }
+        // { name: '팀별 굿즈', path: '/store/team' }
       ]
     },
     {
