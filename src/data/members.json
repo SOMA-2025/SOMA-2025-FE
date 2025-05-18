@@ -86,6 +86,20 @@
           "assets/lucid-dream/brochure/자각몽_이지원_2.jpg"
         ],
         "portfolioUrl": "lee-jiwon"
+      },
+      {
+        "name": "주호천",
+        "englishName": "JOO HOCHEON",
+        "projectTitle": "",
+        "description": "",
+        "email": "",
+        "instagram": "",
+        "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_zhouhaotian.jpg",
+        "brochureImages": [
+          "assets/lucid-dream/brochure/자각몽_주호천_1.jpg",
+          "assets/lucid-dream/brochure/자각몽_주호천_2.jpg"
+        ],
+        "portfolioUrl": "joo-hocheon"
       }
     ]
   },
@@ -190,6 +204,20 @@
           "assets/drift/brochure/표류기_현정은_2.jpg"
         ],
         "portfolioUrl": "hyun-jeongeun"
+      },
+      {
+        "name": "허주연",
+        "englishName": "HUR JOOYEON",
+        "projectTitle": "",
+        "description": "",
+        "email": "",
+        "instagram": "",
+        "profileImageUrl": "assets/drift/profile/DRIFT_hurjooyeon.jpg",
+        "brochureImages": [
+          "assets/drift/brochure/표류기_허주연_1.jpg",
+          "assets/drift/brochure/표류기_허주연_2.jpg"
+        ],
+        "portfolioUrl": "hur-jooyeon"
       }
     ]
   },
