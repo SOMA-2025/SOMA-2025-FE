@@ -100,7 +100,7 @@
         "description": "현대인은 스스로 만든 디지털 세계 속에 잠식된 채, 현실의 온기와 감각을 잃어간다. 블루 스크린과 기계에 가려진 존재는 자극 속에서 무기력하게 살아간다. 그러나 그 세계가 진짜가 아님을 자각하고, 파편을 만들며 일어선다. 피로 얼룩진 셔츠와 붉은 치마는 깨어남의 흔적이자, 고통의 기억이다. ‘Wake(로그아웃)’는 가상의 껍질을 깨고 나오는 인간의 각성과 회복을 그린다. 이 컬렉션은 가상과 현실 사이의 긴장을 시적으로 풀어낸 하나의 서사이다.",
         "email": "hjb8355@naver.com",
         "instagram": "woqja_",
-        "profileImageUrl": "assets/drift/profile/DRIFT_heojaeheom.jpg",
+        "profileImageUrl": "assets/drift/profile/DRIFT_heojaebeom.jpg",
         "brochureImages": [
           "assets/drift/brochure/표류기_허재범_1.jpg",
           "assets/drift/brochure/표류기_허재범_2.jpg"
@@ -151,7 +151,7 @@
       },
       {
         "name": "조수아",
-        "englishName": "JOSHUA",
+        "englishName": "JO SHUA",
         "projectTitle": "Perfect Error",
         "description": "건망증이 심한 완벽주의. 도시를 표류하며 완벽함을 좇아 살아가지만 기억력이 좋지 않다. 해야할 일들, 하고싶은 일들을 기억하기 위해 끝없이 체크리스트를 작성하고, 모든 것을 기록한다. 반복과 강박, 주위를 둘러싼 글자들 속에서 오늘도 완벽을 위해 나아간다.",
         "email": "saj0201@naver.com",
@@ -161,7 +161,7 @@
           "assets/drift/brochure/표류기_조수아_1.jpg",
           "assets/drift/brochure/표류기_조수아_2.jpg"
         ],
-        "portfolioUrl": "joshua"
+        "portfolioUrl": "jo-shua"
       },
       {
         "name": "신승리",
@@ -464,8 +464,8 @@
         "instagram": "kwakhyunill",
         "profileImageUrl": "assets/bipolar/profile/BIPOLAR_guoxianyi.jpg",
         "brochureImages": [
-          "assets/bipolar/brochure/Bipolar_곽현일look1.jpg",
-          "assets/bipolar/brochure/Bipolar_곽현일look2.jpg"
+          "assets/bipolar/brochure/Bipolar_곽현일_1.jpg",
+          "assets/bipolar/brochure/Bipolar_곽현일_2.jpg"
         ],
         "portfolioUrl": "kwak-hyunil"
       }
