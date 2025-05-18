@@ -11,6 +11,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import AdminReceiptDetail from './pages/AdminReceiptDetail';
 import Home from './pages/Home';
 import PortfolioPage from './pages/PortfolioPage';
+import MainTheme from './pages/MainTheme';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* 메인 테마 */}
+          <Route path="/project/main-theme" element={<MainTheme />} />
           {/* 기존 경로 */}
           <Route path="/search" element={<SearchPage />} />
           <Route path="/portfolio/:portfolioUrl" element={<PortfolioPage />} />

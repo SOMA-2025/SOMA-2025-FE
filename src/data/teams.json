@@ -1,0 +1,38 @@
+[
+  {
+    "id": "agiotita",
+    "name": "AGIOTITA",
+    "poster": "../poster/Agiotita.webp",
+    "description": "이 팀"
+  },
+  {
+    "id": "bipolar",
+    "name": "BIPOLAR",
+    "poster": "../poster/Bipolar.webp",
+    "description": "이 팀"
+  },
+  {
+    "id": "dash",
+    "name": "Dash",
+    "poster": "../poster/DASH.webp",
+    "description": "이 팀"
+  },
+  {
+    "id": "dialysis",
+    "name": "Dialysis",
+    "poster": "../poster/Dialysis.webp",
+    "description": "이 팀"
+  },
+  {
+    "id": "drift",
+    "name": "표류[]기",
+    "poster": "../poster/표류기.webp",
+    "description": "이 팀"
+  },
+  {
+    "id": "lucid-dream",
+    "name": "자각몽",
+    "poster": "../poster/자각몽.webp",
+    "description": "이 팀"
+  }
+]
