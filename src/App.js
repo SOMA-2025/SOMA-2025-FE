@@ -12,6 +12,7 @@ import AdminReceiptDetail from './pages/AdminReceiptDetail';
 import Home from './pages/Home';
 import PortfolioPage from './pages/PortfolioPage';
 import MainTheme from './pages/MainTheme';
+import TeamPage from './pages/TeamPage';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* 메인 테마 */}
           <Route path="/project/main-theme" element={<MainTheme />} />
+          {/* 팀 페이지 */}
+          <Route path="/team/:teamId" element={<TeamPage />} />
           {/* 기존 경로 */}
           <Route path="/search" element={<SearchPage />} />
           <Route path="/portfolio/:portfolioUrl" element={<PortfolioPage />} />
