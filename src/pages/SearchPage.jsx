@@ -78,6 +78,7 @@ const SearchPage = () => {
                     <img
                       src={require(`../${member.profileImageUrl}`)}
                       alt={member.name}
+                      loading = "lazy"
                       className="absolute top-0 left-0 w-full h-full object-contain"
                     />
                   </div>
