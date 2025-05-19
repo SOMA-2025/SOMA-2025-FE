@@ -30,10 +30,10 @@ const Header = () => {
     };
 
     calculateCartItems();
-    
+
     // 로컬 스토리지 변경을 감지하여 장바구니 수 업데이트
     window.addEventListener('storage', calculateCartItems);
-    
+
     return () => {
       window.removeEventListener('storage', calculateCartItems);
     };
@@ -131,30 +131,26 @@ const Header = () => {
           <div className="w-full px-4">
             <div className="flex justify-between h-12">
               <div className="flex flex-col mt-4">
-                <h1 className={`w-[400px] h-[15px] mb-2 text-sm leading-none font-medium transition-colors duration-300 ${
-                  hoveredNav ? 'text-white' : 'text-black'
-                }`}>
+                <h1 className={`w-[400px] h-[15px] mb-2 text-sm leading-none font-medium transition-colors duration-300 ${hoveredNav ? 'text-white' : 'text-black'
+                  }`}>
                   2025 KUAD GRADUATION FASHION SHOW
                 </h1>
                 <div className="flex gap-4">
                   <a href="https://www.youtube.com/@kuappareldesign" target="_blank" rel="noopener noreferrer">
-                    <Youtube className={`w-[25px] h-[25px] transition-colors duration-300 ${
-                      hoveredNav ? 'text-white' : 'text-black'
-                    }`} />
+                    <Youtube className={`w-[25px] h-[25px] transition-colors duration-300 ${hoveredNav ? 'text-white' : 'text-black'
+                      }`} />
                   </a>
                   <a href="https://www.instagram.com/kuad_archive/" target="_blank" rel="noopener noreferrer">
-                    <Instagram className={`w-[25px] h-[25px] transition-colors duration-300 ${
-                      hoveredNav ? 'text-white' : 'text-black'
-                    }`} />
+                    <Instagram className={`w-[25px] h-[25px] transition-colors duration-300 ${hoveredNav ? 'text-white' : 'text-black'
+                      }`} />
                   </a>
                 </div>
               </div>
               <div className="flex flex-col mt-4">
                 <div className="h-[15px] mb-2" />
                 <button onClick={handleCartClick} className="relative">
-                  <ShoppingCart className={`w-[25px] h-[25px] transition-colors duration-300 ${
-                    hoveredNav ? 'text-white' : 'text-black'
-                  }`} />
+                  <ShoppingCart className={`w-[25px] h-[25px] transition-colors duration-300 ${hoveredNav ? 'text-white' : 'text-black'
+                    }`} />
                   {cartItemCount > 0 && (
                     <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
                       {cartItemCount}
@@ -166,9 +162,8 @@ const Header = () => {
             <div className="text-center py-4">
               <Link
                 to="/"
-                className={`inline-block w-[310px] h-[40px] font-bold text-5xl leading-none transition-colors duration-300 ${
-                  hoveredNav ? 'text-white' : 'text-black'
-                }`}
+                className={`inline-block w-[310px] h-[40px] font-bold text-5xl leading-none transition-colors duration-300 ${hoveredNav ? 'text-white' : 'text-black'
+                  }`}
               >
                 SOMA
               </Link>
@@ -188,15 +183,13 @@ const Header = () => {
                   >
                     <Link
                       to={`/${item.title.toLowerCase()}`}
-                      className={`relative transition-colors duration-300 font-bold ${
-                        hoveredNav ? 'text-white hover:text-gray-300' : 'text-black hover:text-gray-600'
-                      }`}
+                      className={`relative transition-colors duration-300 font-bold ${hoveredNav ? 'text-white hover:text-gray-300' : 'text-black hover:text-gray-600'
+                        }`}
                       style={{ fontSize: '22px', lineHeight: '30px', display: 'block' }}
                     >
                       {item.title}
-                      <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-200 group-hover:w-full ${
-                        hoveredNav ? 'bg-white' : 'bg-black'
-                      }`} />
+                      <span className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-200 group-hover:w-full ${hoveredNav ? 'bg-white' : 'bg-black'
+                        }`} />
                     </Link>
                   </li>
                 ))}
@@ -217,19 +210,27 @@ const Header = () => {
                       {navItems.find(i => i.title === hoveredNav)?.description}
                     </p>
                   </div>
-                  <div className={`pt-16 pb-20 ${
-                    hoveredNav === 'PROJECT' ? 'ml-[132px]' : 'ml-[425px]'
-                  }`}>
+                  <div className={`pt-16 pb-20 ${hoveredNav === 'PROJECT' ? 'ml-[132px]' : 'ml-[425px]'
+                    }`}>
                     <ul className="space-y-6">
                       {navItems.find(i => i.title === hoveredNav)?.subItems.map(sub => (
                         <li key={sub.name} className="relative group">
-                          <Link
-                            to={sub.path}
-                            className="text-black text-lg font-medium hover:text-gray-600 transition-colors duration-200 relative"
-                          >
-                            {sub.name}
-                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-200 group-hover:w-full" />
-                          </Link>
+                          {sub.path === '/2024' ? (
+                            <a
+                              href="/2024"
+                              className="text-black text-lg font-medium hover:text-gray-600 transition-colors duration-200 relative"
+                            >
+                              {sub.name}
+                              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-200 group-hover:w-full" />
+                            </a>
+                          ) :
+                            (<Link
+                              to={sub.path}
+                              className="text-black text-lg font-medium hover:text-gray-600 transition-colors duration-200 relative"
+                            >
+                              {sub.name}
+                              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black transition-all duration-200 group-hover:w-full" />
+                            </Link>)}
                         </li>
                       ))}
                     </ul>
@@ -271,7 +272,7 @@ const Header = () => {
           className={`
             fixed top-0 right-0 bottom-0 w-[288px] bg-white z-50
             transform transition-transform duration-300
-            ${(isMobileOpen ) ? 'translate-x-0' : 'translate-x-full'}
+            ${(isMobileOpen) ? 'translate-x-0' : 'translate-x-full'}
           `}
         >
           <div className="pt-20 px-6 pb-20 overflow-y-auto h-full relative">
@@ -294,10 +295,10 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            
+
             {/* 모바일 장바구니 버튼 */}
             <div className="mt-10">
-              <button 
+              <button
                 className="flex items-center gap-2 text-lg font-medium"
                 onClick={handleCartClick}
               >
@@ -310,7 +311,7 @@ const Header = () => {
                 )}
               </button>
             </div>
-            
+
             {/* 하단 SNS 링크 */}
             <div className="absolute bottom-6 left-6 flex space-x-4">
               <a href="https://www.instagram.com/kuad_archive/" target="_blank" rel="noopener noreferrer">
@@ -344,13 +345,22 @@ const Header = () => {
             <ul className="space-y-4">
               {selectedMenu?.subItems.map(sub => (
                 <li key={sub.name}>
-                  <Link
-                    to={sub.path}
-                    className="block text-base font-medium"
-                    onClick={closeMobile}
-                  >
-                    {sub.name}
-                  </Link>
+                  {sub.path === '/2024' ? (
+                    <a
+                      href="/2024"
+                      className="block text-base font-medium"
+                      onClick={closeMobile}
+                    >
+                      {sub.name}
+                    </a>
+                  ) :
+                    (<Link
+                      to={sub.path}
+                      className="block text-base font-medium"
+                      onClick={closeMobile}
+                    >
+                      {sub.name}
+                    </Link>)}
                 </li>
               ))}
             </ul>
