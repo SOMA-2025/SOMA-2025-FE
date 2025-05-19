@@ -13,10 +13,12 @@ import Home from './pages/Home';
 import PortfolioPage from './pages/PortfolioPage';
 import MainTheme from './pages/MainTheme';
 import TeamPage from './pages/TeamPage';
+import ScrollToTop from './components/ScrollToTop'; 
 
 function App() {
   return (
     <BrowserRouter basename="/2025">
+      <ScrollToTop />
       <div className="min-h-screen-dvh bg-white">
         <Header />
         <Routes>
