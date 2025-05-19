@@ -88,7 +88,7 @@ const PortfolioPage = () => {
           )}
         </div>
       </div>
-      <div className="w-full mt-10 aspect-[3/4]">
+      <div className="w-1/2 mx-auto mt-10 aspect-[3/4]">
         <iframe
           title="3D 디자인 미리보기"
           src="https://my.spline.design/untitled-84YDxSYhT49JsRNfZV0IS4g1/"
