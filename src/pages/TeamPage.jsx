@@ -1,49 +1,32 @@
-import React, { useState, useEffect } from 'react';
+// src/pages/TeamPage.jsx
+import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import axios from 'axios';
 import teams from '../data/teams.json';
-
-const API_URL = process.env.REACT_APP_API_URL;
+import membersData from '../data/members.json';
 
 const TeamPage = () => {
   const { teamId } = useParams();
-  const [team, setTeam] = useState(null);
-  const [members, setMembers] = useState([]);
 
-  useEffect(() => {
-    // 1. JSON에서 팀 정보 찾기
-    const matched = teams.find((t) => t.id === teamId);
-    setTeam(matched);
-
-    // 2. DB에서 멤버 정보 가져오기
-    const fetchMembers = async () => {
-      try {
-        const res = await axios.get(`${API_URL}/api/members/team/${teamId}`);
-        setMembers(res.data);
-      } catch (err) {
-        console.error('멤버 불러오기 실패:', err);
-      }
-    };
-
-    if (matched) {
-      fetchMembers();
-    }
-  }, [teamId]);
-
-  const calculatePaddingTop = () => (3500 / 2333) * 100;
-
+  // 팀 정보 가져오기
+  const team = teams.find((t) => t.id === teamId);
   if (!team) {
-    return <p className="text-center py-20 text-xl">팀 정보를 찾을 수 없습니다.</p>;
+    return <div className="text-center py-20">팀 정보를 찾을 수 없습니다.</div>;
   }
+
+  // members.json에서 해당 팀의 멤버 리스트 찾기
+  const teamMembersEntry = membersData.find((t) => t.teamPageUrl.toLowerCase() === teamId);
+  const members = teamMembersEntry ? teamMembersEntry.members : [];
+
+  const calculatePaddingTop = () => (3500 / 2333) * 100; // 비율 유지용
 
   return (
     <div className="max-w-[1140px] mx-auto px-4 py-10 space-y-20">
       {/* 1. 포스터 + 설명 */}
       <section className="flex flex-col md:flex-row items-center gap-10">
-        <img src={team.poster} alt={team.name} className="w-full md:w-1/2 rounded-lg" />
+        <img src={team.poster} alt={team.name} className="w-full md:w-1/2" />
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-5xl font-bold mb-4">{team.name}</h2>
-          <p className="text-lg leading-relaxed whitespace-pre-line">{team.description}</p>
+          <p className="whitespace-pre-line text-lg leading-relaxed">{team.description}</p>
         </div>
       </section>
 
@@ -58,7 +41,7 @@ const TeamPage = () => {
             allowFullScreen
           />
         </div>
-        <h3 className="text-xl font-semibold mt-4">{team.name} FILM</h3>
+        <h3 className="text-xl font-semibold mt-4">{team.name} Teaser</h3>
       </section>
 
       {/* 3. 멤버 목록 */}
@@ -76,7 +59,7 @@ const TeamPage = () => {
                 style={{ paddingTop: `${calculatePaddingTop()}%` }}
               >
                 <img
-                  src={member.profileImageUrl}
+                  src={require(`../${member.profileImageUrl}`)}
                   alt={member.name}
                   className="absolute top-0 left-0 w-full h-full object-contain"
                 />
