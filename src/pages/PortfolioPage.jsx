@@ -48,7 +48,7 @@ const PortfolioPage = () => {
                 </SwiperSlide>
               ))}
 
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className="w-full aspect-[3/4]">
                   <iframe
                     title="3d 모델"
@@ -60,7 +60,7 @@ const PortfolioPage = () => {
                     className="w-full h-full"
                   />
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
 
             </Swiper>
           ) : (
