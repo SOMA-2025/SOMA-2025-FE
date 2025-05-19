@@ -88,6 +88,17 @@ const PortfolioPage = () => {
           )}
         </div>
       </div>
+      <div className="w-full mt-10 aspect-[3/4]">
+        <iframe
+          title="3D 디자인 미리보기"
+          src="https://my.spline.design/untitled-84YDxSYhT49JsRNfZV0IS4g1/"
+          frameBorder="0"
+          width="100%"
+          height="100%"
+          allowFullScreen
+          className="w-full h-full"
+        />
+      </div>
     </div>
   );
 };
