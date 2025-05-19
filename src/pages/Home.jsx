@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const videoList = [
     // {
     //     title: 'MAIN FILM',
@@ -31,14 +31,24 @@ const videoList = [
     },
 ];
 
+const teamTitleToIdMap = {
+    AGIOTITA: 'agiotita',
+    BIPOLAR: 'bipolar',
+    '"- - -"': 'dash',
+    Dialysis: 'dialysis',
+    '표류[]기': 'drift',
+    자각몽: 'lucid-dream'
+};
+
 const Home = () => {
-    
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const [progress, setProgress] = useState(0);
     const videoRef = useRef(null);
     // const [setDisableTransition] = useState(false);
     const [progressBarKey, setProgressBarKey] = useState(0);
     const [disableTransition, setDisableTransition] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const video = videoRef.current;
@@ -48,7 +58,7 @@ const Home = () => {
             if (!video.duration) return;
             const percent = (video.currentTime / video.duration) * 100;
 
-            // 🔥 줄어드는 순간이면 transition 끈다
+            // 줄어드는 순간이면 transition 끈다
             if (percent < progress) {
                 setDisableTransition(true);
                 setTimeout(() => setDisableTransition(false), 50);
@@ -70,12 +80,12 @@ const Home = () => {
 
     const goToVideo = (index) => { // 진행 바 초기화 함수
         setDisableTransition(true);           // transition 끄기
-        setProgress(0);                       
-        setProgressBarKey(prev => prev + 1);  
+        setProgress(0);
+        setProgressBarKey(prev => prev + 1);
         setCurrentIndex(index);
 
         setTimeout(() => {
-            setDisableTransition(false);        
+            setDisableTransition(false);
         }, 50);
     };
 
@@ -112,11 +122,18 @@ const Home = () => {
                         setProgress(0);
                         setProgressBarKey(prev => prev + 1); // 바를 리셋하기 위해 key 변경
                     }}
+                    onClick={() => {
+                        const title = videoList[currentIndex].title;
+                        const teamId = teamTitleToIdMap[title];
+                        if (teamId) {
+                            navigate(`/team/${teamId}`);
+                        }
+                    }}
                     className="w-full h-full object-cover"
 
                 />
 
-                
+
                 {/* <div className="absolute bottom-0 left-0 w-full h-1 bg-white/20">
                     <div
                         key={progressBarKey}
