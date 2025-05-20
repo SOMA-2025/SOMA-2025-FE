@@ -62,7 +62,7 @@ const ShowInfo = () => {
                 <button onClick={goToPrev}>
                     <ChevronLeft className="w-6 h-6 hover:text-gray-500" />
                 </button>
-                <span className="text-base font-medium">{current.title}</span>
+                <span className="text-base font-medium whitespace-nowrap">{current.title}</span>
                 <button onClick={goToNext}>
                     <ChevronRight className="w-6 h-6 hover:text-gray-500" />
                 </button>
