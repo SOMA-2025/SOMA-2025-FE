@@ -13,7 +13,8 @@ import Home from './pages/Home';
 import PortfolioPage from './pages/PortfolioPage';
 import MainTheme from './pages/MainTheme';
 import TeamPage from './pages/TeamPage';
-import ScrollToTop from './components/ScrollToTop'; 
+import ScrollToTop from './components/ScrollToTop';
+import ShowInfo from "./pages/ShowInfo";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* 메인 테마 */}
           <Route path="/project/main-theme" element={<MainTheme />} />
+          <Route path="/project/" element={<Navigate to="/project/main-theme" />} />
           {/* 팀 페이지 */}
           <Route path="/team/:teamId" element={<TeamPage />} />
           {/* 기존 경로 */}
@@ -41,7 +43,9 @@ function App() {
           <Route path="/admin" element={<AdminLogin />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
           <Route path="/admin/receipt/:id" element={<AdminReceiptDetail />} />
-          
+          {/* 쇼 인포 */}
+          <Route path="/show-info/:section" element={<ShowInfo />} />
+          <Route path="/show info/" element={<Navigate to="/show-info/exhibition" />} />
           {/* 404 페이지 */}
           <Route path="*" element={
             <div className="flex flex-col items-center justify-center h-screen">
