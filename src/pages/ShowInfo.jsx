@@ -13,13 +13,13 @@ const sections = [
         key: 'visitor',
         title: '좌석 안내',
         leftImg: '/2025/image/좌석안내.jpg',
-        rightImg: '/2025/image/좌석배치표_설명.jpg',
+        rightImg: '/2025/image/좌석안내_텍스트.jpg',
     },
     {
         key: 'location',
         title: '오시는 길',
         leftImg: '/2025/image/오시는길.jpg',
-        rightImg: '/2025/image/약도수정2_텍스트.jpg',
+        rightImg: '/2025/image/오시는길_텍스트.jpg',
     },
 ];
 
