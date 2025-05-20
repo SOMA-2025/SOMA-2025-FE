@@ -126,7 +126,7 @@ const Header = () => {
   return (
     <div className="relative">
       {/* 데스크탑 헤더 & 네비 (md 이상) */}
-      <div className="hidden lg:block">
+      <div className="hidden lg:block shadow">
         <header className={`w-full transition-colors duration-300 ${hoveredNav ? 'bg-black' : 'bg-white'}`}>
           <div className="w-full px-4">
             <div className="flex justify-between h-12">
