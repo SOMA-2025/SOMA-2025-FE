@@ -7,7 +7,7 @@ const sections = [
         key: 'exhibition',
         title: '전시 안내',
         leftImg: '/2025/image/전시안내.jpg',
-        rightImg: '/2025/image/전시안내_텍스트.jpeg',
+        rightImg: '/2025/image/전시안내_텍스트.jpg',
     },
     {
         key: 'visitor',
