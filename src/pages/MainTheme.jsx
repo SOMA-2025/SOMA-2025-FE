@@ -11,7 +11,7 @@ const MainTheme = () => {
                     className="w-full md:w-1/2 rounded-lg"
                 />
                 <div className="md:w-1/2 text-center md:text-left">
-                    <h2 className="text-3xl font-bold mb-4 text-center">SOMA</h2>
+                    <h2 className="text-5xl font-bold mb-4">SOMA</h2>
                     <p className="text-lg leading-relaxed">
                         SOMA는 체세포, 더 나아가 물리적 형태인 몸과 정신이 깃든 신체를 아우르는 개념이다.
                         신체는 타고난 본성으로부터 시작하여, 나로 비롯된 취향, 그리고 자연스럽게 형성된 습관을 통해 하나의 고유한 실체로 완성되어 간다.<br/><br/>
