@@ -2,9 +2,19 @@ import React, { useEffect, useState, useRef } from "react";
 import HTMLFlipBook from "react-pageflip";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+const isGalaxyDevice = () => {
+  const ua = navigator.userAgent.toLowerCase();
+  return (
+    ua.includes("samsung") ||
+    ua.includes("sm-") ||
+    ua.includes("galaxy") ||
+    (ua.includes("android") && ua.includes("mobile"))
+  );
+};
+
 const LookBook = () => {
     const bookRef = useRef();
-
+    
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
     const [headerHeight, setHeaderHeight] = useState(
         window.innerWidth >= 1024 ? 190 : 52
@@ -58,7 +68,8 @@ const LookBook = () => {
                     usePortrait={isMobile}
                     mobileScrollSupport={false} 
                     // drawShadow={false}
-                    // flippingTime={300}             
+                    // flippingTime={300}   
+                    drawShadow={!isGalaxyDevice()}          
                     minWidth={300}
                     maxWidth={1000}
                     minHeight={400}
