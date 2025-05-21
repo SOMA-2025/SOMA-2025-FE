@@ -57,12 +57,13 @@ const LookBook = () => {
                     size="stretch"
                     usePortrait={isMobile}
                     mobileScrollSupport={false} 
-                    drawShadow={false}            
+                    // drawShadow={false}
+                    // flippingTime={300}             
                     minWidth={300}
                     maxWidth={1000}
                     minHeight={400}
                     //   showCover={true}
-                    style={{ width: "100%", height: "100%" }}
+                    style={{ width: "100%", height: "100%", backfaceVisibility: "hidden", WebkitBackfaceVisibility: "hidden", }}
                 >
                     {imagePaths.map((src, i) => (
                         <div key={i} className="w-full h-full">
