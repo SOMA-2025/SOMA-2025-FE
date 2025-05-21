@@ -56,7 +56,8 @@ const LookBook = () => {
                     height={2000}
                     size="stretch"
                     usePortrait={isMobile}
-                    mobileScrollSupport={false}              
+                    mobileScrollSupport={false} 
+                    drawShadow={false}            
                     minWidth={300}
                     maxWidth={1000}
                     minHeight={400}
