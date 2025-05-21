@@ -30,7 +30,7 @@ const LookBook = () => {
   return (
     <div
       className="relative flex justify-center items-center overflow-hidden"
-      style={{ height: `calc(100vh - ${headerHeight}px)` }}
+      style={{ height: `calc(100dvh - ${headerHeight}px)` }}
     >
       {/* 좌측 버튼 */}
       <button
