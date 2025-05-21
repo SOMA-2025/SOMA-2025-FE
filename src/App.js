@@ -15,6 +15,7 @@ import MainTheme from './pages/MainTheme';
 import TeamPage from './pages/TeamPage';
 import ScrollToTop from './components/ScrollToTop';
 import ShowInfo from "./pages/ShowInfo";
+import LookBook from "./pages/LookBook";
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
           <Route path="/project/" element={<Navigate to="/project/main-theme" />} />
           {/* 팀 페이지 */}
           <Route path="/team/:teamId" element={<TeamPage />} />
+          {/* 룩북 */}
+          <Route path="/project/look-book" element={<LookBook />} />
           {/* 기존 경로 */}
           <Route path="/search" element={<SearchPage />} />
           <Route path="/portfolio/:portfolioUrl" element={<PortfolioPage />} />
