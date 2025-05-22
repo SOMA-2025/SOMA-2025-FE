@@ -32,7 +32,7 @@ const TeamPage = () => {
 
       {/* 2. 유튜브 */}
       <section className="text-center">
-        <div className="w-full max-w-5xl mx-auto aspect-video">
+        <div className="w-full max-w-[1140px] mx-auto aspect-video">
           <iframe
             className="w-full h-full"
             src={`https://www.youtube.com/embed/${team.youtubeId}`}
