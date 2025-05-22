@@ -120,7 +120,7 @@ const Home = () => {
                     onEnded={() => {
                         setCurrentIndex(prev => (prev + 1) % videoList.length);
                         setProgress(0);
-                        setProgressBarKey(prev => prev + 1); // 바를 리셋하기 위해 key 변경
+                        setProgressBarKey(prev => prev + 1); // 진행바 리셋하려고 key 변경
                     }}
                     onClick={() => {
                         const title = videoList[currentIndex].title;

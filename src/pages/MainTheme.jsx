@@ -29,7 +29,7 @@ const MainTheme = () => {
                 <div className="w-full max-w-4xl mx-auto aspect-video">
                     <iframe
                         className="w-full h-full"
-                        src="https://www.youtube.com/embed/SIuF37EWaLU" // 실제 YouTube 영상 ID로 바꾸기
+                        src="https://www.youtube.com/embed/jO-DC4w7Gr8" // 실제 유튜브 영상 ID로 바꾸기
                         title="SOMA Teaser"
                         frameBorder="0"
                         allowFullScreen
