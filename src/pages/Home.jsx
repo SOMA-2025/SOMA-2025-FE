@@ -14,7 +14,7 @@ const videoList = [
         src: '/videos/team_2_cut_2560.mp4'
     },
     {
-        title: '"- - -"',
+        title: '" - - - "',
         src: '/videos/team_3_cut_comp.mp4'
     },
     {
@@ -22,7 +22,7 @@ const videoList = [
         src: '/videos/team_4_cut_comp.mp4'
     },
     {
-        title: '표류[]기',
+        title: '표류[ ]기',
         src: '/videos/team_5_cut_comp.mp4'
     },
     {
@@ -34,9 +34,9 @@ const videoList = [
 const teamTitleToIdMap = {
     AGIOTITA: 'agiotita',
     BIPOLAR: 'bipolar',
-    '"- - -"': 'dash',
+    '" - - - "': 'dash',
     Dialysis: 'dialysis',
-    '표류[]기': 'drift',
+    '표류[ ]기': 'drift',
     자각몽: 'lucid-dream'
 };
 
@@ -132,15 +132,6 @@ const Home = () => {
                     className="w-full h-full object-cover"
 
                 />
-
-
-                {/* <div className="absolute bottom-0 left-0 w-full h-1 bg-white/20">
-                    <div
-                        key={progressBarKey}
-                        className="h-full bg-black transition-[width] duration-[1000ms] ease-linear"
-                        style={{ width: `${progress}%` }}
-                    />
-                </div> */}
 
                 {/* 진행 바 */}
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-white/20">

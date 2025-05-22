@@ -44,9 +44,9 @@ const MainTheme = () => {
                     {[
                         { name: 'AGIOTITA', image: '../poster/Agiotita.webp', url: 'agiotita' },
                         { name: 'BIPOLAR', image: '../poster/Bipolar.webp', url: 'bipolar' },
-                        { name: '"- - -"', image: '../poster/DASH.webp', url: 'dash' },
+                        { name: '" - - - "', image: '../poster/DASH.webp', url: 'dash' },
                         { name: 'Dialysis', image: '../poster/Dialysis.webp', url: 'dialysis' },
-                        { name: '표류[]기', image: '../poster/표류기.webp', url: 'drift' },
+                        { name: '표류[ ]기', image: '../poster/표류기.webp', url: 'drift' },
                         { name: '자각몽', image: '../poster/자각몽.webp', url: 'lucid-dream' },
                     ].map((team, idx) => (
                         <Link
