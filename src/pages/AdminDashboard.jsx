@@ -45,6 +45,60 @@ const AdminDashboard = () => {
     fetchReceipts();
   }, [API_URL, page, navigate]);
 
+  // 상태 토글 함수
+  const handleToggleStatus = async (receiptId) => {
+    try {
+      const response = await fetch(`${API_URL}/api/admin/receipts/${receiptId}/toggle-status`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) throw new Error('상태 변경에 실패했습니다.');
+
+      const updatedReceipt = await response.json();
+      
+      // 로컬 상태 업데이트
+      setReceipts(prevReceipts => 
+        prevReceipts.map(receipt => 
+          receipt.id === receiptId 
+            ? { ...receipt, status: updatedReceipt.status, statusDescription: updatedReceipt.statusDescription }
+            : receipt
+        )
+      );
+    } catch (err) {
+      console.error('❌ toggle status error:', err);
+      alert('상태 변경 중 오류가 발생했습니다.');
+    }
+  };
+
+  // 주문 삭제 함수
+  const handleDeleteReceipt = async (receiptId) => {
+    if (!window.confirm('정말로 이 주문을 삭제하시겠습니까?')) return;
+
+    try {
+      const response = await fetch(`${API_URL}/api/admin/receipts/${receiptId}`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) throw new Error('삭제에 실패했습니다.');
+
+      // 로컬 상태에서 해당 주문 제거
+      setReceipts(prevReceipts => 
+        prevReceipts.filter(receipt => receipt.id !== receiptId)
+      );
+
+      alert('주문이 삭제되었습니다.');
+    } catch (err) {
+      console.error('❌ delete error:', err);
+      alert('삭제 중 오류가 발생했습니다.');
+    }
+  };
+
   // 엑셀 내보내기
   const handleExport = async () => {
     try {
@@ -69,6 +123,25 @@ const AdminDashboard = () => {
   const handleLogout = () => {
     sessionStorage.removeItem('adminAuth');
     navigate('/admin');
+  };
+
+  // 상태별 스타일 반환
+  const getStatusStyle = (status) => {
+    switch (status) {
+      case 'PENDING_PAYMENT':
+        return 'bg-yellow-100 text-yellow-800 border-yellow-300';
+      case 'PAYMENT_COMPLETED':
+        return 'bg-green-100 text-green-800 border-green-300';
+      default:
+        return 'bg-gray-100 text-gray-800 border-gray-300';
+    }
+  };
+
+  // 상태 토글 버튼 스타일
+  const getToggleButtonStyle = (status) => {
+    return status === 'PENDING_PAYMENT' 
+      ? 'bg-yellow-500 hover:bg-yellow-600' 
+      : 'bg-green-500 hover:bg-green-600';
   };
 
   if (loading) {
@@ -125,7 +198,7 @@ const AdminDashboard = () => {
           <table className="min-w-full divide-y divide-gray-200">
             <thead className="bg-gray-50">
               <tr>
-                {['주문번호','주문일시','입금자명','연락처','총금액','관리'].map(h => (
+                {['주문번호','주문일시','상태','입금자명','연락처','총금액','관리'].map(h => (
                   <th
                     key={h}
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase"
@@ -141,18 +214,47 @@ const AdminDashboard = () => {
                   <tr key={r.id}>
                     <td className="px-6 py-4 text-sm">{r.id}</td>
                     <td className="px-6 py-4 text-sm">{new Date(r.createdAt).toLocaleString('ko-KR')}</td>
+                    <td className="px-6 py-4 text-sm">
+                      <span className={`px-2 py-1 text-xs rounded border ${getStatusStyle(r.status)}`}>
+                        {r.statusDescription}
+                      </span>
+                    </td>
                     <td className="px-6 py-4 text-sm">{r.accountHolder}</td>
                     <td className="px-6 py-4 text-sm">{r.phoneNumber}</td>
                     <td className="px-6 py-4 text-sm">{Number(r.totalAmount).toLocaleString()} ₩</td>
                     <td className="px-6 py-4 text-sm">
-                      <Link to={`/admin/receipt/${r.id}`} className="text-indigo-600 hover:underline">
-                        상세보기
-                      </Link>
+                      <div className="flex gap-2">
+                        {/* 상태 토글 버튼 */}
+                        <button
+                          onClick={() => handleToggleStatus(r.id)}
+                          className={`px-3 py-1 text-xs text-white rounded hover:opacity-80 ${getToggleButtonStyle(r.status)}`}
+                          title={r.status === 'PENDING_PAYMENT' ? '입금 완료로 변경' : '입금 대기로 변경'}
+                        >
+                          {r.status === 'PENDING_PAYMENT' ? '완료' : '대기'}
+                        </button>
+                        
+                        {/* 삭제 버튼 */}
+                        <button
+                          onClick={() => handleDeleteReceipt(r.id)}
+                          className="px-3 py-1 text-xs bg-red-500 text-white rounded hover:bg-red-600"
+                          title="주문 삭제"
+                        >
+                          삭제
+                        </button>
+                        
+                        {/* 상세보기 링크 */}
+                        <Link 
+                          to={`/admin/receipt/${r.id}`} 
+                          className="px-3 py-1 text-xs bg-indigo-500 text-white rounded hover:bg-indigo-600"
+                        >
+                          상세
+                        </Link>
+                      </div>
                     </td>
                   </tr>
                 ))
               ) : (
-                <tr><td colSpan="6" className="px-6 py-4 text-center text-gray-500">주문 내역이 없습니다.</td></tr>
+                <tr><td colSpan="7" className="px-6 py-4 text-center text-gray-500">주문 내역이 없습니다.</td></tr>
               )}
             </tbody>
           </table>
