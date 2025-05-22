@@ -60,7 +60,7 @@ const LookBook = () => {
                 }}
             >
                 <HTMLFlipBook
-                    key={isMobile ? "mobile" : "desktop"} // 모바일 단면 / 데스크탑 양면 적용
+                    key={isMobile ? "mobile" : "desktop"} // 모바일 데스크탑 양면 적용
                     ref={bookRef}
                     width={1571}
                     height={2000}
