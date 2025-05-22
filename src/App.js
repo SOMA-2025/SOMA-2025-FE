@@ -16,6 +16,7 @@ import TeamPage from './pages/TeamPage';
 import ScrollToTop from './components/ScrollToTop';
 import ShowInfo from "./pages/ShowInfo";
 import LookBook from "./pages/LookBook";
+import ComingSoon from "./pages/ComingSoon";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* PROJECT 카테고리 경로 */}
           {/* 메인 테마 */}
           <Route path="/project/main-theme" element={<MainTheme />} />
           <Route path="/project/" element={<Navigate to="/project/main-theme" />} />
@@ -32,9 +34,12 @@ function App() {
           <Route path="/team/:teamId" element={<TeamPage />} />
           {/* 룩북 */}
           <Route path="/project/look-book" element={<LookBook />} />
+          {/* 런웨이 */}
+          <Route path="/project/runway" element={<ComingSoon />} />
           {/* 기존 경로 */}
           <Route path="/search" element={<SearchPage />} />
           <Route path="/portfolio/:portfolioUrl" element={<PortfolioPage />} />
+
           {/* 스토어 관련 경로 - teamName 대신 teamId 사용 */}
           <Route path="/store" element={<Navigate to="/store/all" />} />
           <Route path="/store/all" element={<StorePage />} />
@@ -49,6 +54,13 @@ function App() {
           {/* 쇼 인포 */}
           <Route path="/show-info/:section" element={<ShowInfo />} />
           <Route path="/show info/" element={<Navigate to="/show-info/exhibition" />} />
+
+          {/* 비하인드 */}
+          <Route path="/behind/" element={<Navigate to="/behind/show" />} />
+          <Route path="/behind/show" element={<ComingSoon />} />
+          <Route path="/behind/brochure" element={<ComingSoon />} />
+          <Route path="/behind/making" element={<ComingSoon />} />
+
           {/* 404 페이지 */}
           <Route path="*" element={
             <div className="flex flex-col items-center justify-center h-screen">
