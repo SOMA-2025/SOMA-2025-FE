@@ -56,7 +56,7 @@ const SearchPage = () => {
           <div key={team.teamName} className="mx-auto mb-8 md:mb-16 w-full max-w-7xl">
             <div className="mb-4 md:mb-8">
               <Link 
-                to={`${BASE_URL}/team/${team.teamPageUrl}`}
+                to={`/team/${team.teamPageUrl}`}
                 className="text-xl md:text-3xl font-bold hover:text-gray-600 transition-colors"
               >
                 {team.teamName}
