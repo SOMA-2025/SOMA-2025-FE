@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 const videoList = [
-    // {
-    //     title: 'MAIN FILM',
-    //     src: '/videos/SOMA2025_motionposter.mp4'
-    // },
+    {
+        title: 'MAIN TEASER',
+        src: '/videos/MainTeaser.mp4'
+    },
     {
         title: 'AGIOTITA',
         src: '/videos/team_1_cut_comp.mp4'
