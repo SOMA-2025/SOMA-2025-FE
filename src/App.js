@@ -17,6 +17,7 @@ import ScrollToTop from './components/ScrollToTop';
 import ShowInfo from "./pages/ShowInfo";
 import LookBook from "./pages/LookBook";
 import ComingSoon from "./pages/ComingSoon";
+import ArchivePage from "./pages/ArchivePage";
 
 function App() {
   return (
@@ -60,6 +61,9 @@ function App() {
           <Route path="/behind/show" element={<ComingSoon />} />
           <Route path="/behind/brochure" element={<ComingSoon />} />
           <Route path="/behind/making" element={<ComingSoon />} />
+          
+          {/* archive */}
+          <Route path="/archive" element={<ArchivePage />} />
 
           {/* 404 페이지 */}
           <Route path="*" element={
