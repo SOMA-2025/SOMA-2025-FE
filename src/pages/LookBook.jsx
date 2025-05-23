@@ -3,18 +3,18 @@ import HTMLFlipBook from "react-pageflip";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const isGalaxyDevice = () => {
-  const ua = navigator.userAgent.toLowerCase();
-  return (
-    ua.includes("samsung") ||
-    ua.includes("sm-") ||
-    ua.includes("galaxy") ||
-    (ua.includes("android") && ua.includes("mobile"))
-  );
+    const ua = navigator.userAgent.toLowerCase();
+    return (
+        ua.includes("samsung") ||
+        ua.includes("sm-") ||
+        ua.includes("galaxy") ||
+        (ua.includes("android") && ua.includes("mobile"))
+    );
 };
 
 const LookBook = () => {
     const bookRef = useRef();
-    
+
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
     const [headerHeight, setHeaderHeight] = useState(
         window.innerWidth >= 1024 ? 190 : 52
@@ -33,7 +33,7 @@ const LookBook = () => {
     }, []);
 
     const imagePaths = Array.from({ length: 252 }, (_, i) => {
-        const suffix = i === 0 ? "" : (i + 1).toString();
+        const suffix = i === 0 ? "" : `${i}`;
         return `/2025/lookbook/SOMA2025${suffix}.jpg`;
     });
 
@@ -66,10 +66,10 @@ const LookBook = () => {
                     height={2000}
                     size="stretch"
                     usePortrait={isMobile}
-                    mobileScrollSupport={false} 
+                    mobileScrollSupport={false}
                     // drawShadow={false}
                     // flippingTime={300}   
-                    drawShadow={!isGalaxyDevice()}          
+                    drawShadow={!isGalaxyDevice()}
                     minWidth={300}
                     maxWidth={1000}
                     minHeight={400}
