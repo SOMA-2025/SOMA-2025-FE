@@ -58,7 +58,7 @@ const ShowInfo = () => {
                 </div>
             </div>
 
-            <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 flex items-center space-x-12 bg-white px-4 py-2 rounded-full shadow-md">
+            <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-30 flex items-center space-x-12 bg-white px-4 py-2 rounded-full shadow-md">
                 <button onClick={goToPrev}>
                     <ChevronLeft className="w-6 h-6 hover:text-gray-500" />
                 </button>
