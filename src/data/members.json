@@ -512,8 +512,8 @@
         "instagram": "gwixin",
         "profileImageUrl": "assets/dialysis/profile/Dialysis_kiljunyoung.jpg",
         "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_길준영_1.JPG",
-          "assets/dialysis/brochure/Dialysis_길준영_2.JPG"
+          "assets/dialysis/brochure/Dialysis_길준영_1.jpg",
+          "assets/dialysis/brochure/Dialysis_길준영_2.jpg"
         ],
         "portfolioUrl": "kil-junyoung"
       },
@@ -527,7 +527,7 @@
         "profileImageUrl": "assets/dialysis/profile/Dialysis_parksanghyun.jpg",
         "brochureImages": [
           "assets/dialysis/brochure/Dialysis_박상현_1.webp",
-          "assets/dialysis/brochure/Dialysis_박상현_2.webp"
+          "assets/dialysis/brochure/Dialysis_박상현_2.jpg"
         ],
         "portfolioUrl": "park-sanghyun"
       },
@@ -596,8 +596,8 @@
         "instagram": "sleowhee",
         "profileImageUrl": "assets/dialysis/profile/Dialysis_parkseohee.jpg",
         "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_박서희_1.webp",
-          "assets/dialysis/brochure/Dialysis_박서희_2.webp"
+          "assets/dialysis/brochure/Dialysis_박서희_1.jpg",
+          "assets/dialysis/brochure/Dialysis_박서희_2.jpg"
         ],
         "portfolioUrl": "park-seohee"
       },
@@ -644,8 +644,8 @@
         "instagram": "",
         "profileImageUrl": "assets/dash/profile/DASH_kimsolyi.JPG",
         "brochureImages": [
-          "assets/dash/brochure/DASH_김솔이_1.jpg",
-          "assets/dash/brochure/DASH_김솔이_2.jpg"
+          "assets/dash/brochure/dash_김솔이_1.jpg",
+          "assets/dash/brochure/dash_김솔이_2.jpg"
         ],
         "portfolioUrl": "kim-solyi"
       },
@@ -658,8 +658,8 @@
         "instagram": "",
         "profileImageUrl": "assets/dash/profile/DASH_parkjungyoon.jpg",
         "brochureImages": [
-          "assets/dash/brochure/DASH_박정윤_1.jpg",
-          "assets/dash/brochure/DASH_박정윤_2.jpg"
+          "assets/dash/brochure/dash_박정윤_1.jpg",
+          "assets/dash/brochure/dash_박정윤_2.jpg"
         ],
         "portfolioUrl": "park-jungyoon"
       },
@@ -672,8 +672,8 @@
         "instagram": "",
         "profileImageUrl": "assets/dash/profile/DASH_kimnahyeon.jpg",
         "brochureImages": [
-          "assets/dash/brochure/DASH_김나현_1.jpg",
-          "assets/dash/brochure/DASH_김나현_2.jpg"
+          "assets/dash/brochure/dash_김나현_1.jpg",
+          "assets/dash/brochure/dash_김나현_2.jpg"
         ],
         "portfolioUrl": "kim-nahyeon"
       },
@@ -686,8 +686,8 @@
         "instagram": "yjiiin.k",
         "profileImageUrl": "assets/dash/profile/DASH_kimyeojin.JPG",
         "brochureImages": [
-          "assets/dash/brochure/DASH_김여진_1.jpg",
-          "assets/dash/brochure/DASH_김여진_2.jpg"
+          "assets/dash/brochure/dash_김여진_1.jpg",
+          "assets/dash/brochure/dash_김여진_2.jpg"
         ],
         "portfolioUrl": "kim-yeojin"
       },
@@ -700,8 +700,8 @@
         "instagram": "@_nibueab_",
         "profileImageUrl": "assets/dash/profile/DASH_beayoobin.jpg",
         "brochureImages": [
-          "assets/dash/brochure/DASH_배유빈_1.jpg",
-          "assets/dash/brochure/DASH_배유빈_2.jpg"
+          "assets/dash/brochure/dash_배유빈_1.jpg",
+          "assets/dash/brochure/dash_배유빈_2.jpg"
         ],
         "portfolioUrl": "bae-yoobin"
       },
@@ -714,8 +714,8 @@
         "instagram": "@zzer0_0west",
         "profileImageUrl": "assets/dash/profile/DASH_kimyoungseo.jpg",
         "brochureImages": [
-          "assets/dash/brochure/DASH_김영서_1.jpg",
-          "assets/dash/brochure/DASH_김영서_2.jpg"
+          "assets/dash/brochure/dash_김영서_1.jpg",
+          "assets/dash/brochure/dash_김영서_2.jpg"
         ],
         "portfolioUrl": "kim-youngseo"
       },
@@ -728,8 +728,8 @@
         "instagram": "",
         "profileImageUrl": "assets/dash/profile/DASH_songdayeon.JPG",
         "brochureImages": [
-          "assets/dash/brochure/DASH_송다연_1.jpg",
-          "assets/dash/brochure/DASH_송다연_2.jpg"
+          "assets/dash/brochure/dash_송다연_1.jpg",
+          "assets/dash/brochure/dash_송다연_2.jpg"
         ],
         "portfolioUrl": "song-dayeon"
       },
@@ -742,8 +742,8 @@
         "instagram": "@drygincherrybrandylemonsoda",
         "profileImageUrl": "assets/dash/profile/DASH_shinarim.JPG",
         "brochureImages": [
-          "assets/dash/brochure/DASH_신아림_1.jpg",
-          "assets/dash/brochure/DASH_신아림_2.jpg"
+          "assets/dash/brochure/dash_신아림_1.jpg",
+          "assets/dash/brochure/dash_신아림_2.jpg"
         ],
         "portfolioUrl": "shin-arim"
       },
@@ -756,8 +756,8 @@
         "instagram": "@2lozni",
         "profileImageUrl": "assets/dash/profile/DASH_choijiyeon.jpg",
         "brochureImages": [
-          "assets/dash/brochure/DASH_최지연_1.jpg",
-          "assets/dash/brochure/DASH_최지연_2.jpg"
+          "assets/dash/brochure/dash_최지연_1.jpg",
+          "assets/dash/brochure/dash_최지연_2.jpg"
         ],
         "portfolioUrl": "choi-jiyeon"
       }
