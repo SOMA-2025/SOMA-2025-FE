@@ -4,20 +4,6 @@
     "teamPageUrl": "lucid-dream",
     "members": [
       {
-        "name": "최진우",
-        "englishName": "CHOI JINWOO",
-        "projectTitle": "Lost In Lucidity",
-        "description": "Lost In Lucidity는 욕망을 표현한 작품이다. 아무리 선한 사람도 내면에는 감추고 싶은 어두운 욕망이 자리 잡고 있다. 자각몽을 이러한 욕망이 표출되는 일탈의 공간으로 설정하여, 꿈과 현실과의 경계가 점차 무너지며 어두운 욕망에 잠식되어가는 인물을 의상으로 표현하였다.",
-        "email": "chooijw24@naver.com",
-        "instagram": "choijw_24",
-        "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_choijinwoo.jpg",
-        "brochureImages": [
-          "assets/lucid-dream/brochure/자각몽_최진우_1.jpg",
-          "assets/lucid-dream/brochure/자각몽_최진우_2.jpg"
-        ],
-        "portfolioUrl": "choi-jinwoo"
-      },
-      {
         "name": "김여름",
         "englishName": "KIM YEOREUM",
         "projectTitle": "Future Self",
@@ -46,20 +32,6 @@
         "portfolioUrl": "moon-suyeon"
       },
       {
-        "name": "이지원",
-        "englishName": "LEE JIWON",
-        "projectTitle": "BITTER SWEET 달콤쌉싸름한 눈물",
-        "description": " 슬픔과 행복의 공통점, 눈물. 슬퍼도 행복해도 눈물을 흘린다. 하지만 울어야만 한다면 행복의 눈물이길!\n\n 베개를 적시던 슬픈 꿈 속의 나는, 이젠 자각몽에서 기쁜 눈물을 흘리고 싶다. 감정에 따라 달고 쓴 두 개의 맛을 가진 눈물. “BiTTER SWETT”. 그 양면성을 중점으로 행복과 슬픔이 혼재된 룩을 표현했다.\n\n 과장된 실루엣을 통해 행복의 눈물을 원하는 한 소녀의 열망의 크기를 나타내고, 실험적인 연출을 통해 꿈의 비현실성을 보여준다.\n",
-        "email": "jenny5033@naver.com",
-        "instagram": "leemitied",
-        "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_leejiwon.jpg",
-        "brochureImages": [
-          "assets/lucid-dream/brochure/자각몽_이지원_1.jpg",
-          "assets/lucid-dream/brochure/자각몽_이지원_2.jpg"
-        ],
-        "portfolioUrl": "lee-jiwon"
-      },
-      {
         "name": "이동권",
         "englishName": "LEE DONGKWON",
         "projectTitle": "Plastics Suite",
@@ -74,18 +46,18 @@
         "portfolioUrl": "lee-dongkwon"
       },
       {
-        "name": "황윤경",
-        "englishName": "HWANG YOONKYUNG",
-        "projectTitle": "물의 여행",
-        "description": "Soma를 통해 내가 나임을 느끼는 자각몽 속에서, 나는 ‘물’이 되어 한없이 자유롭고 싶었다. 흐르는 바다가 되기도 하고, 하늘을 떠다니는 구름이 되기도 하는—그 변화무쌍한 물의 이미지를 두 가지 착장에 담았다. \n\n첫째 착장은 물이 바다가 된 모습을 표현했다. 셔링과 곡선 절개선, 청량한 색감과 프린트 등으로 바다의 일렁임을 시각화했다. \n\n둘째 착장은 물이 구름이 된 모습을 담았다. 증발과 상승을 소매 디테일과 실루엣, 프린트로 표현했다.",
-        "email": "",
-        "instagram": "@hae._.mo",
-        "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_hwangyunkyung.jpg",
+        "name": "이지원",
+        "englishName": "LEE JIWON",
+        "projectTitle": "BITTER SWEET 달콤쌉싸름한 눈물",
+        "description": " 슬픔과 행복의 공통점, 눈물. 슬퍼도 행복해도 눈물을 흘린다. 하지만 울어야만 한다면 행복의 눈물이길!\n\n 베개를 적시던 슬픈 꿈 속의 나는, 이젠 자각몽에서 기쁜 눈물을 흘리고 싶다. 감정에 따라 달고 쓴 두 개의 맛을 가진 눈물. “BiTTER SWETT”. 그 양면성을 중점으로 행복과 슬픔이 혼재된 룩을 표현했다.\n\n 과장된 실루엣을 통해 행복의 눈물을 원하는 한 소녀의 열망의 크기를 나타내고, 실험적인 연출을 통해 꿈의 비현실성을 보여준다.\n",
+        "email": "jenny5033@naver.com",
+        "instagram": "leemitied",
+        "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_leejiwon.jpg",
         "brochureImages": [
-          "assets/lucid-dream/brochure/자각몽_황윤경_1.jpg",
-          "assets/lucid-dream/brochure/자각몽_황윤경_2.jpg"
+          "assets/lucid-dream/brochure/자각몽_이지원_1.jpg",
+          "assets/lucid-dream/brochure/자각몽_이지원_2.jpg"
         ],
-        "portfolioUrl": "hwang-yoonkyung"
+        "portfolioUrl": "lee-jiwon"
       },
       {
         "name": "주호천",
@@ -100,6 +72,34 @@
           "assets/lucid-dream/brochure/자각몽_주호천_2.jpg"
         ],
         "portfolioUrl": "joo-hocheon"
+      },
+      {
+        "name": "최진우",
+        "englishName": "CHOI JINWOO",
+        "projectTitle": "Lost In Lucidity",
+        "description": "Lost In Lucidity는 욕망을 표현한 작품이다. 아무리 선한 사람도 내면에는 감추고 싶은 어두운 욕망이 자리 잡고 있다. 자각몽을 이러한 욕망이 표출되는 일탈의 공간으로 설정하여, 꿈과 현실과의 경계가 점차 무너지며 어두운 욕망에 잠식되어가는 인물을 의상으로 표현하였다.",
+        "email": "chooijw24@naver.com",
+        "instagram": "choijw_24",
+        "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_choijinwoo.jpg",
+        "brochureImages": [
+          "assets/lucid-dream/brochure/자각몽_최진우_1.jpg",
+          "assets/lucid-dream/brochure/자각몽_최진우_2.jpg"
+        ],
+        "portfolioUrl": "choi-jinwoo"
+      },
+      {
+        "name": "황윤경",
+        "englishName": "HWANG YOONKYUNG",
+        "projectTitle": "물의 여행",
+        "description": "Soma를 통해 내가 나임을 느끼는 자각몽 속에서, 나는 ‘물’이 되어 한없이 자유롭고 싶었다. 흐르는 바다가 되기도 하고, 하늘을 떠다니는 구름이 되기도 하는—그 변화무쌍한 물의 이미지를 두 가지 착장에 담았다. \n\n첫째 착장은 물이 바다가 된 모습을 표현했다. 셔링과 곡선 절개선, 청량한 색감과 프린트 등으로 바다의 일렁임을 시각화했다. \n\n둘째 착장은 물이 구름이 된 모습을 담았다. 증발과 상승을 소매 디테일과 실루엣, 프린트로 표현했다.",
+        "email": "",
+        "instagram": "@hae._.mo",
+        "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_hwangyunkyung.jpg",
+        "brochureImages": [
+          "assets/lucid-dream/brochure/자각몽_황윤경_1.jpg",
+          "assets/lucid-dream/brochure/자각몽_황윤경_2.jpg"
+        ],
+        "portfolioUrl": "hwang-yoonkyung"
       }
     ]
   },
@@ -107,6 +107,76 @@
     "teamName": "TEAM drift",
     "teamPageUrl": "drift",
     "members": [
+      {
+        "name": "김주리",
+        "englishName": "KIM JULI",
+        "projectTitle": "고슴도치의 딜레마",
+        "description": " 도심 속의 모든 사람은 살아가면서 끊임없이 새로운 환경에 놓여지게 된다. 새로운 환경에 직면하게 된 개개인은 환경에 맞춰 적응하는 동시에, 개인의 내면에서는 자기 자신을 보호하려는 본능이 발동된다.\n 이때 신체는 외부 환경에 적응하며 스스로를 보호하려는 내면 속 본능의 매개체로 작용한다. 마침내 새로운 환경에 치열하게 적응한 모두는 현대 사회에서 자신을 보호할 수 있는 일정한 거리감이 필요하다는 것을 깨닫게 된다.",
+        "email": "dabom200@naver.com",
+        "instagram": "juuriik",
+        "profileImageUrl": "assets/drift/profile/DRIFT_kimjuli.jpg",
+        "brochureImages": [
+          "assets/drift/brochure/표류기_김주리_1.jpg",
+          "assets/drift/brochure/표류기_김주리_2.jpg"
+        ],
+        "portfolioUrl": "kim-juli"
+      },
+      {
+        "name": "신승리",
+        "englishName": "SHIN SEUNGLEE",
+        "projectTitle": "밴드맨 (BANDSMAN)",
+        "description": "도시를 누비는 밴드 멤버의 하루. \n기타 케이스를 메고, 드럼스틱을 가방에 꽂아넣고, 공연장으로 출발하는 모습에서 착안한 스트랩과 볼륨, 리듬을 디자인에 녹였다. 복잡한 도시를 오가는 일상도 작은 무대와 같고, 무거운 악기에도 리듬은 가볍다. 나의 가장 시끄럽고 즐거웠던 날들의 흔적을 담았다.",
+        "email": "victoria2580@naver.com",
+        "instagram": "@seun9lee",
+        "profileImageUrl": "assets/drift/profile/DRIFT_shinseunglee.jpg",
+        "brochureImages": [
+          "assets/drift/brochure/표류기_신승리_1.jpg",
+          "assets/drift/brochure/표류기_신승리_2.jpg"
+        ],
+        "portfolioUrl": "shin-seunglee"
+      },
+      {
+        "name": "오제현",
+        "englishName": "OH JEHYUN",
+        "projectTitle": "Suit",
+        "description": " 도시에 적응하는 나만의 방식은 바다이다. \n 바다는 나의 감각과 기억, 삶의 방식이 스며든 공간이다. suit와 wetsuit, 포멀과 스포티의 경계를 허문 새로운 suit를 제안한다. 소재와 기능, 실루엣을 통해 다층적인 자아와 삶의 태도를 표현한다.",
+        "email": "suaegii@naver.com",
+        "instagram": "ohje_ohje",
+        "profileImageUrl": "assets/drift/profile/DRIFT_ohjehyun.jpg",
+        "brochureImages": [
+          "assets/drift/brochure/표류기_오제현_1.jpg",
+          "assets/drift/brochure/표류기_오제현_2.jpg"
+        ],
+        "portfolioUrl": "oh-jehyun"
+      },
+      {
+        "name": "이현희",
+        "englishName": "LEE HYUNHEE",
+        "projectTitle": "candy-colored",
+        "description": "20××.0×.××. 지구, 서울 - 맑음\n\n지구에 온 지도 벌써 4년째.\n고향 디저트 행성을 떠나 이곳저곳을 여행하던 중, 우연히 서울에 도착했다.\n처음엔 모든 것이 낯설었다. 건물은 딱딱했고, 사람들은 지나치게 빠르게 움직였다.\n그런데 이상하게도, 낯선 풍경 속에서 문득 고향이 떠오르곤 했다.\n크림소다같은 연못, 초콜릿같은 건물들…\n그렇게 이 도시와 내가 연결되기 시작했다.\n나는 지금, 서울에서 살아가는 외계인이다.",
+        "email": "lhh2030@daum.net",
+        "instagram": "@two.h_h",
+        "profileImageUrl": "assets/drift/profile/DRIFT_leehyunhee.jpeg",
+        "brochureImages": [
+          "assets/drift/brochure/표류기_이현희_1.jpg",
+          "assets/drift/brochure/표류기_이현희_2.jpg"
+        ],
+        "portfolioUrl": "lee-hyunhee"
+      },
+      {
+        "name": "조수아",
+        "englishName": "JO SHUA",
+        "projectTitle": "Perfect Error",
+        "description": "건망증이 심한 완벽주의. 도시를 표류하며 완벽함을 좇아 살아가지만 기억력이 좋지 않다. 해야할 일들, 하고싶은 일들을 기억하기 위해 끝없이 체크리스트를 작성하고, 모든 것을 기록한다. 반복과 강박, 주위를 둘러싼 글자들 속에서 오늘도 완벽을 위해 나아간다.",
+        "email": "saj0201@naver.com",
+        "instagram": "@shu_u_a",
+        "profileImageUrl": "assets/drift/profile/DRIFT_joshua.jpg",
+        "brochureImages": [
+          "assets/drift/brochure/표류기_조수아_1.jpg",
+          "assets/drift/brochure/표류기_조수아_2.jpg"
+        ],
+        "portfolioUrl": "jo-shua"
+      },
       {
         "name": "허재범",
         "englishName": "HEO JAEBEOM",
@@ -124,58 +194,16 @@
       {
         "name": "허주연",
         "englishName": "HUR JOOYEON",
-        "projectTitle": "",
-        "description": "",
-        "email": "",
-        "instagram": "",
+        "projectTitle": "유학생",
+        "description": "언어의 장벽, 문화적 거리감, 그리고 타국에서 마주하는 일상의 외로움은 유학생이 겪는 가장 보편적인 감정이다. 그런 감정들은 유학생의 정체성을 상징하는 ‘캐리어’를 통해 드러난다. 떠나기 전 엄마가 정성스레 넣어준 토끼 인형, 익숙한 향기가 밴 옷가지들, 그리고 그 안에 섞인 새로운 삶의 조각들은 캐리어 속에서 유학생의 복잡한 내면을 상징하며 하나의 작은 세계가 된다.",
+        "email": "hurjoo99@gmail.com",
+        "instagram": "9_hzoo",
         "profileImageUrl": "assets/drift/profile/DRIFT_hurjooyeon.jpg",
         "brochureImages": [
           "assets/drift/brochure/표류기_허주연_1.jpg",
           "assets/drift/brochure/표류기_허주연_2.jpg"
         ],
         "portfolioUrl": "hur-jooyeon"
-      },
-      {
-        "name": "신승리",
-        "englishName": "SHIN SEUNGLEE",
-        "projectTitle": "밴드맨 (BANDSMAN)",
-        "description": "도시를 누비는 밴드 멤버의 하루. \n기타 케이스를 메고, 드럼스틱을 가방에 꽂아넣고, 공연장으로 출발하는 모습에서 착안한 스트랩과 볼륨, 리듬을 디자인에 녹였다. 복잡한 도시를 오가는 일상도 작은 무대와 같고, 무거운 악기에도 리듬은 가볍다. 나의 가장 시끄럽고 즐거웠던 날들의 흔적을 담았다.",
-        "email": "victoria2580@naver.com",
-        "instagram": "@seun9lee",
-        "profileImageUrl": "assets/drift/profile/DRIFT_shinseunglee.jpg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_신승리_1.jpg",
-          "assets/drift/brochure/표류기_신승리_2.jpg"
-        ],
-        "portfolioUrl": "shin-seunglee"
-      },
-      {
-        "name": "김주리",
-        "englishName": "KIM JULI",
-        "projectTitle": "고슴도치의 딜레마",
-        "description": " 도심 속의 모든 사람은 살아가면서 끊임없이 새로운 환경에 놓여지게 된다. 새로운 환경에 직면하게 된 개개인은 환경에 맞춰 적응하는 동시에, 개인의 내면에서는 자기 자신을 보호하려는 본능이 발동된다.\n 이때 신체는 외부 환경에 적응하며 스스로를 보호하려는 내면 속 본능의 매개체로 작용한다. 마침내 새로운 환경에 치열하게 적응한 모두는 현대 사회에서 자신을 보호할 수 있는 일정한 거리감이 필요하다는 것을 깨닫게 된다.",
-        "email": "dabom200@naver.com",
-        "instagram": "juuriik",
-        "profileImageUrl": "assets/drift/profile/DRIFT_kimjuli.jpg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_김주리_1.jpg",
-          "assets/drift/brochure/표류기_김주리_2.jpg"
-        ],
-        "portfolioUrl": "kim-juli"
-      },
-      {
-        "name": "오제현",
-        "englishName": "OH JEHYUN",
-        "projectTitle": "Suit",
-        "description": " 도시에 적응하는 나만의 방식은 바다이다. \n 바다는 나의 감각과 기억, 삶의 방식이 스며든 공간이다. suit와 wetsuit, 포멀과 스포티의 경계를 허문 새로운 suit를 제안한다. 소재와 기능, 실루엣을 통해 다층적인 자아와 삶의 태도를 표현한다.",
-        "email": "suaegii@naver.com",
-        "instagram": "ohje_ohje",
-        "profileImageUrl": "assets/drift/profile/DRIFT_ohjehyun.jpg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_오제현_1.jpg",
-          "assets/drift/brochure/표류기_오제현_2.jpg"
-        ],
-        "portfolioUrl": "oh-jehyun"
       },
       {
         "name": "현정은",
@@ -190,34 +218,6 @@
           "assets/drift/brochure/표류기_현정은_2.jpg"
         ],
         "portfolioUrl": "hyun-jeongeun"
-      },
-      {
-        "name": "조수아",
-        "englishName": "JO SHUA",
-        "projectTitle": "Perfect Error",
-        "description": "건망증이 심한 완벽주의. 도시를 표류하며 완벽함을 좇아 살아가지만 기억력이 좋지 않다. 해야할 일들, 하고싶은 일들을 기억하기 위해 끝없이 체크리스트를 작성하고, 모든 것을 기록한다. 반복과 강박, 주위를 둘러싼 글자들 속에서 오늘도 완벽을 위해 나아간다.",
-        "email": "saj0201@naver.com",
-        "instagram": "@shu_u_a",
-        "profileImageUrl": "assets/drift/profile/DRIFT_joshua.jpg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_조수아_1.jpg",
-          "assets/drift/brochure/표류기_조수아_2.jpg"
-        ],
-        "portfolioUrl": "jo-shua"
-      },
-      {
-        "name": "이현희",
-        "englishName": "LEE HYUNHEE",
-        "projectTitle": "candy-colored",
-        "description": "20××.0×.××. 지구, 서울 - 맑음\n\n지구에 온 지도 벌써 4년째.\n고향 디저트 행성을 떠나 이곳저곳을 여행하던 중, 우연히 서울에 도착했다.\n처음엔 모든 것이 낯설었다. 건물은 딱딱했고, 사람들은 지나치게 빠르게 움직였다.\n그런데 이상하게도, 낯선 풍경 속에서 문득 고향이 떠오르곤 했다.\n크림소다같은 연못, 초콜릿같은 건물들…\n그렇게 이 도시와 내가 연결되기 시작했다.\n나는 지금, 서울에서 살아가는 외계인이다.",
-        "email": "lhh2030@daum.net",
-        "instagram": "@two.h_h",
-        "profileImageUrl": "assets/drift/profile/DRIFT_leehyunhee.jpeg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_이현희_1.jpg",
-          "assets/drift/brochure/표류기_이현희_2.jpg"
-        ],
-        "portfolioUrl": "lee-hyunhee"
       }
     ]
   },
@@ -226,18 +226,18 @@
     "teamPageUrl": "agiotita",
     "members": [
       {
-        "name": "이승주",
-        "englishName": "LEE SEUNGJU",
-        "projectTitle": "Nephele",
-        "description": "Nephele는 고대 그리스어로 구름을 의미하며, 영어로 성운을 뜻하는 Nebula의 어원이다. 성운은 별의 탄생과 죽음에 의해 형성되는 불규칙적인 우주 현상이다. 이 컬렉션은 이상적인 아름다움과 신성함을 추구하던 고대 그리스의 양식을 통해 성운의 비정형적이고 장엄한 아름다움을 표현한다.",
-        "email": "",
-        "instagram": "",
-        "profileImageUrl": "assets/agiotita/profile/AGIOTITA_leeseungju.jpg",
+        "name": "김규빈",
+        "englishName": "KIM GYUBIN",
+        "projectTitle": "우주의 진리에 도달한 자들은 지구인이였다 ",
+        "description": "영화 ‘Men in Black’에서 영감을 얻었다. 만약 외계인이 지구인을 숭배하고, 그들을 모방하려 한다면? 그들은 최신 유행을 따르려 하지만, 방식은 서툴고 어색하다. 이 컬렉션은 그런 불완전한 모방에서 출발해, 낯설지만 기묘한 아름다움을 표현하고자 했다.",
+        "email": "pam06138@naver.com",
+        "instagram": "gyuvinny",
+        "profileImageUrl": "assets/agiotita/profile/AGIOTITA_kimgyubin.JPG",
         "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_이승주_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_이승주_2.jpg"
+          "assets/agiotita/brochure/AGIOTITA_김규빈_1.jpg",
+          "assets/agiotita/brochure/AGIOTITA_김규빈_2.jpg"
         ],
-        "portfolioUrl": "lee-seungju"
+        "portfolioUrl": "kim-gyubin"
       },
       {
         "name": "김윤성",
@@ -268,20 +268,6 @@
         "portfolioUrl": "kim-juhyun"
       },
       {
-        "name": "최정연",
-        "englishName": "CHOI JEONGYEON",
-        "projectTitle": "Silent Implosion",
-        "description": "137억 년 전, 하나의 점은 폭발하였고 시간과 공간이 탄생했다.\n그 순간은 모든 것의 종말이자 기원이었고, 별의 죽음은 생명이라는 역설을 품었다.\n우리는 별의 잔해로 태어났고, 우주의 침묵 속에서 우주에 존재의 의미를 묻는 태초의 존재들이다.\n\n'Silent Implosion'은 고요 속에서 모든 것이 무너지고 태어나는 초신성 폭발의 순간을 그린다.",
-        "email": "choiiiijy@naver.com",
-        "instagram": "choiiiijy",
-        "profileImageUrl": "assets/agiotita/profile/AGIOTITA_choijeongyeon.jpg",
-        "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_최정연_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_최정연_2.jpg"
-        ],
-        "portfolioUrl": "choi-jeongyeon"
-      },
-      {
         "name": "김지향",
         "englishName": "KIM JIHYANG",
         "projectTitle": "Orbits",
@@ -310,18 +296,32 @@
         "portfolioUrl": "su-han"
       },
       {
-        "name": "김규빈",
-        "englishName": "KIM GYUBIN",
-        "projectTitle": "우주의 진리에 도달한 자들은 지구인이였다 ",
-        "description": "영화 ‘Men in Black’에서 영감을 얻었다. 만약 외계인이 지구인을 숭배하고, 그들을 모방하려 한다면? 그들은 최신 유행을 따르려 하지만, 방식은 서툴고 어색하다. 이 컬렉션은 그런 불완전한 모방에서 출발해, 낯설지만 기묘한 아름다움을 표현하고자 했다.",
-        "email": "pam06138@naver.com",
-        "instagram": "gyuvinny",
-        "profileImageUrl": "assets/agiotita/profile/AGIOTITA_kimgyubin.JPG",
+        "name": "유예리",
+        "englishName": "YOO YELEE",
+        "projectTitle": "Coexistence",
+        "description": "극한의 아름다움을 마주할 때, 우리는 동시에 두려움을 느끼며 경외감에 사로잡히게 된다.\n우주의 반짝이는 은하수는 찬란하게 아름답지만, 그 이면에 자리한 무한한 어둠은 깊은 두려움을 안겨준다.\n본 작품은 이처럼 아름다움과 두려움이 공존하는 순간에 대한 시선에서 출발한 이야기이다.",
+        "email": "yooyelee0221@naver.com",
+        "instagram": "@yeellee.y",
+        "profileImageUrl": "assets/agiotita/profile/AGIOTITA_yooyealee.jpg",
         "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_김규빈_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_김규빈_2.jpg"
+          "assets/agiotita/brochure/AGIOTITA_유예리_1.jpg",
+          "assets/agiotita/brochure/AGIOTITA_유예리_2.jpg"
         ],
-        "portfolioUrl": "kim-gyubin"
+        "portfolioUrl": "yoo-yelee"
+      },
+      {
+        "name": "이승주",
+        "englishName": "LEE SEUNGJU",
+        "projectTitle": "Nephele",
+        "description": "Nephele는 고대 그리스어로 구름을 의미하며, 영어로 성운을 뜻하는 Nebula의 어원이다. 성운은 별의 탄생과 죽음에 의해 형성되는 불규칙적인 우주 현상이다. 이 컬렉션은 이상적인 아름다움과 신성함을 추구하던 고대 그리스의 양식을 통해 성운의 비정형적이고 장엄한 아름다움을 표현한다.",
+        "email": "",
+        "instagram": "",
+        "profileImageUrl": "assets/agiotita/profile/AGIOTITA_leeseungju.jpg",
+        "brochureImages": [
+          "assets/agiotita/brochure/AGIOTITA_이승주_1.jpg",
+          "assets/agiotita/brochure/AGIOTITA_이승주_2.jpg"
+        ],
+        "portfolioUrl": "lee-seungju"
       },
       {
         "name": "진영희",
@@ -338,18 +338,18 @@
         "portfolioUrl": "jin-younghee"
       },
       {
-        "name": "유예리",
-        "englishName": "YOO YELEE",
-        "projectTitle": "Coexistence",
-        "description": "극한의 아름다움을 마주할 때, 우리는 동시에 두려움을 느끼며 경외감에 사로잡히게 된다.\n우주의 반짝이는 은하수는 찬란하게 아름답지만, 그 이면에 자리한 무한한 어둠은 깊은 두려움을 안겨준다.\n본 작품은 이처럼 아름다움과 두려움이 공존하는 순간에 대한 시선에서 출발한 이야기이다.",
-        "email": "yooyelee0221@naver.com",
-        "instagram": "@yeellee.y",
-        "profileImageUrl": "assets/agiotita/profile/AGIOTITA_yooyealee.jpg",
+        "name": "최정연",
+        "englishName": "CHOI JEONGYEON",
+        "projectTitle": "Silent Implosion",
+        "description": "137억 년 전, 하나의 점은 폭발하였고 시간과 공간이 탄생했다.\n그 순간은 모든 것의 종말이자 기원이었고, 별의 죽음은 생명이라는 역설을 품었다.\n우리는 별의 잔해로 태어났고, 우주의 침묵 속에서 우주에 존재의 의미를 묻는 태초의 존재들이다.\n\n'Silent Implosion'은 고요 속에서 모든 것이 무너지고 태어나는 초신성 폭발의 순간을 그린다.",
+        "email": "choiiiijy@naver.com",
+        "instagram": "choiiiijy",
+        "profileImageUrl": "assets/agiotita/profile/AGIOTITA_choijeongyeon.jpg",
         "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_유예리_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_유예리_2.jpg"
+          "assets/agiotita/brochure/AGIOTITA_최정연_1.jpg",
+          "assets/agiotita/brochure/AGIOTITA_최정연_2.jpg"
         ],
-        "portfolioUrl": "yoo-yelee"
+        "portfolioUrl": "choi-jeongyeon"
       }
     ]
   },
@@ -357,6 +357,20 @@
     "teamName": "TEAM BIPOLAR",
     "teamPageUrl": "bipolar",
     "members": [
+      {
+        "name": "곽현일",
+        "englishName": "KWAK HYUNIL",
+        "projectTitle": "무제",
+        "description": "무제",
+        "email": "a1244299939@gmail.com",
+        "instagram": "kwakhyunill",
+        "profileImageUrl": "assets/bipolar/profile/BIPOLAR_guoxianyi.jpg",
+        "brochureImages": [
+          "assets/bipolar/brochure/Bipolar_곽현일_1.jpg",
+          "assets/bipolar/brochure/Bipolar_곽현일_2.jpg"
+        ],
+        "portfolioUrl": "kwak-hyunil"
+      },
       {
         "name": "마우천",
         "englishName": "MA YUCHEN",
@@ -386,6 +400,34 @@
         "portfolioUrl": "wu-hanyu"
       },
       {
+        "name": "범옥천",
+        "englishName": "BEOM OKCHEON",
+        "projectTitle": "PAIN & HAPPINESS ",
+        "description": "출산한 여성은 출산의 고통을 겪은 후, 출산 후의 신체적 고통뿐만 아니라 아이를 돌보는 과정에서 많은 심리적 압박을 받게 됩니다. \n하지만 아이의 성장을 보거나 아이의 첫마디를 보면 더할 나위 없이 행복합니다. \n여성들이 아이를 낳는 고통과 행복 속에서 그녀들의 마음의 여정은 어떨까요?",
+        "email": "xixi7cc@naver.com",
+        "instagram": "",
+        "profileImageUrl": "assets/bipolar/profile/BIPOLAR_fanyuxi.jpg",
+        "brochureImages": [
+          "assets/bipolar/brochure/BIPOLAR_범옥천_1.jpg",
+          "assets/bipolar/brochure/BIPOLAR_범옥천_2.jpg"
+        ],
+        "portfolioUrl": "beom-okcheon"
+      },
+      {
+        "name": "사청의",
+        "englishName": "SHI QINGYI",
+        "projectTitle": "uncontrollable crying ",
+        "description": "통제되지 않는 울음/웃음\n(울고 웃는 것은 반대말이지만, 병든 상태에서도 공존합니다.)\n주인공 이야기:\n외롭고 많은 사랑을 받지 못했던 소녀는 자라면서 갑자기 다른 사랑을 받게 됩니다. 하지만 주인공이 사랑했던 사람들은 다른 이유로 사라졌습니다. 이런 일들이 주인공에게 너무 큰 충격을 주어 정서적으로 불안정해졌습니다. 양극성 장애가 매우 심각합니다. 질병이 신체화 단계에 이르면 주인공은 겉잡을 수 없이 울며 웃습니다. 주인공은 갑자기 외로움을 느끼고 울곤 했습니다. 주인공은 갑자기 흥분해서 웃곤 했습니다. 하지만 웃음이 정말 큰 웃음일까요? 아니요, 주인공의 마음은 울고 있었습니다.",
+        "email": "Ssqy13961586971@163.com",
+        "instagram": "shi_sqy",
+        "profileImageUrl": "assets/bipolar/profile/BIPOLAR_shiqingyi.jpg",
+        "brochureImages": [
+          "assets/bipolar/brochure/BIPOLAR_사청의_look1.jpg",
+          "assets/bipolar/brochure/BIPOLAR_사청의_look2.jpg"
+        ],
+        "portfolioUrl": "shi-qingyi"
+      },
+      {
         "name": "왕업가",
         "englishName": "WANG YEJIA",
         "projectTitle": "사이렌 아리아",
@@ -398,6 +440,20 @@
           "assets/bipolar/brochure/Bipolar_왕업가_2.webp"
         ],
         "portfolioUrl": "wang-yejia"
+      },
+      {
+        "name": "유가리",
+        "englishName": "LAU KALEE",
+        "projectTitle": "혼돈 Chaos",
+        "description": "강렬한 색상 대비와 얽힌 니트 장식이 주를 이루며 사람의 감정 표현에 대한 충돌감과 혼란감을 표현한다.\n\n초기 설계를 진행할 때 많은 키워드를 생각해냈고 최종적으로 \"혼돈\"을 작품의 주요 키워드로 결정했다.\n\n쌍방향 감정 장애에 대해 생각할 때 대부분의 사람들은 감정이 충돌하고 명확한 변화가 있다고 생각하지만 나는 감정이 원래 복잡하고 혼란스럽다고 생각한다. 그래서 나는 이 생각에 따라 디자인을 만들었다.",
+        "email": "",
+        "instagram": "",
+        "profileImageUrl": "assets/bipolar/profile/BIPOLAR_laukalee.jpg",
+        "brochureImages": [
+          "assets/bipolar/brochure/Bipolar_유가리_1.jpg",
+          "assets/bipolar/brochure/Bipolar_유가리_2.jpg"
+        ],
+        "portfolioUrl": "lau-kalee"
       },
       {
         "name": "유한녕",
@@ -440,62 +496,6 @@
           "assets/bipolar/brochure/bipolar_항림아_2.jpg"
         ],
         "portfolioUrl": "hang-rima"
-      },
-      {
-        "name": "범옥천",
-        "englishName": "BEOM OKCHEON",
-        "projectTitle": "PAIN & HAPPINESS ",
-        "description": "출산한 여성은 출산의 고통을 겪은 후, 출산 후의 신체적 고통뿐만 아니라 아이를 돌보는 과정에서 많은 심리적 압박을 받게 됩니다. \n하지만 아이의 성장을 보거나 아이의 첫마디를 보면 더할 나위 없이 행복합니다. \n여성들이 아이를 낳는 고통과 행복 속에서 그녀들의 마음의 여정은 어떨까요?",
-        "email": "xixi7cc@naver.com",
-        "instagram": "",
-        "profileImageUrl": "assets/bipolar/profile/BIPOLAR_fanyuxi.jpg",
-        "brochureImages": [
-          "assets/bipolar/brochure/BIPOLAR_범옥천_1.jpg",
-          "assets/bipolar/brochure/BIPOLAR_범옥천_2.jpg"
-        ],
-        "portfolioUrl": "beom-okcheon"
-      },
-      {
-        "name": "유가리",
-        "englishName": "LAU KALEE",
-        "projectTitle": "혼돈 Chaos",
-        "description": "강렬한 색상 대비와 얽힌 니트 장식이 주를 이루며 사람의 감정 표현에 대한 충돌감과 혼란감을 표현한다.\n\n초기 설계를 진행할 때 많은 키워드를 생각해냈고 최종적으로 \"혼돈\"을 작품의 주요 키워드로 결정했다.\n\n쌍방향 감정 장애에 대해 생각할 때 대부분의 사람들은 감정이 충돌하고 명확한 변화가 있다고 생각하지만 나는 감정이 원래 복잡하고 혼란스럽다고 생각한다. 그래서 나는 이 생각에 따라 디자인을 만들었다.",
-        "email": "",
-        "instagram": "",
-        "profileImageUrl": "assets/bipolar/profile/BIPOLAR_laukalee.jpg",
-        "brochureImages": [
-          "assets/bipolar/brochure/Bipolar_유가리_1.jpg",
-          "assets/bipolar/brochure/Bipolar_유가리_2.jpg"
-        ],
-        "portfolioUrl": "lau-kalee"
-      },
-      {
-        "name": "곽현일",
-        "englishName": "KWAK HYUNIL",
-        "projectTitle": "무제",
-        "description": "무제",
-        "email": "a1244299939@gmail.com",
-        "instagram": "kwakhyunill",
-        "profileImageUrl": "assets/bipolar/profile/BIPOLAR_guoxianyi.jpg",
-        "brochureImages": [
-          "assets/bipolar/brochure/Bipolar_곽현일_1.jpg",
-          "assets/bipolar/brochure/Bipolar_곽현일_2.jpg"
-        ],
-        "portfolioUrl": "kwak-hyunil"
-      },
-      {
-        "name": "사청의",
-        "englishName": "SHI QINGYI",
-        "projectTitle": "uncontrollable crying ",
-        "description": "통제되지 않는 울음/웃음\n(울고 웃는 것은 반대말이지만, 병든 상태에서도 공존합니다.)\n주인공 이야기:\n외롭고 많은 사랑을 받지 못했던 소녀는 자라면서 갑자기 다른 사랑을 받게 됩니다. 하지만 주인공이 사랑했던 사람들은 다른 이유로 사라졌습니다. 이런 일들이 주인공에게 너무 큰 충격을 주어 정서적으로 불안정해졌습니다. 양극성 장애가 매우 심각합니다. 질병이 신체화 단계에 이르면 주인공은 겉잡을 수 없이 울며 웃습니다. 주인공은 갑자기 외로움을 느끼고 울곤 했습니다. 주인공은 갑자기 흥분해서 웃곤 했습니다. 하지만 웃음이 정말 큰 웃음일까요? 아니요, 주인공의 마음은 울고 있었습니다.",
-        "email": "Ssqy13961586971@163.com",
-        "instagram": "shi_sqy",
-        "profileImageUrl": "assets/bipolar/profile/BIPOLAR_shiqingyi.jpg",
-        "brochureImages": [
-          "assets/bipolar/brochure/BIPOLAR_사청의_look1.jpg",
-          "assets/bipolar/brochure/BIPOLAR_사청의_look2.jpg"
-        ],
-        "portfolioUrl": "shi-qingyi"
       }
     ]
   },
@@ -518,6 +518,34 @@
         "portfolioUrl": "kil-junyoung"
       },
       {
+        "name": "김민규",
+        "englishName": "KIM MINGYU",
+        "projectTitle": "At the End of Cypress",
+        "description": "자아의 본질을 찾기 위한 소거의 여정은, 깊은 혼돈과 마주하게 됐다. 고흐의 사이프러스, 에곤 쉴레의 불안한 자화상처럼, 비정형의 실루엣과 까마귀는 불안정한 심상을 품는다.\n\n첫 착장은 변형된 어깨선과 거친 텍스처로 뒤틀린 감정과 자아를 시각화한다. 두 번째 착장은 비대칭적이고 날카로운 실루엣을 통해 내면의 균열과 감정의 파편을 형상화한다.\n\n컬렉션은 존재의 불안과 소거의 미학을 탐구한다. 자아가 흔들리는 그 찰나의 감정을 옷 위에 새겼다.",
+        "email": "gu1911@naver.com",
+        "instagram": "@migyuuu___",
+        "profileImageUrl": "assets/dialysis/profile/Dialysis_kimmingyu.jpg",
+        "brochureImages": [
+          "assets/dialysis/brochure/Dialysis_김민규_1.webp",
+          "assets/dialysis/brochure/Dialysis_김민규_2.webp"
+        ],
+        "portfolioUrl": "kim-mingyu"
+      },
+      {
+        "name": "문지원",
+        "englishName": "MOON JIWON",
+        "projectTitle": "Unknownability",
+        "description": "자아의 불가해성은 모호함과 무한함이라는 두 가지 특성으로 설명될 수 있으며, 이는 원(circle)이 지닌 상징성과 깊이 연결되어 있습니다. 원은 시작도 끝도 없는 닫힌 형상이지만, 그 안에는 경계 없는 확장의 가능성을 품고 있습니다. 마치 원이 단순한 구조 속에서 무한을 암시하듯, 자아 또한 고정된 정의에 머물지 않고 끊임없이 확장되고 변화하는 존재입니다. ",
+        "email": "",
+        "instagram": "moonjiiwon",
+        "profileImageUrl": "assets/dialysis/profile/Dialysis_moonjiwon.jpg",
+        "brochureImages": [
+          "assets/dialysis/brochure/Dialysis_문지원_1.jpg",
+          "assets/dialysis/brochure/Dialysis_문지원_2.jpg"
+        ],
+        "portfolioUrl": "moon-jiwon"
+      },
+      {
         "name": "박상현",
         "englishName": "PARK SANGHYUN",
         "projectTitle": "구겨짐",
@@ -530,6 +558,34 @@
           "assets/dialysis/brochure/Dialysis_박상현_2.jpg"
         ],
         "portfolioUrl": "park-sanghyun"
+      },
+      {
+        "name": "박서희",
+        "englishName": "PARK SEOHEE",
+        "projectTitle": "조화",
+        "description": "소거 과정의 끝에 나의 마지막 ‘SOMA’는 이 단어를 남겼다. - '조화'\n\"사랑 그리고 자연, 그와 함께 조화로운 내가 되길 바라요.\"",
+        "email": "seoheeparkparis@gmail.com",
+        "instagram": "sleowhee",
+        "profileImageUrl": "assets/dialysis/profile/Dialysis_parkseohee.jpg",
+        "brochureImages": [
+          "assets/dialysis/brochure/Dialysis_박서희_1.jpg",
+          "assets/dialysis/brochure/Dialysis_박서희_2.jpg"
+        ],
+        "portfolioUrl": "park-seohee"
+      },
+      {
+        "name": "양승연",
+        "englishName": "YANG SEUNGYEON",
+        "projectTitle": "잠식 蠶食",
+        "description": "영역을 한꺼번에 얻어내는 것이 아닌, 조금씩 조금씩 침략해 들어와서 자기 것으로 만들어가는 과정.\n소거하며 진정한 나를 찾아가는 것은 마치 잠식과도 같다. \n\n어둠이 아닌 빛으로, Dialysis를 통해 나 자신이 ‘나’를 잠식한다.",
+        "email": "syyang1001@naver.com",
+        "instagram": "@yangsngyn",
+        "profileImageUrl": "assets/dialysis/profile/Dialysis_yangseungyeon.jpg",
+        "brochureImages": [
+          "assets/dialysis/brochure/Dialysis_양승연_1.webp",
+          "assets/dialysis/brochure/Dialysis_양승연_2.webp"
+        ],
+        "portfolioUrl": "yang-seungyeon"
       },
       {
         "name": "이동준",
@@ -560,48 +616,6 @@
         "portfolioUrl": "lee-yejin"
       },
       {
-        "name": "문지원",
-        "englishName": "MOON JIWON",
-        "projectTitle": "Unknownability",
-        "description": "자아의 불가해성은 모호함과 무한함이라는 두 가지 특성으로 설명될 수 있으며, 이는 원(circle)이 지닌 상징성과 깊이 연결되어 있습니다. 원은 시작도 끝도 없는 닫힌 형상이지만, 그 안에는 경계 없는 확장의 가능성을 품고 있습니다. 마치 원이 단순한 구조 속에서 무한을 암시하듯, 자아 또한 고정된 정의에 머물지 않고 끊임없이 확장되고 변화하는 존재입니다. ",
-        "email": "",
-        "instagram": "moonjiiwon",
-        "profileImageUrl": "assets/dialysis/profile/Dialysis_moonjiwon.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_문지원_1.jpg",
-          "assets/dialysis/brochure/Dialysis_문지원_2.jpg"
-        ],
-        "portfolioUrl": "moon-jiwon"
-      },
-      {
-        "name": "양승연",
-        "englishName": "YANG SEUNGYEON",
-        "projectTitle": "잠식 蠶食",
-        "description": "영역을 한꺼번에 얻어내는 것이 아닌, 조금씩 조금씩 침략해 들어와서 자기 것으로 만들어가는 과정.\n소거하며 진정한 나를 찾아가는 것은 마치 잠식과도 같다. \n\n어둠이 아닌 빛으로, Dialysis를 통해 나 자신이 ‘나’를 잠식한다.",
-        "email": "syyang1001@naver.com",
-        "instagram": "@yangsngyn",
-        "profileImageUrl": "assets/dialysis/profile/Dialysis_yangseungyeon.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_양승연_1.webp",
-          "assets/dialysis/brochure/Dialysis_양승연_2.webp"
-        ],
-        "portfolioUrl": "yang-seungyeon"
-      },
-      {
-        "name": "박서희",
-        "englishName": "PARK SEOHEE",
-        "projectTitle": "조화",
-        "description": "소거 과정의 끝에 나의 마지막 ‘SOMA’는 이 단어를 남겼다. - '조화'\n\"사랑 그리고 자연, 그와 함께 조화로운 내가 되길 바라요.\"",
-        "email": "seoheeparkparis@gmail.com",
-        "instagram": "sleowhee",
-        "profileImageUrl": "assets/dialysis/profile/Dialysis_parkseohee.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_박서희_1.jpg",
-          "assets/dialysis/brochure/Dialysis_박서희_2.jpg"
-        ],
-        "portfolioUrl": "park-seohee"
-      },
-      {
         "name": "전희진",
         "englishName": "JUN HEEJIN",
         "projectTitle": "무결",
@@ -614,20 +628,6 @@
           "assets/dialysis/brochure/Dialysis_전희진_2.webp"
         ],
         "portfolioUrl": "jun-heejin"
-      },
-      {
-        "name": "김민규",
-        "englishName": "KIM MINGYU",
-        "projectTitle": "At the End of Cypress",
-        "description": "자아의 본질을 찾기 위한 소거의 여정은, 깊은 혼돈과 마주하게 됐다. 고흐의 사이프러스, 에곤 쉴레의 불안한 자화상처럼, 비정형의 실루엣과 까마귀는 불안정한 심상을 품는다.\n\n첫 착장은 변형된 어깨선과 거친 텍스처로 뒤틀린 감정과 자아를 시각화한다. 두 번째 착장은 비대칭적이고 날카로운 실루엣을 통해 내면의 균열과 감정의 파편을 형상화한다.\n\n컬렉션은 존재의 불안과 소거의 미학을 탐구한다. 자아가 흔들리는 그 찰나의 감정을 옷 위에 새겼다.",
-        "email": "gu1911@naver.com",
-        "instagram": "@migyuuu___",
-        "profileImageUrl": "assets/dialysis/profile/Dialysis_kimmingyu.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_김민규_1.webp",
-          "assets/dialysis/brochure/Dialysis_김민규_2.webp"
-        ],
-        "portfolioUrl": "kim-mingyu"
       }
     ]
   },
@@ -635,34 +635,6 @@
     "teamName": "TEAM DASH",
     "teamPageUrl": "dash",
     "members": [
-      {
-        "name": "김솔이",
-        "englishName": "KIM SOLYI",
-        "projectTitle": "Glacier mind",
-        "description": "무의식은 마치 바다 아래 잠긴 빙하처럼, 겉으로 드러나지 않지만 깊고 무겁게 존재합니다. \n빙하의 균열과 구조를 모티프로 하여, 내면의 흔들림과 억눌린 감정을 섬세하고 페미닌한 실루엣으로 표현했습니다. \n디테일은 빙하의 선들을 따라 흐르고, 블루 톤과 그레이 톤은 감춰진 감정과 그 너머의 진실을 은유하며, 여성성의 섬세한 내면을 포착합니다. \n‘무의식’이라는 깊은 수면 아래의 공간에서 일어나는 감정의 균열, 그리고 그 속에서 피어나는 여성성의 유연한 힘을 담아봤습니다. ",
-        "email": "",
-        "instagram": "",
-        "profileImageUrl": "assets/dash/profile/DASH_kimsolyi.JPG",
-        "brochureImages": [
-          "assets/dash/brochure/dash_kimsolyi_1.jpg",
-          "assets/dash/brochure/dash_kimsolyi_2.jpg"
-        ],
-        "portfolioUrl": "kim-solyi"
-      },
-      {
-        "name": "박정윤",
-        "englishName": "PARK JUNGYOON",
-        "projectTitle": "Essence of form ",
-        "description": "무의식 속 우리 내면에 숨겨진 진정한 자신을 마주한 적이 있나요? 당신이 바라는 모습, 갈망하는 가치, 이상적인 자아는 어떤 형태인가요. 디자인은 그 본질의 흔적을 담아냅니다. 당신의 이상과 현실을 형태로써 표현한다면, 그 형태는 무엇을 닮아 있나요?",
-        "email": "nsdo0617@naver.com",
-        "instagram": "",
-        "profileImageUrl": "assets/dash/profile/DASH_parkjungyoon.jpg",
-        "brochureImages": [
-          "assets/dash/brochure/dash_parkjungyoon_1.jpg",
-          "assets/dash/brochure/dash_parkjungyoon_2.jpg"
-        ],
-        "portfolioUrl": "park-jungyoon"
-      },
       {
         "name": "김나현",
         "englishName": "KIM NAHYEON",
@@ -676,6 +648,20 @@
           "assets/dash/brochure/dash_kimnahyeon_2.jpg"
         ],
         "portfolioUrl": "kim-nahyeon"
+      },
+      {
+        "name": "김솔이",
+        "englishName": "KIM SOLYI",
+        "projectTitle": "Glacier mind",
+        "description": "무의식은 마치 바다 아래 잠긴 빙하처럼, 겉으로 드러나지 않지만 깊고 무겁게 존재합니다. \n빙하의 균열과 구조를 모티프로 하여, 내면의 흔들림과 억눌린 감정을 섬세하고 페미닌한 실루엣으로 표현했습니다. \n디테일은 빙하의 선들을 따라 흐르고, 블루 톤과 그레이 톤은 감춰진 감정과 그 너머의 진실을 은유하며, 여성성의 섬세한 내면을 포착합니다. \n‘무의식’이라는 깊은 수면 아래의 공간에서 일어나는 감정의 균열, 그리고 그 속에서 피어나는 여성성의 유연한 힘을 담아봤습니다. ",
+        "email": "",
+        "instagram": "",
+        "profileImageUrl": "assets/dash/profile/DASH_kimsolyi.JPG",
+        "brochureImages": [
+          "assets/dash/brochure/dash_kimsolyi_1.jpg",
+          "assets/dash/brochure/dash_kimsolyi_2.jpg"
+        ],
+        "portfolioUrl": "kim-solyi"
       },
       {
         "name": "김여진",
@@ -692,20 +678,6 @@
         "portfolioUrl": "kim-yeojin"
       },
       {
-        "name": "배유빈",
-        "englishName": "BAE YOOBIN",
-        "projectTitle": "Ondine Fleurie",
-        "description": "\"Ondine Fleurie\"는 프랑스어로 \"꽃이 핀 물의 요정\"이라는 뜻으로 오간자와 꽃 장식을 통해, 물속을 부유하는 신체의 유동성과 감각의 재구성을 시각화한 작품이다.",
-        "email": "",
-        "instagram": "@_nibueab_",
-        "profileImageUrl": "assets/dash/profile/DASH_beayoobin.jpg",
-        "brochureImages": [
-          "assets/dash/brochure/dash_beayoobin_1.jpg",
-          "assets/dash/brochure/dash_beayoobin_2.jpg"
-        ],
-        "portfolioUrl": "bae-yoobin"
-      },
-      {
         "name": "김영서",
         "englishName": "KIM YOUNGSEO",
         "projectTitle": "阿賴耶識(아뢰야식)",
@@ -718,6 +690,34 @@
           "assets/dash/brochure/dash_kimyoungseo_2.jpg"
         ],
         "portfolioUrl": "kim-youngseo"
+      },
+      {
+        "name": "박정윤",
+        "englishName": "PARK JUNGYOON",
+        "projectTitle": "Essence of form ",
+        "description": "무의식 속 우리 내면에 숨겨진 진정한 자신을 마주한 적이 있나요? 당신이 바라는 모습, 갈망하는 가치, 이상적인 자아는 어떤 형태인가요. 디자인은 그 본질의 흔적을 담아냅니다. 당신의 이상과 현실을 형태로써 표현한다면, 그 형태는 무엇을 닮아 있나요?",
+        "email": "nsdo0617@naver.com",
+        "instagram": "",
+        "profileImageUrl": "assets/dash/profile/DASH_parkjungyoon.jpg",
+        "brochureImages": [
+          "assets/dash/brochure/dash_parkjungyoon_1.jpg",
+          "assets/dash/brochure/dash_parkjungyoon_2.jpg"
+        ],
+        "portfolioUrl": "park-jungyoon"
+      },
+      {
+        "name": "배유빈",
+        "englishName": "BAE YOOBIN",
+        "projectTitle": "Ondine Fleurie",
+        "description": "\"Ondine Fleurie\"는 프랑스어로 \"꽃이 핀 물의 요정\"이라는 뜻으로 오간자와 꽃 장식을 통해, 물속을 부유하는 신체의 유동성과 감각의 재구성을 시각화한 작품이다.",
+        "email": "",
+        "instagram": "@_nibueab_",
+        "profileImageUrl": "assets/dash/profile/DASH_beayoobin.jpg",
+        "brochureImages": [
+          "assets/dash/brochure/dash_beayoobin_1.jpg",
+          "assets/dash/brochure/dash_beayoobin_2.jpg"
+        ],
+        "portfolioUrl": "bae-yoobin"
       },
       {
         "name": "송다연",
