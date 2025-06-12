@@ -9,19 +9,21 @@ const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [members, setMembers] = useState([]);
 
-  const fetchMembers = useCallback(async (term) => {
-    try {
-      const response = await axios.get(`${API_URL}/api/members/search`, {
-        params: { keyword: term }
-      });
+const fetchMembers = useCallback(async (term) => {
+  try {
+    const response = await axios.get(`${API_URL}/api/members/search`, {
+      params: { keyword: term }
+    });
 
-      // 모든 팀의 members를 하나의 배열로 병합
-      const allMembers = response.data.flatMap(team => team.members);
-      setMembers(allMembers);
-    } catch (error) {
-      console.error('Error fetching members:', error);
-    }
-  }, []);
+    const allMembers = response.data.flatMap(team => team.members);
+
+    allMembers.sort((a, b) => a.name.localeCompare(b.name, 'ko'));
+
+    setMembers(allMembers);
+  } catch (error) {
+    console.error('Error fetching members:', error);
+  }
+}, []);
 
   useEffect(() => {
     fetchMembers(searchTerm);
