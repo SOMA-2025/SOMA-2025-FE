@@ -4,24 +4,20 @@ import { Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const API_URL = process.env.REACT_APP_API_URL;
-// const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 const SearchPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [teams, setTeams] = useState([]);
+  const [members, setMembers] = useState([]);
 
-  console.log('API_URL:', process.env.REACT_APP_API_URL);
-  console.log('BASE_URL:', process.env.REACT_APP_BASE_URL);
-
-  // fetchAllMembers와 searchMembers를 하나의 함수로 통합
   const fetchMembers = useCallback(async (term) => {
     try {
       const response = await axios.get(`${API_URL}/api/members/search`, {
-        params: {
-          keyword: term
-        }
+        params: { keyword: term }
       });
-      setTeams(response.data);
+
+      // 모든 팀의 members를 하나의 배열로 병합
+      const allMembers = response.data.flatMap(team => team.members);
+      setMembers(allMembers);
     } catch (error) {
       console.error('Error fetching members:', error);
     }
@@ -31,7 +27,6 @@ const SearchPage = () => {
     fetchMembers(searchTerm);
   }, [searchTerm, fetchMembers]);
 
-  // 2333:3500 비율로 계산하는 함수 (약 0.6666 : 1)
   const calculatePaddingTop = () => {
     return (3500 / 2333) * 100; // 약 150%
   };
@@ -52,44 +47,30 @@ const SearchPage = () => {
       </div>
 
       <div className="w-full px-4">
-        {teams.map((team) => (
-          <div key={team.teamName} className="mx-auto mb-8 md:mb-16 w-full max-w-7xl">
-            <div className="mb-4 md:mb-8">
-              <Link 
-                to={`/team/${team.teamPageUrl}`}
-                className="text-xl md:text-3xl font-bold hover:text-gray-600 transition-colors"
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8 max-w-7xl mx-auto">
+          {members.map((member) => (
+            <Link 
+              key={member.name}
+              to={`/portfolio/${member.portfolioUrl}`}
+              className="block group"
+            >
+              <div 
+                className="bg-gray-100 mb-2 md:mb-4 relative" 
+                style={{ paddingTop: `${calculatePaddingTop()}%` }}
               >
-                {team.teamName}
-              </Link>
-            </div>
-            
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8">
-              {team.members.map((member) => (
-                <Link 
-                  key={member.name}
-                  // to={`${BASE_URL}/portfolio/${member.portfolioUrl}`}
-                  to={`/portfolio/${member.portfolioUrl}`}
-                  className="block group"
-                >
-                  <div 
-                    className="bg-gray-100 mb-2 md:mb-4 relative" 
-                    style={{ paddingTop: `${calculatePaddingTop()}%` }}
-                  >
-                    <img
-                      src={require(`../${member.profileImageUrl}`)}
-                      alt={member.name}
-                      loading = "lazy"
-                      className="absolute top-0 left-0 w-full h-full object-contain"
-                    />
-                  </div>
-                  <h3 className="text-base md:text-xl font-medium group-hover:text-gray-600 transition-colors truncate">
-                    {member.name}
-                  </h3>
-                </Link>
-              ))}
-            </div>
-          </div>
-        ))}
+                <img
+                  src={require(`../${member.profileImageUrl}`)}
+                  alt={member.name}
+                  loading="lazy"
+                  className="absolute top-0 left-0 w-full h-full object-contain"
+                />
+              </div>
+              <h3 className="text-base md:text-xl font-medium group-hover:text-gray-600 transition-colors truncate">
+                {member.name}
+              </h3>
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );
