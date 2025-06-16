@@ -6,20 +6,23 @@ const sections = [
     {
         key: 'exhibition',
         title: '전시 안내',
-        leftImg: '/2025/image/전시안내.jpg',
-        rightImg: '/2025/image/전시안내_텍스트.jpg',
+        leftImg: '/2025/image/전시안내_모바일_1.jpg',
+        rightImg: '/2025/image/전시안내_모바일_2.jpg',
+        pcImg: '/2025/image/전시안내.jpg',
     },
     {
-        key: 'visitor',
-        title: '좌석 안내',
-        leftImg: '/2025/image/좌석안내.jpg',
-        rightImg: '/2025/image/좌석안내_텍스트.jpg',
+        key: 'staffRoll',
+        title: '팀 크레딧',
+        leftImg: '/2025/image/팀크레딧_모바일_1.jpg',
+        rightImg: '/2025/image/팀크레딧_모바일_2.jpg',
+        pcImg: '/2025/image/팀크레딧.jpg',
     },
     {
         key: 'location',
         title: '오시는 길',
-        leftImg: '/2025/image/오시는길.jpg',
-        rightImg: '/2025/image/오시는길_텍스트.jpg',
+        leftImg: '/2025/image/오시는길_모바일_1.jpg',
+        rightImg: '/2025/image/오시는길_모바일_2.jpg',
+        pcImg: '/2025/image/오시는길.jpg',
     },
 ];
 
@@ -43,19 +46,25 @@ const ShowInfo = () => {
 
     return (
         <div className="w-full flex flex-col items-center py-12 px-4">
-            <div className="flex flex-col items-center">
-                <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-                    <img
-                        src={current.leftImg}
-                        alt={`${current.title} 왼쪽`}
-                        className="w-full md:w-1/2 max-w-[600px] h-[600px] object-contain"
-                    />
-                    <img
-                        src={current.rightImg}
-                        alt={`${current.title} 오른쪽`}
-                        className="w-full md:w-1/2 max-w-[600px] h-[600px] object-contain"
-                    />
-                </div>
+            {/* PC */}
+            <img
+                src={current.pcImg}
+                alt={`${current.title} 데스크탑`}
+                className="hidden md:block w-full max-w-[900px] h-auto object-contain"
+            />
+
+            {/* 모바일 */}
+            <div className="flex flex-col gap-6 justify-center items-center md:hidden">
+                <img
+                    src={current.leftImg}
+                    alt={`${current.title} 왼쪽`}
+                    className="w-full max-w-[600px] h-[600px] object-contain"
+                />
+                <img
+                    src={current.rightImg}
+                    alt={`${current.title} 오른쪽`}
+                    className="w-full max-w-[600px] h-[600px] object-contain"
+                />
             </div>
 
             <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-30 flex items-center space-x-12 bg-white px-4 py-2 rounded-full shadow-md">
