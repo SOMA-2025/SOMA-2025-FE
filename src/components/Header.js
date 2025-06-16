@@ -93,7 +93,7 @@ const Header = () => {
 이 카테고리는 관람객이 전시회를 쉽게 이해하고 즐길 수 있도록 전시정보와 관람정보를 제공하고, 오시는 길에 대한 정보도 함께 안내합니다.`,
       subItems: [
         { name: '전시 안내', path: '/show-info/exhibition' },
-        { name: '좌석 안내', path: '/show-info/visitor' },
+        { name: '팀 크레딧', path: '/show-info/staffRoll' },
         { name: '오시는 길', path: '/show-info/location' }
       ]
     },
