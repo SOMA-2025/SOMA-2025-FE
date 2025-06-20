@@ -7,8 +7,8 @@ const sections = [
         key: 'exhibition',
         title: '전시 안내',
         leftImg: '/2025/image/전시안내_모바일_1.jpg',
-        rightImg: '/2025/image/전시안내_모바일_2.jpg',
-        pcImg: '/2025/image/전시안내.jpg',
+        rightImg: '/2025/image/전시안내_모바일_2.png',
+        pcImg: '/2025/image/전시안내.png',
     },
     {
         key: 'staffRoll',
