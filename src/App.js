@@ -16,10 +16,11 @@ import TeamPage from './pages/TeamPage';
 import ScrollToTop from './components/ScrollToTop';
 import ShowInfo from "./pages/ShowInfo";
 import LookBook from "./pages/LookBook";
-import ComingSoon from "./pages/ComingSoon";
+// import ComingSoon from "./pages/ComingSoon";
 import ArchivePage from "./pages/ArchivePage";
 import BehindShow from "./pages/BehindShow";
 import BehindBrochure from "./pages/BehindBrochure";
+import BehindMaking from "./pages/BehindMaking";
 import Runway from "./pages/Runway";
 
 function App() {
@@ -63,7 +64,7 @@ function App() {
           <Route path="/behind/" element={<Navigate to="/behind/show" />} />
           <Route path="/behind/show" element={<BehindShow />} />
           <Route path="/behind/brochure" element={<BehindBrochure />} />
-          <Route path="/behind/making" element={<ComingSoon />} />
+          <Route path="/behind/making" element={<BehindMaking />} />
           
           {/* archive */}
           <Route path="/archive" element={<ArchivePage />} />

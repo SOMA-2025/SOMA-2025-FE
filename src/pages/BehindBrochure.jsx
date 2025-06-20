@@ -58,7 +58,7 @@ export default function BehindBrochure() {
                         onClick={() => !isOpen && setExpanded(idx)}
                     >
                         <div className="w-full aspect-video relative rounded-lg shadow-md overflow-hidden group">
-                            {/* 썸네일(처음 화면) */}
+                            {/* 썸네일 */}
                             {!isOpen && (
                                 <>
                                     <img
@@ -67,7 +67,7 @@ export default function BehindBrochure() {
                                         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                                         loading="lazy"
                                     />
-                                    {/* 중앙 ▶︎ 아이콘 */}
+                                    {/* 중앙 재생 아이콘 */}
                                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                                         <svg
                                             className="w-14 h-14 text-white/90"
@@ -80,7 +80,7 @@ export default function BehindBrochure() {
                                 </>
                             )}
 
-                            {/* iframe(확대 후) */}
+                            {/* iframe 확대 후 */}
                             {isOpen && (
                                 <>
                                     <iframe
