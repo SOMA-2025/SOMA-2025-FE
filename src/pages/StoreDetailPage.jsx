@@ -313,16 +313,18 @@ const StoreDetailPage = () => {
             {/* Action Buttons */}
             <div className="flex flex-col md:flex-row gap-2 md:gap-4">
               <button 
-                className="w-full md:w-1/2 py-3 bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition-colors"
+                className="w-full md:w-1/2 py-3 bg-indigo-600 text-white font-medium cursor-not-allowed"
+                // hover:bg-indigo-700 transition-colors
                 onClick={handleAddToCart}
               >
-                장바구니 담기
+                SOLD OUT
               </button>
               <button 
-                className="w-full md:w-1/2 py-3 bg-white text-indigo-600 font-medium border border-indigo-600 hover:bg-indigo-50 transition-colors"
+                className="w-full md:w-1/2 py-3 bg-white text-indigo-600 font-medium border border-indigo-600 cursor-not-allowed"
+                // hover:bg-indigo-50 transition-colors"
                 onClick={handleDirectCheckout}
               >
-                바로 주문하기
+                SOLD OUT
               </button>
             </div>
             
