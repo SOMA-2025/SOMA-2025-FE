@@ -65,7 +65,7 @@ const ShowBehindPage = () => {
           640: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        className="w-full"
+        className="w-full select-none "
       >
         {imagePaths.map((src, idx) => (
           <SwiperSlide key={idx} className="flex justify-center items-center">

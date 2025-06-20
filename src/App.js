@@ -19,6 +19,8 @@ import LookBook from "./pages/LookBook";
 import ComingSoon from "./pages/ComingSoon";
 import ArchivePage from "./pages/ArchivePage";
 import BehindShow from "./pages/BehindShow";
+import Runway from "./pages/Runway";
+
 function App() {
   return (
     <BrowserRouter basename="/2025">
@@ -36,7 +38,7 @@ function App() {
           {/* 룩북 */}
           <Route path="/project/look-book" element={<LookBook />} />
           {/* 런웨이 */}
-          <Route path="/project/runway" element={<ComingSoon />} />
+          <Route path="/project/runway" element={<Runway />} />
           {/* 기존 경로 */}
           <Route path="/search" element={<SearchPage />} />
           <Route path="/portfolio/:portfolioUrl" element={<PortfolioPage />} />
