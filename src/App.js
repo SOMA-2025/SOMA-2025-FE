@@ -18,6 +18,8 @@ import ShowInfo from "./pages/ShowInfo";
 import LookBook from "./pages/LookBook";
 import ComingSoon from "./pages/ComingSoon";
 import ArchivePage from "./pages/ArchivePage";
+import BehindShow from "./pages/BehindShow";
+import Runway from "./pages/Runway";
 
 function App() {
   return (
@@ -36,7 +38,7 @@ function App() {
           {/* 룩북 */}
           <Route path="/project/look-book" element={<LookBook />} />
           {/* 런웨이 */}
-          <Route path="/project/runway" element={<ComingSoon />} />
+          <Route path="/project/runway" element={<Runway />} />
           {/* 기존 경로 */}
           <Route path="/search" element={<SearchPage />} />
           <Route path="/portfolio/:portfolioUrl" element={<PortfolioPage />} />
@@ -58,7 +60,7 @@ function App() {
 
           {/* 비하인드 */}
           <Route path="/behind/" element={<Navigate to="/behind/show" />} />
-          <Route path="/behind/show" element={<ComingSoon />} />
+          <Route path="/behind/show" element={<BehindShow />} />
           <Route path="/behind/brochure" element={<ComingSoon />} />
           <Route path="/behind/making" element={<ComingSoon />} />
           
