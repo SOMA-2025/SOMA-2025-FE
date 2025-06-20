@@ -19,6 +19,7 @@ import LookBook from "./pages/LookBook";
 import ComingSoon from "./pages/ComingSoon";
 import ArchivePage from "./pages/ArchivePage";
 import BehindShow from "./pages/BehindShow";
+import BehindBrochure from "./pages/BehindBrochure";
 import Runway from "./pages/Runway";
 
 function App() {
@@ -61,7 +62,7 @@ function App() {
           {/* 비하인드 */}
           <Route path="/behind/" element={<Navigate to="/behind/show" />} />
           <Route path="/behind/show" element={<BehindShow />} />
-          <Route path="/behind/brochure" element={<ComingSoon />} />
+          <Route path="/behind/brochure" element={<BehindBrochure />} />
           <Route path="/behind/making" element={<ComingSoon />} />
           
           {/* archive */}
