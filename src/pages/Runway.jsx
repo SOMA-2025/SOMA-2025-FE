@@ -132,15 +132,15 @@ export default function Runway() {
             <Swiper
                 modules={[Navigation, Grid]}
                 slidesPerView={4}
-                grid={{ rows: 2, fill: 'column' }}   // 1357 / 2468
-                spaceBetween={0}
+                grid={{ fill: 'row' }}   // 1357 / 2468
+                spaceBetween={8}
                 navigation
                 breakpoints={{
-                    0: { slidesPerView: 2, grid: { rows: 2, fill: 'column' } },
-                    768: { slidesPerView: 3, grid: { rows: 2, fill: 'column' } },
-                    1024: { slidesPerView: 4, grid: { rows: 2, fill: 'column' } },
+                    0: { slidesPerView: 2, grid: { fill: 'row' } },
+                    768: { slidesPerView: 3, grid: { fill: 'row' } },
+                    1024: { slidesPerView: 4, grid: { fill: 'row' } },
                 }}
-                className="h-[120dvh] select-none"
+                className="select-none"
             >
                 {runwayImages.map((src, idx) => (
                     <SwiperSlide key={idx}>
