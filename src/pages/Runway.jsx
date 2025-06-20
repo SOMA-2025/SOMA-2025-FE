@@ -1,4 +1,3 @@
-// src/pages/Runway.jsx
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Grid } from 'swiper/modules';
@@ -7,7 +6,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/grid';
 
-/* 이미지 require(… ) 는 그대로 */
 const runwayImages = [
     require('../assets/dialysis/runway/다이앨러시스_길준영_runway_1.jpg'),
     require('../assets/dialysis/runway/다이앨러시스_길준영_runway_2.jpg'),
@@ -61,9 +59,8 @@ const videos = [
 
 export default function Runway() {
     const [zoomSrc, setZoomSrc] = useState(null);
-    const [expanded, setExpanded] = useState(null); // 0 / 1 / null
+    const [expanded, setExpanded] = useState(null); 
 
-    /* ① VideoSection – 수정 버전 */
     const VideoSection = () => (
         <section className="flex flex-col md:flex-row gap-4">
             {videos.map((v, idx) => {
@@ -81,7 +78,7 @@ export default function Runway() {
                         onClick={() => !isOpen && setExpanded(idx)}
                     >
                         <div className="w-full aspect-video relative rounded-lg shadow-md overflow-hidden group">
-                            {/* 썸네일(처음 화면) */}
+                            {/* 썸네일 */}
                             {!isOpen && (
                                 <>
                                     <img
@@ -90,7 +87,7 @@ export default function Runway() {
                                         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                                         loading="lazy"
                                     />
-                                    {/* 중앙 ▶︎ 아이콘 */}
+                                    
                                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                                         <svg
                                             className="w-14 h-14 text-white/90"
@@ -103,7 +100,7 @@ export default function Runway() {
                                 </>
                             )}
 
-                            {/* iframe(확대 후) */}
+                            {/* 확대 후 */}
                             {isOpen && (
                                 <>
                                     <iframe
@@ -135,7 +132,7 @@ export default function Runway() {
             <Swiper
                 modules={[Navigation, Grid]}
                 slidesPerView={4}
-                grid={{ rows: 2, fill: 'column' }}   // 1·3·5·7 / 2·4·6·8
+                grid={{ rows: 2, fill: 'column' }}   // 1357 / 2468
                 spaceBetween={0}
                 navigation
                 breakpoints={{
@@ -160,7 +157,6 @@ export default function Runway() {
                 ))}
             </Swiper>
 
-            {/* ③ 클릭-확대 모달 */}
             {zoomSrc && (
                 <div
                     className="fixed inset-0 z-[60] flex items-center justify-center bg-black/70"
