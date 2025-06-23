@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, memo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Grid } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import { X } from 'lucide-react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/grid';
+import ReactDOM from 'react-dom';
 
 const runwayImages = [
     require('../assets/dialysis/runway/다이앨러시스_길준영_runway_1.jpg'),
@@ -47,9 +47,72 @@ const runwayImages = [
     require('../assets/bipolar/runway/바이폴라_향림아_runway_1.jpg'),
     require('../assets/bipolar/runway/바이폴라_향림아_runway_2.jpg'),
 
-
     require('../assets/lucid-dream/runway/자각몽_김여름_runway_1.jpg'),
-    require('../assets/lucid-dream/runway/자각몽_김여름_runway_2.jpg'),];
+    require('../assets/lucid-dream/runway/자각몽_김여름_runway_2.jpg'),
+    require('../assets/lucid-dream/runway/자각몽_문수연_runway_1.jpg'),
+    require('../assets/lucid-dream/runway/자각몽_문수연_runway_2.jpg'),
+    require('../assets/lucid-dream/runway/자각몽_이동권_runway_1.jpg'),
+    require('../assets/lucid-dream/runway/자각몽_이동권_runway_2.jpg'),
+    require('../assets/lucid-dream/runway/자각몽_이지원_runway_1.jpg'),
+    require('../assets/lucid-dream/runway/자각몽_이지원_runway_2.jpg'),
+    require('../assets/lucid-dream/runway/자각몽_주호천_runway_1.jpg'),
+    require('../assets/lucid-dream/runway/자각몽_주호천_runway_2.jpg'),
+    require('../assets/lucid-dream/runway/자각몽_최진우_runway_1.jpg'),
+    require('../assets/lucid-dream/runway/자각몽_최진우_runway_2.jpg'),
+    require('../assets/lucid-dream/runway/자각몽_황윤경_runway_1.jpg'),
+    require('../assets/lucid-dream/runway/자각몽_황윤경_runway_2.jpg'),
+
+    require('../assets/dash/runway/대시_김나현_runway_1.jpg'),
+    require('../assets/dash/runway/대시_김나현_runway_2.jpg'),
+    require('../assets/dash/runway/대시_김솔이_runway_1.jpg'),
+    require('../assets/dash/runway/대시_김솔이_runway_2.jpg'),
+    require('../assets/dash/runway/대시_김여진_runway_1.jpg'),
+    require('../assets/dash/runway/대시_김여진_runway_2.jpg'),
+    require('../assets/dash/runway/대시_김영서_runway_1.jpg'),
+    require('../assets/dash/runway/대시_김영서_runway_2.jpg'),
+    require('../assets/dash/runway/대시_박정윤_runway_1.jpg'),
+    require('../assets/dash/runway/대시_박정윤_runway_2.jpg'),
+    require('../assets/dash/runway/대시_배유빈_runway_1.jpg'),
+    require('../assets/dash/runway/대시_배유빈_runway_2.jpg'),
+    require('../assets/dash/runway/대시_송다연_runway_1.jpg'),
+    require('../assets/dash/runway/대시_송다연_runway_2.jpg'),
+    require('../assets/dash/runway/대시_신아림_runway_1.jpg'),
+    require('../assets/dash/runway/대시_신아림_runway_2.jpg'),
+    require('../assets/dash/runway/대시_최지연_runway_1.jpg'),
+    require('../assets/dash/runway/대시_최지연_runway_2.jpg'),
+
+    require('../assets/drift/runway/표류기_김주리_runway_1.jpg'),
+    require('../assets/drift/runway/표류기_김주리_runway_2.jpg'),
+    require('../assets/drift/runway/표류기_신승리_runway_1.jpg'),
+    require('../assets/drift/runway/표류기_신승리_runway_2.jpg'),
+    require('../assets/drift/runway/표류기_오제현_runway_1.jpg'),
+    require('../assets/drift/runway/표류기_오제현_runway_2.jpg'),
+    require('../assets/drift/runway/표류기_이현희_runway_1.jpg'),
+    require('../assets/drift/runway/표류기_이현희_runway_2.jpg'),
+    require('../assets/drift/runway/표류기_조수아_runway_1.jpg'),
+    require('../assets/drift/runway/표류기_조수아_runway_2.jpg'),
+    require('../assets/drift/runway/표류기_허재범_runway_1.jpg'),
+    require('../assets/drift/runway/표류기_허재범_runway_2.jpg'),
+    require('../assets/drift/runway/표류기_허주연_runway_1.jpg'),
+    require('../assets/drift/runway/표류기_허주연_runway_2.jpg'),
+    require('../assets/drift/runway/표류기_현정은_runway_1.jpg'),
+    require('../assets/drift/runway/표류기_현정은_runway_2.jpg'),
+
+    require('../assets/agiotita/runway/아지오티타_김규빈_runway_1.jpg'),
+    require('../assets/agiotita/runway/아지오티타_김규빈_runway_2.jpg'),
+    require('../assets/agiotita/runway/아지오티타_김주현_runway_1.jpg'),
+    require('../assets/agiotita/runway/아지오티타_김주현_runway_2.jpg'),
+    require('../assets/agiotita/runway/아지오티타_김지향_runway_1.jpg'),
+    require('../assets/agiotita/runway/아지오티타_김지향_runway_2.jpg'),
+    require('../assets/agiotita/runway/아지오티타_수한_runway_1.jpg'),
+    require('../assets/agiotita/runway/아지오티타_수한_runway_2.jpg'),
+    require('../assets/agiotita/runway/아지오티타_유예리_runway_1.jpg'),
+    require('../assets/agiotita/runway/아지오티타_유예리_runway_2.jpg'),
+    require('../assets/agiotita/runway/아지오티타_이승주_runway_1.jpg'),
+    require('../assets/agiotita/runway/아지오티타_이승주_runway_2.jpg'),
+    require('../assets/agiotita/runway/아지오티타_최정연_runway_1.jpg'),
+    require('../assets/agiotita/runway/아지오티타_최정연_runway_2.jpg'),
+];
 
 /* 유튜브 정보 */
 const videos = [
@@ -57,10 +120,59 @@ const videos = [
     { src: 'https://www.youtube.com/embed/FiBDt4KMncY', title: 'RUNWAY 2', thumb: '/2025/thumbs/run2.png' },
 ];
 
+const ImageSlider = memo(({ onImageClick }) => (
+    <section>
+        <Swiper
+            modules={[Navigation]}
+            slidesPerView={4}
+            // grid={{ fill: 'row' }}  1357 / 2468
+            spaceBetween={8}
+            navigation
+
+            breakpoints={{
+                0: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 4 },
+            }}
+            className="select-none"
+        >
+            {runwayImages.map((src, idx) => (
+                <SwiperSlide key={idx}>
+                    <img
+                        src={src}
+                        alt=""
+                        loading="lazy"
+                        draggable={false}
+                        className="w-full h-full object-contain"
+                        onClick={() => onImageClick(src)}
+                    />
+                </SwiperSlide>
+            ))}
+        </Swiper>
+    </section>
+));
+
 export default function Runway() {
     const [zoomSrc, setZoomSrc] = useState(null);
-    const [expanded, setExpanded] = useState(null); 
-
+    const [expanded, setExpanded] = useState(null);
+    const ZoomModal = ({ src, onClose }) => (
+        <div
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70"
+            onClick={onClose}
+        >
+            <button
+                className="absolute top-6 right-6 text-white"
+                aria-label="닫기"
+            >
+                <X size={32} />
+            </button>
+            <img
+                src={src}
+                alt="Zoomed runway"
+                className="max-h-[90vh] max-w-[90vw] object-contain"
+            />
+        </div>
+    );
     const VideoSection = () => (
         <section className="flex flex-col md:flex-row gap-4">
             {videos.map((v, idx) => {
@@ -87,7 +199,7 @@ export default function Runway() {
                                         className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                                         loading="lazy"
                                     />
-                                    
+
                                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                                         <svg
                                             className="w-14 h-14 text-white/90"
@@ -123,62 +235,24 @@ export default function Runway() {
                     </div>
                 );
             })}
+
+
         </section>
     );
+    const handleZoom = useCallback(src => setZoomSrc(src), []);
 
-
-    const ImageSlider = () => (
-        <section>
-            <Swiper
-                modules={[Navigation, Grid]}
-                slidesPerView={4}
-                grid={{ fill: 'row' }}   // 1357 / 2468
-                spaceBetween={8}
-                navigation
-                breakpoints={{
-                    0: { slidesPerView: 2, grid: { fill: 'row' } },
-                    768: { slidesPerView: 3, grid: { fill: 'row' } },
-                    1024: { slidesPerView: 4, grid: { fill: 'row' } },
-                }}
-                className="select-none"
-            >
-                {runwayImages.map((src, idx) => (
-                    <SwiperSlide key={idx}>
-                        <div onClick={() => setZoomSrc(src)} className="">
-                            <img
-                                src={src}
-                                alt=""
-                                className="w-full h-full object-contain"
-                                loading="lazy"
-                                draggable={false}
-                            />
-                        </div> 
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-
-            {zoomSrc && (
-                <div
-                    className="fixed inset-0 z-[60] flex items-center justify-center bg-black/70"
-                    onClick={() => setZoomSrc(null)}
-                >
-                    <button className="absolute top-6 right-6 text-white" aria-label="닫기">
-                        <X size={32} />
-                    </button>
-                    <img
-                        src={zoomSrc}
-                        alt="Zoomed runway"
-                        className="max-h-[90vh] max-w-[90vw] object-contain"
-                    />
-                </div>
-            )}
-        </section>
-    );
 
     return (
         <div className=" max-w-[1140px] mx-auto px-4 py-12 space-y-16">
             <VideoSection />
-            <ImageSlider />
+            <ImageSlider onImageClick={handleZoom} />
+
+            {zoomSrc &&
+                ReactDOM.createPortal(
+                    <ZoomModal src={zoomSrc} onClose={() => setZoomSrc(null)} />,
+                    document.body
+                )}
+
         </div>
     );
 }
