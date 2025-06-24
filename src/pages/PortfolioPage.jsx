@@ -3,10 +3,10 @@ import { useParams } from 'react-router-dom';
 import members from '../data/members.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { Mail, Instagram } from 'lucide-react';
+
 const PortfolioPage = () => {
   const { portfolioUrl } = useParams();
 
@@ -22,63 +22,70 @@ const PortfolioPage = () => {
     );
   }
 
+  /* ---------- 슬라이드 소스 선택 ---------- */
+  const slides = member.slides?.length ? member.slides : member.brochureImages?.map(src => ({
+    type: 'image',
+    src,
+  })) || [];
+
   return (
     <div className="max-w-[1140px] mx-auto px-4 py-6">
       <div className="flex flex-col md:flex-row gap-10">
+        {/* ------------------- 슬라이더 ------------------- */}
         <div className="w-full md:w-1/2 order-2 md:order-1">
-          {/* <img
-            src={require(`../${member.brochureImageUrl}`)}
-            alt={`${member.name} runway`}
-            className="w-full object-cover"
-          /> */}
-          {member.brochureImages && member.brochureImages.length > 0 ? (
+          {slides.length ? (
             <Swiper
               spaceBetween={20}
-              navigation={true}
+              navigation
               modules={[Navigation]}
-              className="w-full"
+              className="w-full select-none"
             >
-              {member.brochureImages.map((img, idx) => (
+              {slides.map((item, idx) => (
                 <SwiperSlide key={idx}>
-                  <img
-                    src={require(`../${img}`)}
-                    alt={`브로셔 ${idx + 1}`}
-                    className="w-full object-contain"
-                  />
+                  {item.type === 'image' ? (
+                    <img
+                      src={require(`../${item.src}`)}
+                      alt={`슬라이드 ${idx + 1}`}
+                      className="w-full object-contain"
+                    />
+                  ) : (
+                    <div className="w-full aspect-[3/4]">
+                      <iframe
+                        title={`iframe-${idx}`}
+                        src={item.src}
+                        frameBorder="0"
+                        width="100%"
+                        height="100%"
+                        allowFullScreen
+                        className="w-full h-full"
+                      />
+                    </div>
+                  )}
                 </SwiperSlide>
               ))}
-
-              {/* <SwiperSlide>
-                <div className="w-full aspect-[3/4]">
-                  <iframe
-                    title="3d 모델"
-                    src="https://my.spline.design/untitled-84YDxSYhT49JsRNfZV0IS4g1/"
-                    frameBorder="0"
-                    width="100%"
-                    height="100%"
-                    allowFullScreen
-                    className="w-full h-full"
-                  />
-                </div>
-              </SwiperSlide> */}
-
             </Swiper>
           ) : (
-            <p>브로셔 이미지가 없습니다.</p>
+            <p>슬라이드가 없습니다.</p>
           )}
         </div>
-        <div className="w-full md:w-1/2 py-4 flex flex-col justify center order-1 md:order-2">
+
+        {/* ------------------- 텍스트 영역 ------------------- */}
+        <div className="w-full md:w-1/2 py-4 flex flex-col justify-center order-1 md:order-2">
           <img
             src={require(`../${member.profileImageUrl}`)}
             alt={`${member.name} profile`}
             className="w-96 h-96 object-contain mb-4 self-center"
           />
-          <h1 className="text-xl font-semibold">{member.name} / {member.englishName}</h1>
+          <h1 className="text-xl font-semibold">
+            {member.name} / {member.englishName}
+          </h1>
           <h2 className="text-2xl font-bold mt-2">{member.projectTitle}</h2>
           <p className="mt-4 whitespace-pre-line">{member.description}</p>
+
           {(member.email || member.instagram) && (
             <div className="mt-6 space-y-2">
               <h3 className="text-lg font-semibold uppercase tracking-wide mb-2">Contact</h3>
+
               {member.instagram && (
                 <a
                   href={`https://instagram.com/${member.instagram.replace('@', '')}`}
@@ -90,6 +97,7 @@ const PortfolioPage = () => {
                   {member.instagram}
                 </a>
               )}
+
               {member.email && (
                 <a
                   href={`mailto:${member.email}`}
