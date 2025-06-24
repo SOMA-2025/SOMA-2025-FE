@@ -11,12 +11,27 @@
         "email": "summererer@naver.com",
         "instagram": "@studio.reum",
         "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_kimyeoreum.jpg",
-        "brochureImages": [
-          "assets/lucid-dream/brochure/자각몽_김여름_1.jpg",
-          "assets/lucid-dream/brochure/자각몽_김여름_2.jpg",
-          "assets/lucid-dream/runway/자각몽_김여름_runway_1.jpg",
-          "assets/lucid-dream/runway/자각몽_김여름_runway_2.jpg",
-          "<iframe src='https://my.spline.design/untitled-VunMq97sK8xLOBPn2zO98SFa/' frameborder='0' width='100%' height='100%'></iframe>"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_김여름_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_김여름_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_김여름_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_김여름_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-VunMq97sK8xLOBPn2zO98SFa/"
+          }
         ],
         "portfolioUrl": "kim-yeoreum"
       },
@@ -28,9 +43,27 @@
         "email": "",
         "instagram": "ivankatvin",
         "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_moonsuyeon.jpg",
-        "brochureImages": [
-          "assets/lucid-dream/brochure/자각몽_문수연_1.jpg",
-          "assets/lucid-dream/brochure/자각몽_문수연_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_문수연_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_문수연_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_문수연_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_문수연_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-F7xuaAcBuDija0lT0JB1h379/"
+          }
         ],
         "portfolioUrl": "moon-suyeon"
       },
@@ -42,9 +75,27 @@
         "email": "ldk3377@konkuk.ac.kr",
         "instagram": "isdcyss",
         "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_leedongkwon.jpg",
-        "brochureImages": [
-          "assets/lucid-dream/brochure/자각몽_이동권_1.jpg",
-          "assets/lucid-dream/brochure/자각몽_이동권_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_이동권_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_이동권_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_이동권_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_이동권_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-ZXLnZJJEKebdAUBLk5wuYA9f/"
+          }
         ],
         "portfolioUrl": "lee-dongkwon"
       },
@@ -56,9 +107,27 @@
         "email": "jenny5033@naver.com",
         "instagram": "leemitied",
         "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_leejiwon.jpg",
-        "brochureImages": [
-          "assets/lucid-dream/brochure/자각몽_이지원_1.jpg",
-          "assets/lucid-dream/brochure/자각몽_이지원_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_이지원_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_이지원_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_이지원_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_이지원_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-L544BYA7DDldG5lJXZuzh2bW/"
+          }
         ],
         "portfolioUrl": "lee-jiwon"
       },
@@ -70,9 +139,23 @@
         "email": "",
         "instagram": "",
         "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_zhouhaotian.jpg",
-        "brochureImages": [
-          "assets/lucid-dream/brochure/자각몽_주호천_1.jpg",
-          "assets/lucid-dream/brochure/자각몽_주호천_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_주호천_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_주호천_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_주호천_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_주호천_runway_2.jpg"
+          }
         ],
         "portfolioUrl": "joo-hocheon"
       },
@@ -84,9 +167,27 @@
         "email": "chooijw24@naver.com",
         "instagram": "choijw_24",
         "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_choijinwoo.jpg",
-        "brochureImages": [
-          "assets/lucid-dream/brochure/자각몽_최진우_1.jpg",
-          "assets/lucid-dream/brochure/자각몽_최진우_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_최진우_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_최진우_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_최진우_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_최진우_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/1copy-v1Fzlr0dMslW5ojT5D3Zbf7i/"
+          }
         ],
         "portfolioUrl": "choi-jinwoo"
       },
@@ -98,9 +199,27 @@
         "email": "",
         "instagram": "@hae._.mo",
         "profileImageUrl": "assets/lucid-dream/profile/LUCIDDREAM_hwangyunkyung.jpg",
-        "brochureImages": [
-          "assets/lucid-dream/brochure/자각몽_황윤경_1.jpg",
-          "assets/lucid-dream/brochure/자각몽_황윤경_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_황윤경_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/brochure/자각몽_황윤경_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_황윤경_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/lucid-dream/runway/자각몽_황윤경_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-1HvVrRZfZoeiPhCqEMcNS2VJ/"
+          }
         ],
         "portfolioUrl": "hwang-yoonkyung"
       }
@@ -118,9 +237,27 @@
         "email": "dabom200@naver.com",
         "instagram": "juuriik",
         "profileImageUrl": "assets/drift/profile/DRIFT_kimjuli.jpg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_김주리_1.jpg",
-          "assets/drift/brochure/표류기_김주리_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_김주리_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_김주리_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_김주리_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_김주리_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-ZM7vkbiL8z5wmko4a4ZsGaK7/"
+          }
         ],
         "portfolioUrl": "kim-juli"
       },
@@ -132,9 +269,27 @@
         "email": "victoria2580@naver.com",
         "instagram": "@seun9lee",
         "profileImageUrl": "assets/drift/profile/DRIFT_shinseunglee.jpg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_신승리_1.jpg",
-          "assets/drift/brochure/표류기_신승리_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_신승리_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_신승리_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_신승리_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_신승리_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-0Y09yycD4nUJoRDTHtlfKEHc/"
+          }
         ],
         "portfolioUrl": "shin-seunglee"
       },
@@ -146,9 +301,27 @@
         "email": "suaegii@naver.com",
         "instagram": "ohje_ohje",
         "profileImageUrl": "assets/drift/profile/DRIFT_ohjehyun.jpg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_오제현_1.jpg",
-          "assets/drift/brochure/표류기_오제현_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_오제현_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_오제현_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_오제현_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_오제현_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-jJKnQBkGTJi9PRaJHiR5vzKi/"
+          }
         ],
         "portfolioUrl": "oh-jehyun"
       },
@@ -160,9 +333,27 @@
         "email": "lhh2030@daum.net",
         "instagram": "@two.h_h",
         "profileImageUrl": "assets/drift/profile/DRIFT_leehyunhee.jpeg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_이현희_1.jpg",
-          "assets/drift/brochure/표류기_이현희_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_이현희_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_이현희_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_이현희_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_이현희_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-VNp2XQbOtCgcYYOgCssKqOJD/"
+          }
         ],
         "portfolioUrl": "lee-hyunhee"
       },
@@ -174,9 +365,27 @@
         "email": "saj0201@naver.com",
         "instagram": "@shu_u_a",
         "profileImageUrl": "assets/drift/profile/DRIFT_joshua.jpg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_조수아_1.jpg",
-          "assets/drift/brochure/표류기_조수아_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_조수아_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_조수아_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_조수아_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_조수아_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-irmtlNKEMDWp5rt85VScv4on/"
+          }
         ],
         "portfolioUrl": "jo-shua"
       },
@@ -188,9 +397,27 @@
         "email": "hjb8355@naver.com",
         "instagram": "woqja_",
         "profileImageUrl": "assets/drift/profile/DRIFT_heojaebeom.jpg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_허재범_1.jpg",
-          "assets/drift/brochure/표류기_허재범_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_허재범_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_허재범_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_허재범_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_허재범_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-MhB4S35MBu8GWKJbGM8GLgIs/"
+          }
         ],
         "portfolioUrl": "heo-jaebeom"
       },
@@ -202,9 +429,27 @@
         "email": "hurjoo99@gmail.com",
         "instagram": "9_hzoo",
         "profileImageUrl": "assets/drift/profile/DRIFT_hurjooyeon.jpg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_허주연_1.jpg",
-          "assets/drift/brochure/표류기_허주연_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_허주연_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_허주연_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_허주연_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_허주연_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-NdhjPhKhxzzheOneQch3evQx/"
+          }
         ],
         "portfolioUrl": "hur-jooyeon"
       },
@@ -216,9 +461,27 @@
         "email": "hjefd01@gmail.com",
         "instagram": "@hye_0n___",
         "profileImageUrl": "assets/drift/profile/DRIFT_hyunjeongeun.jpg",
-        "brochureImages": [
-          "assets/drift/brochure/표류기_현정은_1.jpg",
-          "assets/drift/brochure/표류기_현정은_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_현정은_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/brochure/표류기_현정은_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_현정은_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/drift/runway/표류기_현정은_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-84YDxSYhT49JsRNfZV0IS4g1/"
+          }
         ],
         "portfolioUrl": "hyun-jeongeun"
       }
@@ -236,9 +499,27 @@
         "email": "pam06138@naver.com",
         "instagram": "gyuvinny",
         "profileImageUrl": "assets/agiotita/profile/AGIOTITA_kimgyubin.JPG",
-        "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_김규빈_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_김규빈_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_김규빈_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_김규빈_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_김규빈_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_김규빈_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-HRoJFZAt7ZjMjP04macE4NgC/"
+          }
         ],
         "portfolioUrl": "kim-gyubin"
       },
@@ -250,9 +531,19 @@
         "email": "kozu1012@naver.com",
         "instagram": "ssaekk_gga",
         "profileImageUrl": "assets/agiotita/profile/AGIOTITA_kimyoonsung.jpg",
-        "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_김윤성_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_김윤성_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_김윤성_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_김윤성_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-ihO51gDNnvS57GRjPafogRke/"
+          }
         ],
         "portfolioUrl": "kim-yoonseong"
       },
@@ -264,9 +555,27 @@
         "email": "riley2687@naver.com",
         "instagram": "juyo_ning",
         "profileImageUrl": "assets/agiotita/profile/AGIOTITA_kimjuhyun.jpg",
-        "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_김주현_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_김주현_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_김주현_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_김주현_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_김주현_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_김주현_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-rVoV2fGofcOTlEiGNuNsPv2m/"
+          }
         ],
         "portfolioUrl": "kim-juhyun"
       },
@@ -278,9 +587,27 @@
         "email": "kimmoonkim@naver.com",
         "instagram": "@rrock_hamster",
         "profileImageUrl": "assets/agiotita/profile/AGIOTITA_kimjiehyang.jpg",
-        "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_김지향_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_김지향_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_김지향_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_김지향_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_김지향_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_김지향_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-jlE6bdMAb5qKq1DWtMgRAgLx/"
+          }
         ],
         "portfolioUrl": "kim-jihyang"
       },
@@ -292,9 +619,27 @@
         "email": "Soehanyap@gmail.com",
         "instagram": "@Soehan.yap",
         "profileImageUrl": "assets/agiotita/profile/AGIOTITA_soehanyap.JPG",
-        "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_수한_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_수한_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_수한_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_수한_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_수한_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_수한_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-C3z3zzxiyzWEvFSFPTcvnnHq/"
+          }
         ],
         "portfolioUrl": "su-han"
       },
@@ -306,9 +651,27 @@
         "email": "yooyelee0221@naver.com",
         "instagram": "@yeellee.y",
         "profileImageUrl": "assets/agiotita/profile/AGIOTITA_yooyealee.jpg",
-        "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_유예리_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_유예리_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_유예리_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_유예리_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_유예리_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_유예리_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-bxCTV3Q4TIztKJHn2Oaxa4tL/"
+          }
         ],
         "portfolioUrl": "yoo-yelee"
       },
@@ -320,9 +683,27 @@
         "email": "",
         "instagram": "",
         "profileImageUrl": "assets/agiotita/profile/AGIOTITA_leeseungju.jpg",
-        "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_이승주_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_이승주_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_이승주_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_이승주_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_이승주_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_이승주_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-1FV6fmwW0fXEn1ObHYtZbUx6/"
+          }
         ],
         "portfolioUrl": "lee-seungju"
       },
@@ -334,9 +715,19 @@
         "email": "",
         "instagram": "jann__29",
         "profileImageUrl": "assets/agiotita/profile/AGIOTITA_chanwinghei.jpg",
-        "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_진영희_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_진영희_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_진영희_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_진영희_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-U51niPO1RRs4Y667z2VuAOqt/"
+          }
         ],
         "portfolioUrl": "jin-younghee"
       },
@@ -348,9 +739,27 @@
         "email": "choiiiijy@naver.com",
         "instagram": "choiiiijy",
         "profileImageUrl": "assets/agiotita/profile/AGIOTITA_choijeongyeon.jpg",
-        "brochureImages": [
-          "assets/agiotita/brochure/AGIOTITA_최정연_1.jpg",
-          "assets/agiotita/brochure/AGIOTITA_최정연_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_최정연_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/brochure/AGIOTITA_최정연_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_최정연_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/agiotita/runway/아지오티타_최정연_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-MArpPMe1yMsnBJi7IyJyqLhv/"
+          }
         ],
         "portfolioUrl": "choi-jeongyeon"
       }
@@ -363,14 +772,32 @@
       {
         "name": "곽현일",
         "englishName": "KWAK HYUNIL",
-        "projectTitle": "무제",
-        "description": "무제",
+        "projectTitle": "",
+        "description": "",
         "email": "a1244299939@gmail.com",
         "instagram": "kwakhyunill",
         "profileImageUrl": "assets/bipolar/profile/BIPOLAR_guoxianyi.jpg",
-        "brochureImages": [
-          "assets/bipolar/brochure/Bipolar_곽현일_1.jpg",
-          "assets/bipolar/brochure/Bipolar_곽현일_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/Bipolar_곽현일_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/Bipolar_곽현일_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_곽현일_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_곽현일_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-UpfA90wNA2QQQw8i8kMDyvVQ/"
+          }
         ],
         "portfolioUrl": "kwak-hyunil"
       },
@@ -382,9 +809,27 @@
         "email": "ywujini@163.com",
         "instagram": "@hidemyharbor",
         "profileImageUrl": "assets/bipolar/profile/BIPOLAR_mayuchen.jpg",
-        "brochureImages": [
-          "assets/bipolar/brochure/Bipolar_마우천_1.jpg",
-          "assets/bipolar/brochure/Bipolar_마우천_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/Bipolar_마우천_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/Bipolar_마우천_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_마우천_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_마우천_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/-BKJvSbKOPxn9SM4QP5kwNSep/"
+          }
         ],
         "portfolioUrl": "ma-yuchen"
       },
@@ -396,9 +841,27 @@
         "email": "w075hy@gmail.com",
         "instagram": "w_075_hy",
         "profileImageUrl": "assets/bipolar/profile/BIPOLAR_wuhanyu.jpg",
-        "brochureImages": [
-          "assets/bipolar/brochure/Bipolar_무한우_look1.jpg",
-          "assets/bipolar/brochure/Bipolar_무한우_look2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/Bipolar_무한우_look1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/Bipolar_무한우_look2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_무한우_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_무한우_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-tU2lI2nlvUWptXvxpk8XyJw7/"
+          }
         ],
         "portfolioUrl": "wu-hanyu"
       },
@@ -410,9 +873,27 @@
         "email": "xixi7cc@naver.com",
         "instagram": "",
         "profileImageUrl": "assets/bipolar/profile/BIPOLAR_fanyuxi.jpg",
-        "brochureImages": [
-          "assets/bipolar/brochure/BIPOLAR_범옥천_1.jpg",
-          "assets/bipolar/brochure/BIPOLAR_범옥천_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/BIPOLAR_범옥천_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/BIPOLAR_범옥천_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_범옥천_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_범옥천_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-xb1UwAd8qwKzOOtvuNnXR9UP/"
+          }
         ],
         "portfolioUrl": "beom-okcheon"
       },
@@ -424,9 +905,27 @@
         "email": "Ssqy13961586971@163.com",
         "instagram": "shi_sqy",
         "profileImageUrl": "assets/bipolar/profile/BIPOLAR_shiqingyi.jpg",
-        "brochureImages": [
-          "assets/bipolar/brochure/BIPOLAR_사청의_look1.jpg",
-          "assets/bipolar/brochure/BIPOLAR_사청의_look2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/BIPOLAR_사청의_look1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/BIPOLAR_사청의_look2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_사청의_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_사청의_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/202213578look1-mGGh6vzcHU47U0GL1uOKVVnj/"
+          }
         ],
         "portfolioUrl": "shi-qingyi"
       },
@@ -438,9 +937,27 @@
         "email": "yejiawang27@gmail.com",
         "instagram": "oowyj",
         "profileImageUrl": "assets/bipolar/profile/BIPOLAR_wangyejia.JPG",
-        "brochureImages": [
-          "assets/bipolar/brochure/BIpolar_왕업가_1.webp",
-          "assets/bipolar/brochure/Bipolar_왕업가_2.webp"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/BIpolar_왕업가_1.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/Bipolar_왕업가_2.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_왕업가_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_왕업가_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-9qcP8Qun1shRoNmO4RJyfpgM/"
+          }
         ],
         "portfolioUrl": "wang-yejia"
       },
@@ -452,9 +969,27 @@
         "email": "",
         "instagram": "",
         "profileImageUrl": "assets/bipolar/profile/BIPOLAR_laukalee.jpg",
-        "brochureImages": [
-          "assets/bipolar/brochure/Bipolar_유가리_1.jpg",
-          "assets/bipolar/brochure/Bipolar_유가리_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/Bipolar_유가리_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/Bipolar_유가리_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_유가리_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_유가리_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/2022135362-DkT7v7EgXs03ZAkjyg7bHH23/"
+          }
         ],
         "portfolioUrl": "lau-kalee"
       },
@@ -466,9 +1001,27 @@
         "email": "liuxuanning0519@163.com",
         "instagram": "lxxnn519",
         "profileImageUrl": "assets/bipolar/profile/BIPOLAR_liuxuanning.JPG",
-        "brochureImages": [
-          "assets/bipolar/brochure/Bipolar_유한녕_look1.jpg",
-          "assets/bipolar/brochure/Bipolar_유한녕_look2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/Bipolar_유한녕_look1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/Bipolar_유한녕_look2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_유한녕_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_유한녕_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/-CBXFyMO19SKfr5Cpqn0eCrS4/"
+          }
         ],
         "portfolioUrl": "liu-xuanning"
       },
@@ -480,9 +1033,27 @@
         "email": "",
         "instagram": "",
         "profileImageUrl": "assets/bipolar/profile/BIPOLAR_fengzhijia.jpg",
-        "brochureImages": [
-          "assets/bipolar/brochure/BIPOLAR_풍지가_1.jpg",
-          "assets/bipolar/brochure/BIPOLAR_풍지가_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/BIPOLAR_풍지가_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/BIPOLAR_풍지가_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_풍지가_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_풍지가_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/-r8j1TCNpba5qTlOp90BPdvdp/"
+          }
         ],
         "portfolioUrl": "pung-jiga"
       },
@@ -494,9 +1065,27 @@
         "email": "zky024180@gmail.com",
         "instagram": "",
         "profileImageUrl": "assets/bipolar/profile/BIPOLAR_xianglinya.jpg",
-        "brochureImages": [
-          "assets/bipolar/brochure/bipolar_항림아_1.jpg",
-          "assets/bipolar/brochure/bipolar_항림아_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/bipolar_항림아_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/brochure/bipolar_항림아_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_향림아_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/bipolar/runway/바이폴라_향림아_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/2021139442-oowPtpJUtBL6ST7ZdNtzQGRt/"
+          }
         ],
         "portfolioUrl": "hang-rima"
       }
@@ -514,9 +1103,27 @@
         "email": "",
         "instagram": "gwixin",
         "profileImageUrl": "assets/dialysis/profile/Dialysis_kiljunyoung.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_kiljunyoung_1.jpg",
-          "assets/dialysis/brochure/Dialysis_kiljunyoung_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_kiljunyoung_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_kiljunyoung_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_길준영_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_길준영_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-bDT0CVKywcu7Hked3HlJL8Ku/"
+          }
         ],
         "portfolioUrl": "kil-junyoung"
       },
@@ -528,9 +1135,27 @@
         "email": "gu1911@naver.com",
         "instagram": "@migyuuu___",
         "profileImageUrl": "assets/dialysis/profile/Dialysis_kimmingyu.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_김민규_1.webp",
-          "assets/dialysis/brochure/Dialysis_김민규_2.webp"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_김민규_1.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_김민규_2.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_김민규_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_김민규_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-SmmS9zwBdphUeGsF1nbOG7M5/"
+          }
         ],
         "portfolioUrl": "kim-mingyu"
       },
@@ -542,9 +1167,27 @@
         "email": "",
         "instagram": "moonjiiwon",
         "profileImageUrl": "assets/dialysis/profile/Dialysis_moonjiwon.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_문지원_1.jpg",
-          "assets/dialysis/brochure/Dialysis_문지원_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_문지원_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_문지원_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_문지원_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_문지원_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/-bBBmxDevIsqzKpko0YtypD0w/"
+          }
         ],
         "portfolioUrl": "moon-jiwon"
       },
@@ -556,9 +1199,27 @@
         "email": "99psh512@naver.com",
         "instagram": "sanghyunny",
         "profileImageUrl": "assets/dialysis/profile/Dialysis_parksanghyun.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_박상현_1.webp",
-          "assets/dialysis/brochure/Dialysis_박상현_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_박상현_1.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_박상현_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_박상현_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_박상현_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-StQNrNp86Qm8zwyvh4YAInpx/"
+          }
         ],
         "portfolioUrl": "park-sanghyun"
       },
@@ -570,9 +1231,27 @@
         "email": "seoheeparkparis@gmail.com",
         "instagram": "sleowhee",
         "profileImageUrl": "assets/dialysis/profile/Dialysis_parkseohee.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_박서희_1.jpg",
-          "assets/dialysis/brochure/Dialysis_박서희_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_박서희_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_박서희_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_박서희_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_박서희_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-Mg5oygdrdPYNiOILNOZCGDNp/"
+          }
         ],
         "portfolioUrl": "park-seohee"
       },
@@ -584,9 +1263,27 @@
         "email": "syyang1001@naver.com",
         "instagram": "@yangsngyn",
         "profileImageUrl": "assets/dialysis/profile/Dialysis_yangseungyeon.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_양승연_1.webp",
-          "assets/dialysis/brochure/Dialysis_양승연_2.webp"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_양승연_1.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_양승연_2.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_양승연_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_양승연_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-8SvfNlG4DkZSmPvI00ZXQA8j/"
+          }
         ],
         "portfolioUrl": "yang-seungyeon"
       },
@@ -598,9 +1295,27 @@
         "email": "tony3216@naver.com",
         "instagram": "",
         "profileImageUrl": "assets/dialysis/profile/Dialysis_leedongjun.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_이동준_1.webp",
-          "assets/dialysis/brochure/Dialysis_이동준_2.webp"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_이동준_1.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_이동준_2.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_이동준_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_이동준_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-UnWjZFKk1aA7o89TFCe9B53z/"
+          }
         ],
         "portfolioUrl": "lee-dongjun"
       },
@@ -612,9 +1327,27 @@
         "email": "jiny3805@naver.com",
         "instagram": "",
         "profileImageUrl": "assets/dialysis/profile/Dialysis_leeyejin.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_이예진_1.webp",
-          "assets/dialysis/brochure/Dialysis_이예진_2.webp"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_이예진_1.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_이예진_2.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_이예진_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_이예진_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-oJs9yepuJ7bh1bcHnegZFSFZ/"
+          }
         ],
         "portfolioUrl": "lee-yejin"
       },
@@ -626,9 +1359,27 @@
         "email": "heaejinjun@gmail.com",
         "instagram": "heaejinjun",
         "profileImageUrl": "assets/dialysis/profile/Dialysis_junheejin.jpg",
-        "brochureImages": [
-          "assets/dialysis/brochure/Dialysis_전희진_1.webp",
-          "assets/dialysis/brochure/Dialysis_전희진_2.webp"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_전희진_1.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/brochure/Dialysis_전희진_2.webp"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_전희진_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dialysis/runway/다이앨러시스_전희진_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-wdPnDgKHj8y72SukTAs8JOpW/"
+          }
         ],
         "portfolioUrl": "jun-heejin"
       }
@@ -646,9 +1397,27 @@
         "email": "",
         "instagram": "",
         "profileImageUrl": "assets/dash/profile/DASH_kimnahyeon.jpg",
-        "brochureImages": [
-          "assets/dash/brochure/dash_kimnahyeon_1.jpg",
-          "assets/dash/brochure/dash_kimnahyeon_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_kimnahyeon_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_kimnahyeon_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_김나현_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_김나현_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-hLBRRjqQKHVnGY3x6z7NuVOd/"
+          }
         ],
         "portfolioUrl": "kim-nahyeon"
       },
@@ -660,9 +1429,27 @@
         "email": "",
         "instagram": "",
         "profileImageUrl": "assets/dash/profile/DASH_kimsolyi.JPG",
-        "brochureImages": [
-          "assets/dash/brochure/dash_kimsolyi_1.jpg",
-          "assets/dash/brochure/dash_kimsolyi_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_kimsolyi_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_kimsolyi_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_김솔이_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_김솔이_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-g15M26lD5MWrU9xEuf2M30PI/"
+          }
         ],
         "portfolioUrl": "kim-solyi"
       },
@@ -674,9 +1461,27 @@
         "email": "yeojin9792@naver.com",
         "instagram": "yjiiin.k",
         "profileImageUrl": "assets/dash/profile/DASH_kimyeojin.JPG",
-        "brochureImages": [
-          "assets/dash/brochure/dash_kimyeojin_1.jpg",
-          "assets/dash/brochure/dash_kimyeojin_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_kimyeojin_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_kimyeojin_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_김여진_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_김여진_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-PS6OlSEpqdZctY4E0FcD9r6q/"
+          }
         ],
         "portfolioUrl": "kim-yeojin"
       },
@@ -688,9 +1493,27 @@
         "email": "@ysys1222@naver.com",
         "instagram": "@zzer0_0west",
         "profileImageUrl": "assets/dash/profile/DASH_kimyoungseo.jpg",
-        "brochureImages": [
-          "assets/dash/brochure/dash_kimyoungseo_1.jpg",
-          "assets/dash/brochure/dash_kimyoungseo_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_kimyoungseo_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_kimyoungseo_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_김영서_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_김영서_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/-IZ8eO4snKncoxnDyfPuIwoVQ/"
+          }
         ],
         "portfolioUrl": "kim-youngseo"
       },
@@ -702,9 +1525,27 @@
         "email": "nsdo0617@naver.com",
         "instagram": "",
         "profileImageUrl": "assets/dash/profile/DASH_parkjungyoon.jpg",
-        "brochureImages": [
-          "assets/dash/brochure/dash_parkjungyoon_1.jpg",
-          "assets/dash/brochure/dash_parkjungyoon_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_parkjungyoon_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_parkjungyoon_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_박정윤_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_박정윤_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-e2e0gsIpflLHEP0By1cTFIlV/"
+          }
         ],
         "portfolioUrl": "park-jungyoon"
       },
@@ -716,9 +1557,27 @@
         "email": "",
         "instagram": "@_nibueab_",
         "profileImageUrl": "assets/dash/profile/DASH_beayoobin.jpg",
-        "brochureImages": [
-          "assets/dash/brochure/dash_beayoobin_1.jpg",
-          "assets/dash/brochure/dash_beayoobin_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_beayoobin_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_beayoobin_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_배유빈_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_배유빈_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-VXShhehMyJZ0m2u0yrbLBuTM/"
+          }
         ],
         "portfolioUrl": "bae-yoobin"
       },
@@ -730,9 +1589,27 @@
         "email": "",
         "instagram": "",
         "profileImageUrl": "assets/dash/profile/DASH_songdayeon.JPG",
-        "brochureImages": [
-          "assets/dash/brochure/dash_songdayeon_1.jpg",
-          "assets/dash/brochure/dash_songdayeon_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_songdayeon_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_songdayeon_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_송다연_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_송다연_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-eKiaACkLReXW4Wvzk8WiEjWh/"
+          }
         ],
         "portfolioUrl": "song-dayeon"
       },
@@ -744,9 +1621,27 @@
         "email": "arim1217@naver.com",
         "instagram": "@drygincherrybrandylemonsoda",
         "profileImageUrl": "assets/dash/profile/DASH_shinarim.JPG",
-        "brochureImages": [
-          "assets/dash/brochure/dash_shinarim_1.jpg",
-          "assets/dash/brochure/dash_shinarim_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_shinarim_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_shinarim_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_신아림_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_신아림_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-Nv4HXvwpgGVhxIpcsF8U3xqK/"
+          }
         ],
         "portfolioUrl": "shin-arim"
       },
@@ -758,9 +1653,27 @@
         "email": "choijy0920@naver.com",
         "instagram": "@2lozni",
         "profileImageUrl": "assets/dash/profile/DASH_choijiyeon.jpg",
-        "brochureImages": [
-          "assets/dash/brochure/dash_choijiyeon_1.jpg",
-          "assets/dash/brochure/dash_choijiyeon_2.jpg"
+        "slides": [
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_choijiyeon_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/brochure/dash_choijiyeon_2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_최지연_runway_1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "assets/dash/runway/대시_최지연_runway_2.jpg"
+          },
+          {
+            "type": "iframe",
+            "src": "https://my.spline.design/untitled-nBuaqjess2rXKA2TNdIgESeT/"
+          }
         ],
         "portfolioUrl": "choi-jiyeon"
       }
