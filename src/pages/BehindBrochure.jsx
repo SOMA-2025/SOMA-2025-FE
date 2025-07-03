@@ -32,9 +32,9 @@ const imagePaths = [
   ];
 
 const videos = [
-    { src: 'https://www.youtube.com/embed/7Kgi3zzsTj0', title: 'RUNWAY 1', thumb: '/2025/thumbs/bro_thumbnail_1.png' },
-    { src: 'https://www.youtube.com/embed/BpKl3h0XzPc', title: 'RUNWAY 2', thumb: '/2025/thumbs/bro_thumbnail_2.png' },
-    { src: 'https://www.youtube.com/embed/1AUTXvGAC0c', title: 'RUNWAY 3', thumb: '/2025/thumbs/bro_thumbnail_3.png' },
+    { src: 'https://www.youtube.com/embed/7Kgi3zzsTj0', title: 'RUNWAY 1', thumb: '/2025/thumbs/1ST_2ND_AGIOTITA_BIPOLAR_BROCHURE_MAKINGFILM.jpeg' },
+    { src: 'https://www.youtube.com/embed/BpKl3h0XzPc', title: 'RUNWAY 2', thumb: '/2025/thumbs/3RD_4TH_DASH_DIALYSIS_MAKINGFILM.jpeg' },
+    { src: 'https://www.youtube.com/embed/1AUTXvGAC0c', title: 'RUNWAY 3', thumb: '/2025/thumbs/5TH_6TH_DRIFT_LUCIDDREAM_BROCHURE_MAKINGFILM.jpg' },
 ];
 
 export default function BehindBrochure() {

@@ -116,8 +116,8 @@ const runwayImages = [
 
 /* 유튜브 정보 */
 const videos = [
-    { src: 'https://www.youtube.com/embed/I6ZhuIJTGug', title: 'RUNWAY 1', thumb: '/2025/thumbs/run1.png' },
-    { src: 'https://www.youtube.com/embed/FiBDt4KMncY', title: 'RUNWAY 2', thumb: '/2025/thumbs/run2.png' },
+    { src: 'https://www.youtube.com/embed/I6ZhuIJTGug', title: 'RUNWAY 1', thumb: '/2025/thumbs/1ST_showfilm_.jpeg' },
+    { src: 'https://www.youtube.com/embed/FiBDt4KMncY', title: 'RUNWAY 2', thumb: '/2025/thumbs/2ND_showfilm_.jpeg' },
 ];
 
 const ImageSlider = memo(({ onImageClick }) => (
